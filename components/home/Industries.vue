@@ -1,4 +1,58 @@
-<script setup></script>
+<script setup>
+import {
+  retails,
+  oilGas,
+  manufacture,
+  logistics,
+  foodBeverages,
+  automobile,
+} from "../../lib/images";
+
+const contents = [
+  {
+    id: 3,
+    img: manufacture,
+    title: "Manufacturing",
+    description:
+      "We provide manufacturing solutions that help you optimize your supply chain, improve customer experience, and drive sales.",
+  },
+  {
+    id: 1,
+    img: retails,
+    title: "Retail",
+    description:
+      "Manage POS, Inventory, Cash and Integrate Back End Procurement and SKU with ease.",
+  },
+  {
+    id: 4,
+    img: logistics,
+    title: "Logistics",
+    description:
+      "Functionality for complex warehousing, voluminous stock movements, bin management & distribution centres.",
+  },
+  {
+    id: 6,
+    img: automobile,
+    title: "Automobile component",
+    description:
+      "Comprehensive solution including quality management, advance production & subcontracting.",
+  },
+  {
+    id: 5,
+    img: foodBeverages,
+    title: "Food & Beverages",
+    description:
+      "End to end solution for procurement, processing & distribution for food & beverages manufacturing.",
+  },
+  {
+    id: 2,
+    img: oilGas,
+    title: "Oil & Gas",
+    description:
+      "We offer proven best-practice solutions for companies specializing in the import, export, distribution, and marketing of oil and gas products.",
+  },
+];
+</script>
 
 <template>
   <section class="py-16">
@@ -20,8 +74,20 @@
             ><Icon class="text-3xl" name="flowbite:arrow-right-outline"
           /></NuxtLink>
         </div>
-        <div>
-          <div></div>
+      </div>
+      <div class="grid grid-cols-3 gap-10 my-10">
+        <div
+          class="bg-secondary text-[#FAFAFA] p-6 rounded-xl"
+          v-for="(content, index) in contents"
+          :key="content.id"
+        >
+          <div class="rounded-xl overflow-hidden">
+            <img :src="content.img" alt="" class="w-full h-auto" />
+          </div>
+          <h5 class="text-2xl font-bold py-2">{{ content.title }}</h5>
+          <p>
+            {{ content.description }}
+          </p>
         </div>
       </div>
     </div>
