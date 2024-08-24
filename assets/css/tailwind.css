@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Grifter";
+    font-weight: 700;
+    src: url("/font/grifter-Bold-700.otf") format("otf");
+  }
+}
+.wrapper {
+  @apply px-3 sm:px-5 md:px-20;
+}
+body {
+  @apply font-nunito text-baseBlack;
+}
