@@ -20,6 +20,9 @@ dependencies:
   nuxt:
     specifier: ^3.12.4
     version: 3.12.4(vite@5.4.2)
+  nuxt-swiper:
+    specifier: ^1.2.2
+    version: 1.2.2
   radix-vue:
     specifier: ^1.9.4
     version: 1.9.4(vue@3.4.38)
@@ -4473,6 +4476,17 @@ packages:
       - vue
     dev: true
 
+  /nuxt-swiper@1.2.2:
+    resolution: {integrity: sha512-y4s/srISP4OuhXbYg9/W1/6EWnbcoHRGEKBKAvGP0I2h0b3enhqZNEk7854M3F89ys8waacBXektPzamgl5xwQ==}
+    dependencies:
+      '@nuxt/kit': 3.12.4(magicast@0.3.4)
+      swiper: 10.3.1
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+    dev: false
+
   /nuxt@3.12.4(vite@5.4.2):
     resolution: {integrity: sha512-/ddvyc2kgYYIN2UEjP8QIz48O/W3L0lZm7wChIDbOCj0vF/yLLeZHBaTb3aNvS9Hwp269nfjrm8j/mVxQK4RhA==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -5688,6 +5702,11 @@ packages:
       css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.0.1
+    dev: false
+
+  /swiper@10.3.1:
+    resolution: {integrity: sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /system-architecture@0.1.0:

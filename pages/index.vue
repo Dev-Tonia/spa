@@ -5,6 +5,7 @@
   <HomeServices />
   <HomeWhyChooseUs />
   <HomeIndustries />
+  <HomeSolutions />
 </template>
 
 <style scoped></style>

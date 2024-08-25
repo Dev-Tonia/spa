@@ -57,9 +57,12 @@ const contents = [
 <template>
   <section class="py-16">
     <div class="wrapper">
+      <!-- header -->
       <div class="flex justify-between">
         <div class="w-7/12">
-          <h3 class="font-grifter font-bold text-4xl">Industries we serve</h3>
+          <h3 class="font-grifter font-bold text-4xl py-4">
+            Industries we serve
+          </h3>
           <p class="text-xl text-neutral-600">
             We strive to consistently and efficiently plan, execute and deliver
             high quality services and results across serval Industries
@@ -75,6 +78,8 @@ const contents = [
           /></NuxtLink>
         </div>
       </div>
+
+      <!-- list of industries we serve -->
       <div class="grid grid-cols-3 gap-10 my-10">
         <div
           class="bg-secondary text-[#FAFAFA] p-6 rounded-xl"
