@@ -6,6 +6,8 @@
   <HomeWhyChooseUs />
   <HomeIndustries />
   <HomeSolutions />
+  <CommonClients />
+  <HomeContact />
 </template>
 
 <style scoped></style>

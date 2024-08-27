@@ -12,7 +12,7 @@ import {
   interdialog,
   kolorkote,
   Logo_digischool,
-} from "../../utils/images";
+} from "../../lib/images";
 
 const clients = [
   towerEnergy,
@@ -31,13 +31,10 @@ const clients = [
 </script>
 
 <template>
-  <section class="wrapper py-16">
-    <CommonSubSectionTitle title="Our Clients" />
-    <CommonSectionTitle
-      class="text-secondary w-9/12"
-      title="Look At Our Esteemed & Valued Partners"
-    />
-
+  <section class="bg-white py-16">
+    <h3 class="font-grifter font-bold text-4xl py-6 wrapper text-center">
+      Our Esteemed & Valued Partners
+    </h3>
     <swiper
       :breakpoints="{
         290: {
