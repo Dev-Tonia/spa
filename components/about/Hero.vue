@@ -1,0 +1,36 @@
+<script setup>
+import { aboutUsImg } from "../../lib/images";
+import { aboutImg } from "../../lib/images";
+</script>
+
+<template>
+  <section>
+    <div class="wrapper py-16">
+      <div class="flex gap-10">
+        <div class="w-5/12">
+          <img :src="aboutUsImg" alt="" class="w-full" />
+        </div>
+        <div class="w-7/12">
+          <small class="text-baseBlack text-lg">About Us</small>
+          <h3 class="font-grifter font-bold text-4xl py-10 text-baseBlack">
+            We Are Increasing Business Success With IT Solution
+          </h3>
+          <p>
+            International Data Management Services Limited (IDM), incorporated
+            in Nigeria in the year 1981 is affiliated with Comcraft Services
+            Limited, United Kingdom. Partnering with SAP, IDM specializes in
+            implementing SAP based ERP, SCM & CRM system for mid- sized growing
+            enterprises. IDM also specializes in teaching latest IT technology
+            with world class curriculum in schools in affiliation with the
+            Oxford University Press.
+          </p>
+        </div>
+      </div>
+      <div class="h-[600px] overflow-hidden mt-7">
+        <img :src="aboutImg" alt="" class="w-full h-fit" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<style lang="scss" scoped></style>

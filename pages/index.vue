@@ -7,7 +7,7 @@
   <HomeIndustries />
   <HomeSolutions />
   <CommonClients />
-  <HomeContact />
+  <CommonContact />
 </template>
 
 <style scoped></style>

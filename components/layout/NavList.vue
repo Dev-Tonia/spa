@@ -13,7 +13,7 @@ import { navLinks } from "@/lib/nav.js";
       </NuxtLink>
     </li>
     <li>
-      <NuxtLink to="/"> About Us </NuxtLink>
+      <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
     <li>
       <NuxtLink to="/"> Contact Us </NuxtLink>
@@ -21,4 +21,8 @@ import { navLinks } from "@/lib/nav.js";
   </ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+ul .router-link-exact-active {
+  @apply text-primary border-b-2 border-b-primary pb-1;
+}
+</style>

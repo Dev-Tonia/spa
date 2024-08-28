@@ -38,18 +38,18 @@ const clients = [
     <swiper
       :breakpoints="{
         290: {
-          slidesPerView: 2,
+          slidesPerView: 4,
         },
         480: {
-          slidesPerView: 3,
+          slidesPerView: 5,
         },
 
         768: {
-          slidesPerView: 4,
+          slidesPerView: 6,
         },
 
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 7.5,
         },
       }"
       :slidesPerView="1"
