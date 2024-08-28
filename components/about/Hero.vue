@@ -12,7 +12,7 @@ import { aboutImg } from "../../lib/images";
         </div>
         <div class="w-7/12">
           <small class="text-baseBlack text-lg">About Us</small>
-          <h3 class="font-grifter font-bold text-4xl py-10 text-baseBlack">
+          <h3 class="font-grifter font-bold text-4xl py-5 text-baseBlack">
             We Are Increasing Business Success With IT Solution
           </h3>
           <p>

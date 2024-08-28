@@ -16,7 +16,7 @@ import { navLinks } from "@/lib/nav.js";
       <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
     <li>
-      <NuxtLink to="/"> Contact Us </NuxtLink>
+      <NuxtLink to="/contact"> Contact Us </NuxtLink>
     </li>
   </ul>
 </template>

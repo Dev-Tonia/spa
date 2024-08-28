@@ -19,7 +19,7 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
             <div class="pt-9">
               <NuxtLink
                 class="text-lg font-bold text-white bg-primary rounded-[8px] py-3 px-5"
-                to="
+                to="/contact
           "
               >
                 Contact Our Expert
