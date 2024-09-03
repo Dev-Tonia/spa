@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/icon", "nuxt-swiper"],
+  // pages: true,
 
   shadcn: {
     /**
