@@ -12,18 +12,19 @@ import { aboutImg } from "../../lib/images";
         </div>
         <div class="w-7/12">
           <small class="text-baseBlack text-lg">About Us</small>
-          <h3 class="font-grifter font-bold text-4xl py-5 text-baseBlack">
-            We Are Increasing Business Success With IT Solution
-          </h3>
-          <p>
-            International Data Management Services Limited (IDM), incorporated
+
+          <CommonSectionTitle
+            :data="{
+              title: 'We Are Increasing Business Success With IT Solution',
+              description: `  International Data Management Services Limited (IDM), incorporated
             in Nigeria in the year 1981 is affiliated with Comcraft Services
             Limited, United Kingdom. Partnering with SAP, IDM specializes in
             implementing SAP based ERP, SCM & CRM system for mid- sized growing
             enterprises. IDM also specializes in teaching latest IT technology
             with world class curriculum in schools in affiliation with the
-            Oxford University Press.
-          </p>
+            Oxford University Press.`,
+            }"
+          />
         </div>
       </div>
       <div class="h-[600px] overflow-hidden mt-7">

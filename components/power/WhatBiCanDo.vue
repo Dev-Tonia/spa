@@ -1,16 +1,13 @@
 <template>
   <section class="py-16">
     <div class="wrapper">
-      <div class="text-center py-4">
-        <h3 class="font-grifter text-baseBlack font-bold text-5xl py-2">
-          What we can do with Power BI
-        </h3>
-        <p class="py-4 text-xl text-[#7A7474]">
-          Unlock the full potential of your data with Power BI, a versatile
-          business analytics tool designed to transform complex data into
-          meaningful insights
-        </p>
-      </div>
+      <CommonSectionTitle
+        class="text-center py-4"
+        :data="{
+          title: 'What we can do with Power BI',
+          description: `Power BI is a powerful tool that will provides businesses with valuable insights into their data. It can be used to create interactive dashboards and reports, as well as to perform advanced analytics. With Power BI, businesses can gain a better understanding of their data and make more informed decisions.`,
+        }"
+      />
       <div class="space-y-10">
         <PowerBiCanDoCard
           class="bg-secondary text-white flex-row-reverse"

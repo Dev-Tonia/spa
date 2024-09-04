@@ -45,17 +45,12 @@ const contents = [
 <template>
   <section class="bg-neutral-50 py-16">
     <div class="wrapper">
-      <div>
-        <h3 class="font-grifter text-baseBlack font-bold text-5xl py-2">
-          Why Power BI
-        </h3>
-
-        <p class="py-4 text-xl text-[#7A7474]">
-          Power BI, Microsoft’s business analytic service, is a powerful tool
-          that will provides businesses with valuable insights into their data.
-        </p>
-      </div>
-
+      <CommonSectionTitle
+        :data="{
+          title: 'Why Power BI',
+          description: `Power BI is a powerful tool that will provides businesses with valuable insights into their data. It can be used to create interactive dashboards and reports, as well as to perform advanced analytics. With Power BI, businesses can gain a better understanding of their data and make more informed decisions.`,
+        }"
+      />
       <div class="grid grid-cols-3 gap-10 py-9">
         <div
           class="px-6 py-11 bg-white shadow rounded-xl content-wrapper transition-colors duration-700 ease-in-out"

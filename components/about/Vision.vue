@@ -5,13 +5,19 @@ import { visionImg } from "../../lib/images";
 <template>
   <section class="py-16">
     <div class="wrapper">
-      <h3 class="font-grifter font-bold text-4xl pb-5 text-baseBlack">
+      <!-- <h3 class="font-grifter font-bold text-4xl pb-5 text-baseBlack">
         Our Vision
       </h3>
       <p class="text-[#655F5F]">
         Increasing the global competitiveness of African enterprises is our main
         goal.
-      </p>
+      </p> -->
+      <CommonSectionTitle
+        :data="{
+          title: 'Our Vision',
+          description: `Increasing the global competitiveness of African enterprises is our main goal.`,
+        }"
+      />
       <div class="py-6">
         <img :src="visionImg" alt="" />
       </div>
