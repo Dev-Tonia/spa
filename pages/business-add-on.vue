@@ -11,6 +11,8 @@ import { businessSap } from "../lib/images";
       img: businessSap,
     }"
   />
+  <AddOnFeatures />
+  <CommonContact />
 </template>
 
 <style lang="scss" scoped></style>
