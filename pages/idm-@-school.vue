@@ -9,6 +9,7 @@
   />
   <IdmSchoolWhyIdmSchool />
   <IdmSchoolSolutions />
+  <CommonContact />
 </template>
 
 <script setup>

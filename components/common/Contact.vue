@@ -26,12 +26,10 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
               </NuxtLink>
             </div>
           </div>
-          <div class="">
-            <img :src="group1" alt="" class="absolute top-0 right-28" />
-            <img :src="group2" alt="" class="absolute top-0 -right-4" />
-            <img :src="group4" alt="" class="absolute right-28 z-20" />
-            <img :src="group3" alt="" class="absolute bottom-0 -right-4" />
-          </div>
+          <img :src="group1" alt="" class="absolute top-0 right-28" />
+          <img :src="group2" alt="" class="absolute top-0 -right-4" />
+          <img :src="group4" alt="" class="absolute right-28 z-20" />
+          <img :src="group3" alt="" class="absolute bottom-0 -right-4" />
         </div>
       </div>
     </div>

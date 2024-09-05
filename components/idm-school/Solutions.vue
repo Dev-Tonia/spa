@@ -8,6 +8,7 @@ import {
   animation,
   modelling,
   graphics,
+  paint,
 } from "../../lib/images";
 
 const codingContents = [
@@ -303,7 +304,7 @@ const graphicsContents = [
               </div>
             </div>
             <div>
-              <img :src="paint" alt="" />
+              <img :src="paint" alt="" class="h-[335px]" />
             </div>
           </div>
         </IdmSchoolIdmAccordion>

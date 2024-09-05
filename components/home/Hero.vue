@@ -5,7 +5,7 @@ import { heroImg, textImg } from "../../lib/images";
 <template>
   <section class="h-full bg-primary/[2%] py-6">
     <div class="flex items-center justify-center pt-6">
-      <div class="pl-3 sm:pl-5 md:pl-20 md:w-8/12">
+      <div class="px-6 sm:px-10 md:pr-0 md:pl-16 lg:pl-24 md:w-8/12">
         <!-- intro -->
         <div class="flex items-center py-5">
           <div
@@ -21,10 +21,12 @@ import { heroImg, textImg } from "../../lib/images";
         <div class="">
           <img
             src="../../assets/imgs/Group.svg"
-            class="w-[150px] h-auto float-left"
+            class="w-[120px] md:w-[140px] h-auto float-left pr-3"
             alt=""
           />
-          <p class="text-5xl text-baseBlack font-bold font-grifter">
+          <p
+            class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-baseBlack font-bold font-grifter leading-[57.6px]"
+          >
             Transform Your Business with Our ERP
             <span class="text-primary"> Expertise. </span>
           </p>

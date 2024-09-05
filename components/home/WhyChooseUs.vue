@@ -29,11 +29,11 @@ const contents = [
 <template>
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
-      <div class="flex gap-x-16 justify-center items-center">
-        <div class="w-7/12">
+      <div class="flex gap-x-10 lg:gap-x-16 justify-center items-center">
+        <div class="w-7/12 hidden md:block">
           <img :src="whyChooseImg" alt="" class="rounded-xl h-auto w-full" />
         </div>
-        <div class="w-5/12">
+        <div class="md:w-5/12">
           <div>
             <h3 class="font-grifter font-bold text-4xl">
               Why you should choose our
@@ -51,7 +51,11 @@ const contents = [
               :key="index"
             >
               <div>
-                <Icon :name="content.icon" class="text-primary text-2xl" />
+                <div
+                  class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <Icon :name="content.icon" class="text-primary text-2xl" />
+                </div>
               </div>
               <div>
                 <h5 class="font-bold text-2xl text-[#221F1F]">
