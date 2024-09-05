@@ -55,9 +55,12 @@ const clients = [
       :slidesPerView="1"
       :spaceBetween="10"
       :loop="true"
+      :loopAdditionalSlides="1"
+      :watchSlidesProgress="true"
       :autoplay="{
-        delay: 7000,
+        delay: 2000,
         disableOnInteraction: true,
+        pauseOnMouseEnter: true,
       }"
       :modules="[SwiperAutoplay, SwiperEffectCreative]"
     >
