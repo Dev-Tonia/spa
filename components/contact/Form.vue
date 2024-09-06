@@ -58,7 +58,7 @@ function closeModal() {
 <template>
   <form
     @submit.prevent="submit"
-    class="mx-auto mt-10 flex w-full flex-col bg-secondary text-white rounded-lg p-8 shadow-2xl md:mt-0 md:w-11/12"
+    class="mx-auto mt-10 flex w-full flex-col bg-secondary text-white rounded-lg p-8 shadow-2xl md:mt-0 min-[900px]:w-11/12"
   >
     <div class="mb-7 pt-5">
       <h2 class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3">

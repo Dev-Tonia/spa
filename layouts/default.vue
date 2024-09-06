@@ -1,6 +1,4 @@
-<script setup>
-// import LayoutFooter from "@/components/LayoutFooter.vue";
-</script>
+<script setup></script>
 
 <template>
   <header class="sticky top-0 text-baseBlack z-20 w-full">
@@ -30,7 +28,7 @@
     </nav>
   </header>
 
-  <main class="border-4 border-primary">
+  <main class="">
     <slot></slot>
   </main>
   <LayoutFooter />

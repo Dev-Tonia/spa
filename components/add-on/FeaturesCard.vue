@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl p-8 shadow-sm">
+  <div class="bg-white rounded-xl p-4 lg:p-8 shadow-sm">
     <h6 class="text-baseBlack text-lg font-bold leading-snug py-4">
       {{ content.title }}
     </h6>

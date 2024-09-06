@@ -15,12 +15,16 @@
             description: `A Quality Control Module with the functionalities you mentioned—Inward, Predispatch, Inprocess, and ReQC—can be a crucial component in various manufacturing and production environments. Each functionality serves a specific purpose in ensuring product quality throughout the production process. `,
           }"
         />
-        <div class="grid grid-cols-3 gap-10 py-16">
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
           <AddOnFeaturesCard
             v-for="(qualityContent, index) in qualityContents"
             :key="index"
             :content="qualityContent"
-            :class="{ 'col-span-2': isLastCard(index, qualityContents) }"
+            :class="{
+              'min-[500px]:col-span-2': isLastCard(index, qualityContents),
+            }"
           />
         </div>
       </div>
@@ -32,12 +36,16 @@
             description: `An Import and Export Management Module with functionalities such as handling Letters of Credit (LC), managing licenses, tracking shipments, and monitoring shipment costs is essential for companies engaged in international trade. Here's a breakdown of the functionalities and key features of such a module`,
           }"
         />
-        <div class="grid grid-cols-3 gap-10 py-16">
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
           <AddOnFeaturesCard
             v-for="(eixmContent, index) in eixmContents"
             :key="index"
             :content="eixmContent"
-            :class="{ 'col-span-2': isLastCard(index, eixmContents) }"
+            :class="{
+              'min-[500px]:col-span-2': isLastCard(index, eixmContents),
+            }"
           />
         </div>
       </div>
@@ -48,7 +56,9 @@
             description: `Integrating WhatsApp with SAP Business One offers numerous benefits that can significantly enhance business operations, customer service, and overall communication efficiency.`,
           }"
         />
-        <div class="grid grid-cols-3 gap-10 py-16">
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
           <AddOnFeaturesCard
             v-for="(whatsAppContent, index) in whatsAppContents"
             :key="index"
@@ -64,7 +74,9 @@
             description: `Integrating a report scheduler with email and WhatsApp within SAP Business One offers numerous benefits. This integration allows businesses to automate the distribution of critical reports and information to stakeholders through preferred communication channels`,
           }"
         />
-        <div class="grid grid-cols-3 gap-10 py-16">
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
           <AddOnFeaturesCard
             v-for="(reportContent, index) in reportContents"
             :key="index"

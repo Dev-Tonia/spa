@@ -1,14 +1,13 @@
 <template>
   <section class="wrapper py-16 bg-secondary/5">
-    <div class="grid grid-cols-5 gap-10">
-      <div class="col-span-2">
+    <div class="grid min-[900px]:grid-cols-5 gap-10">
+      <div class="min-[900px]:col-span-2">
         <h2 class="text-2xl font-semibold mb-2">Get In Touch</h2>
         <p class="text-[#908B8B] pb-3">
           Connect with our team to see how SAP can improve your company’s
           digital transformation.
         </p>
-        <!-- <i class="ri-map-pin-fill"></i> -->
-        <div class="mb-5 flex gap-5">
+        <div class="mb-5 flex gap-5 items-center">
           <span
             class="inline-block bg-secondary text-white py-2 px-3 rounded-lg"
           >
@@ -18,8 +17,7 @@
             <a href="mailto:enquiry@idmng.com"> enquiry@idmng.com</a></span
           >
         </div>
-        <!-- <i class="ri-smartphone-fill"></i> -->
-        <div class="mb-5 flex gap-5">
+        <div class="mb-5 flex gap-5 items-center">
           <span
             class="inline-block bg-secondary text-white py-2 px-3 rounded-lg"
           >
@@ -30,7 +28,7 @@
             Bus/Stop, Ikeja, Lagos.</span
           >
         </div>
-        <div class="mb-5 flex gap-5 item-center">
+        <div class="mb-5 flex gap-5 items-center">
           <span
             class="inline-block bg-secondary text-white py-2 px-3 rounded-lg"
           >
@@ -41,7 +39,7 @@
           </span>
         </div>
       </div>
-      <div class="col-span-3">
+      <div class="min-[900px]:col-span-3">
         <ContactForm />
       </div>
     </div>

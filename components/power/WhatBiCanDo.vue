@@ -10,7 +10,7 @@
       />
       <div class="space-y-10">
         <PowerBiCanDoCard
-          class="bg-secondary text-white flex-row-reverse"
+          class="bg-secondary text-white flex-col-reverse md:flex-row-reverse"
           :data="{
             img: biIntergration,
             number: '01',
@@ -36,7 +36,7 @@
           }"
         />
         <PowerBiCanDoCard
-          class="bg-secondary text-white flex-row-reverse"
+          class="bg-secondary text-white flex-col-reverse md:flex-row-reverse"
           :data="{
             img: biDevelopment,
             number: '03',

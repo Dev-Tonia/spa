@@ -11,9 +11,9 @@ const props = defineProps({
     class="px-6 py-11 bg-white shadow rounded-xl content-wrapper transition-colors duration-700 ease-in-out"
   >
     <div
-      class="w-16 h-16 bg-primary text-white rounded-xl flex items-center justify-center icon-wrapper"
+      class="w-14 h-14 min-[920px]:w-16 min-[920px]:h-16 bg-primary text-white rounded-xl flex items-center justify-center icon-wrapper"
     >
-      <Icon :name="content.icon" class="text-5xl" />
+      <Icon :name="content.icon" class="text-4xl min-[920px]:text-5xl" />
     </div>
 
     <div class="pt-10">

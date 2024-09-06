@@ -51,7 +51,7 @@ const contents = [
           description: `Power BI is a powerful tool that will provides businesses with valuable insights into their data. It can be used to create interactive dashboards and reports, as well as to perform advanced analytics. With Power BI, businesses can gain a better understanding of their data and make more informed decisions.`,
         }"
       />
-      <div class="grid grid-cols-3 gap-10 py-9">
+      <div class="grid md:grid-cols-2 min-[920px]:grid-cols-3 gap-6 py-9">
         <CommonWhyCard
           v-for="content in contents"
           :key="content.id"
