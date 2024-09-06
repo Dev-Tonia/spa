@@ -9,6 +9,7 @@ import {
   modelling,
   graphics,
   paint,
+  microsoft,
 } from "../../lib/images";
 
 const codingContents = [
@@ -99,24 +100,24 @@ const graphicsContents = [
             title: 'Robotics',
           }"
         >
-          <div class="flex gap-10 py-4">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
             <div>
               <p class="text-neutral-500">
                 Introducing students to the fascinating world of robotics, where
                 they learn to design, build, and program robots, enhancing their
                 problem-solving and critical-thinking skills.
               </p>
-              <div class="bg-secondary text-white p-3 rounded-md mt-4">
-                <h6 class="font-grifter font-bold">IDM ROBO CAMP</h6>
-                <p class="text-neutral-300">
-                  A unique platform which motivates, inspires and engages
+              <IdmSchoolAccordionCard
+                :data="{
+                  title: 'IDM ROBO CAMP',
+                  description: ` A unique platform which motivates, inspires and engages
                   students to experience a natural, practical, hands on and
                   experimental learning. Students will learn science,
                   technology, programming, Engineering and mathematics concepts
                   in a fun, loving and excelling way aiming towards Endless
-                  possibilities.
-                </p>
-              </div>
+                  possibilities.`,
+                }"
+              />
             </div>
             <div>
               <img :src="robotics" alt="" />
@@ -149,28 +150,25 @@ const graphicsContents = [
             title: 'Software Programming (Coding)',
           }"
         >
-          <div class="flex gap-10 py-4">
-            <div class="w-[70%]">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
+            <div class="md:w-[70%]">
               <p class="text-neutral-500">
                 Introducing students to the language of the future, our coding
                 courses range from basic programming concepts to advanced
                 software development, empowering students to build their own
                 applications and solutions.
               </p>
-              <div class="mt-4 grid grid-cols-3 gap-8">
-                <div
-                  class="bg-secondary text-white p-3 rounded-md mt-4"
+              <div
+                class="mt-4 grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-8"
+              >
+                <IdmSchoolAccordionCard
                   v-for="(item, index) in codingContents"
                   :key="index"
-                >
-                  <h6 class="font-grifter font-bold">{{ item.title }}</h6>
-                  <p class="text-neutral-300">
-                    {{ item.description }}
-                  </p>
-                </div>
+                  :data="item"
+                />
               </div>
             </div>
-            <div class="w-[30%]">
+            <div class="md:w-[30%]">
               <img :src="coding" alt="" class="w-full" />
             </div>
           </div>
@@ -182,25 +180,25 @@ const graphicsContents = [
             title: 'Game Development',
           }"
         >
-          <div class="flex gap-10 py-4">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
             <div>
               <p class="text-neutral-500">
                 Guiding students through the exciting process of game creation,
                 our game development courses teach the fundamentals of game
                 design, programming, and interactive storytelling.
               </p>
-              <div class="bg-secondary text-white p-3 rounded-md mt-4">
-                <h6 class="font-grifter font-bold">GDevelop</h6>
-                <p class="text-neutral-300">
-                  Allows you to simply and quickly create your own video games.
+              <IdmSchoolAccordionCard
+                :data="{
+                  title: 'GDevelop',
+                  description: `Allows you to simply and quickly create your own video games.
                   Just fire up the editor and start creating, no programming
                   knowledge required. Its flexible architecture allows you to
                   choose if you want to create an HTML5 game that can be played
                   on the web and exported to iOS and Android, or a native game
                   for your operating system. or activate both platforms and
-                  export your game everywhere.
-                </p>
-              </div>
+                  export your game everywhere.`,
+                }"
+              />
             </div>
             <div>
               <img :src="gameDev" alt="" />
@@ -289,19 +287,19 @@ const graphicsContents = [
             title: 'Paint Brush',
           }"
         >
-          <div class="flex gap-10 py-4">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
             <div>
               <p class="text-neutral-500">
                 It’s a fun program that helps in drawing and coloring anything
                 you like
               </p>
-              <div class="bg-secondary text-white p-3 rounded-md mt-4">
-                <h6 class="font-grifter font-bold">TUX PAINT</h6>
-                <p class="text-neutral-300">
-                  a software like paint brush, meant for drawing and painting
-                  with interesting sound effects.
-                </p>
-              </div>
+              <IdmSchoolAccordionCard
+                :data="{
+                  title: 'TUX PAINT',
+                  description: ` a software like paint brush, meant for drawing and painting
+                  with interesting sound effects.`,
+                }"
+              />
             </div>
             <div>
               <img :src="paint" alt="" class="h-[335px]" />
@@ -315,27 +313,24 @@ const graphicsContents = [
             title: 'Graphics Design',
           }"
         >
-          <div class="flex gap-10 py-4">
-            <div class="w-[70%]">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
+            <div class="md:w-[70%]">
               <p class="text-neutral-500">
                 Fostering artistic expression, our graphics design courses cover
                 principles of design, digital illustration, and multimedia,
                 allowing students to create visually stunning projects.
               </p>
-              <div class="mt-4 grid grid-cols-3 gap-8">
-                <div
-                  class="bg-secondary text-white p-3 rounded-md mt-4"
+              <div
+                class="mt-4 grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-8"
+              >
+                <IdmSchoolAccordionCard
                   v-for="(item, index) in graphicsContents"
                   :key="index"
-                >
-                  <h6 class="font-grifter font-bold">{{ item.title }}</h6>
-                  <p class="text-neutral-300">
-                    {{ item.description }}
-                  </p>
-                </div>
+                  :data="item"
+                />
               </div>
             </div>
-            <div class="w-[30%]">
+            <div class="md:w-[30%]">
               <img :src="graphics" alt="" class="w-full" />
             </div>
           </div>

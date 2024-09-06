@@ -6,8 +6,10 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
       <div class="flex flex-col items-center justify-center text-center">
-        <h3 class="font-grifter font-bold text-3xl py-2">Use cases checkout</h3>
-        <p class="py-4 text-xl text-[#7A7474]">
+        <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
+          Use cases checkout
+        </h3>
+        <p class="py-4 text-lg md:text-xl text-[#7A7474]">
           Discover How Our SAP Solutions Drive Success Across Diverse Industries
           and Business Challenges
         </p>
@@ -15,12 +17,14 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
 
       <div class="py-10">
         <div class="bg-white rounded-xl p-8">
-          <div class="flex items-center gap-8">
-            <div class="w-5/12">
-              <img :src="useCaseHosp" alt="" />
+          <div class="flex flex-col-reverse md:flex-row items-center gap-8">
+            <div class="md:w-5/12">
+              <img :src="useCaseHosp" alt="" class="w-full" />
             </div>
-            <div class="w-7/12">
-              <h3 class="font-grifter font-bold text-3xl py-2">Hospitality</h3>
+            <div class="md:w-7/12">
+              <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
+                Hospitality
+              </h3>
               <p class="py-4 text-xl text-[#7A7474]">
                 Optimized user interface to be used in catering and
                 hospitality businesses From fast food chains, kiosks, food
@@ -33,7 +37,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
           </div>
         </div>
 
-        <div class="flex justify-between py-10 space-x-10">
+        <div class="md:flex justify-between py-10 space-x-10">
           <div class="bg-white rounded-xl p-8">
             <div class="gap-8">
               <div class="">

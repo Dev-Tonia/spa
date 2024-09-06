@@ -39,7 +39,7 @@ const contents = [
           description: `The curriculum covers from pre-primary to senior secondary school.`,
         }"
       />
-      <div class="grid grid-cols-2 gap-10 py-9">
+      <div class="grid sm:grid-cols-2 gap-6 md:gap-10 py-9">
         <CommonWhyCard
           v-for="content in contents"
           :key="content.id"
