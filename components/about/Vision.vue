@@ -5,13 +5,6 @@ import { visionImg } from "../../lib/images";
 <template>
   <section class="py-16">
     <div class="wrapper">
-      <!-- <h3 class="font-grifter font-bold text-4xl pb-5 text-baseBlack">
-        Our Vision
-      </h3>
-      <p class="text-[#655F5F]">
-        Increasing the global competitiveness of African enterprises is our main
-        goal.
-      </p> -->
       <CommonSectionTitle
         :data="{
           title: 'Our Vision',
@@ -21,8 +14,8 @@ import { visionImg } from "../../lib/images";
       <div class="py-6">
         <img :src="visionImg" alt="" />
       </div>
-      <div class="flex gap-16">
-        <div class="w-1/2">
+      <div class="flex flex-col sm:flex-row gap-16">
+        <div class="sm:w-1/2">
           <p class="font-grifter font-bold text-3xl py-2 text-baseBlack">01</p>
           <h6 class="font-grifter font-bold text-2xl pb-2 text-baseBlack">
             Fostering a World of Skilled Tech Pioneers
@@ -34,7 +27,7 @@ import { visionImg } from "../../lib/images";
             creators, and problem-solvers.
           </p>
         </div>
-        <div class="w-1/2">
+        <div class="sm:w-1/2">
           <p class="font-grifter font-bold text-3xl py-2 text-baseBlack">02</p>
           <h6 class="font-grifter font-bold text-2xl pb-2 text-baseBlack">
             Bridging the learning gap
