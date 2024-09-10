@@ -10,7 +10,6 @@ const slides = [
   {
     title: "We provide solution to grow your",
     highlight: "Business.",
-
     subtitle: "Everything you need to grow your business. Contact us today!",
     bgImage: heroImg2,
   },
@@ -27,12 +26,17 @@ const slides = [
 <template>
   <section class="h-full bg-primary/[4%] py-6">
     <Swiper
-      :modules="[SwiperAutoplay, SwiperEffectCreative]"
+      :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
       :loop="true"
       :effect="'creative'"
+      :speed="1000"
       :autoplay="{
-        delay: 7000,
-        disableOnInteraction: true,
+        delay: 4000,
+        disableOnInteraction: false,
+      }"
+      :pagination="{
+        el: '.swiper-pagination',
+        clickable: true,
       }"
       :creative-effect="{
         prev: {
@@ -49,7 +53,6 @@ const slides = [
         <div class="flex items-center justify-center pt-6">
           <!-- intro text -->
           <div class="px-6 sm:px-10 md:pr-0 md:pl-16 lg:pl-24 md:w-8/12">
-            <!-- intro -->
             <div class="flex items-center py-5">
               <div
                 class="text-primary bg-primary/5 rounded-3xl p-2 flex items-center space-x-2"
@@ -65,20 +68,18 @@ const slides = [
               <img
                 src="../../assets/imgs/Group.svg"
                 class="w-[120px] md:w-[140px] h-auto float-left pr-3"
-                alt=""
+                alt="Logo"
               />
               <p
                 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-baseBlack font-bold font-grifter leading-[57.6px]"
               >
                 {{ slide.title }}
-                <span class="text-primary"> {{ slide.highlight }}</span>
+                <span class="text-primary">{{ slide.highlight }}</span>
               </p>
             </div>
             <!-- Description -->
             <div class="my-8">
-              <p class="text-2xl">
-                {{ slide.subtitle }}
-              </p>
+              <p class="text-2xl">{{ slide.subtitle }}</p>
             </div>
             <!-- CTA -->
             <div class="flex items-center space-x-5">
@@ -94,12 +95,26 @@ const slides = [
           </div>
           <!-- hero image -->
           <div class="w-4/12 hidden md:block">
-            <img :src="slide.bgImage" class="w-full h-auto" alt="" />
+            <img :src="slide.bgImage" class="w-full h-auto" alt="Hero Image" />
           </div>
         </div>
       </SwiperSlide>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </Swiper>
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.swiper-slide {
+  transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #a52424 !important;
+}
+.--swiper-pagination-bullet-inactive-color {
+  background: #000 !important;
+}
+</style>
