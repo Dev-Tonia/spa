@@ -8,6 +8,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const activeDropdown = ref(null);
+const props = defineProps({
+  isOpen: { type: Boolean },
+  updateIsOpen: {
+    type: Function,
+  },
+});
 
 const isDropdownActive = computed(() => (key) => activeDropdown.value === key);
 
@@ -17,7 +23,13 @@ const toggleDropdown = (key) => {
 </script>
 
 <template>
-  <ul class="flex items-center space-x-5 font-bold font-nunito">
+  <ul
+    class="items-center space-x-5 font-bold font-nunito md:flex"
+    :class="{
+      'flex-col flex': isOpen,
+      hidden: !isOpen,
+    }"
+  >
     <li>
       <NuxtLink to="/"> Home </NuxtLink>
     </li>
@@ -33,18 +45,18 @@ const toggleDropdown = (key) => {
           {{ link.title }}</DropdownMenuTrigger
         >
         <DropdownMenuContent
-          class="w-screen wrapper grid grid-cols-3 gap-6 p-4 mt-5"
+          class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
         >
           <DropdownMenuItem v-for="(item, index) in link.items" :key="index">
-            <NuxtLink :to="item.to" class="flex gap-4">
+            <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
               <div
-                class="bg-primary flex items-center justify-center text-white w-14 h-14 rounded-xl p-4"
+                class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
               >
                 <Icon :name="item.icon" class="text-4xl" />
               </div>
               <div>
                 <h6>{{ item.name }}</h6>
-                <p>{{ item.description }}</p>
+                <p class="min-[980px]:flex hidden">{{ item.description }}</p>
               </div>
             </NuxtLink>
           </DropdownMenuItem>
@@ -57,7 +69,19 @@ const toggleDropdown = (key) => {
     <li>
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
     </li>
+    <li class="hidden">
+      <Button
+        class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito"
+        >Request a demo
+      </Button>
+    </li>
   </ul>
+  <div
+    @click="updateIsOpen"
+    class="fixed inset-0 z-10 bg-gray-900 opacity-60 min-[980px]::hidden"
+    :class="{ block: isOpen, hidden: !isOpen }"
+    id="sidebarBackdrop"
+  ></div>
 </template>
 
 <style scoped>
