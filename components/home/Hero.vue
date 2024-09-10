@@ -24,7 +24,7 @@ const slides = [
 </script>
 
 <template>
-  <section class="h-full bg-primary/[4%] py-6">
+  <section class="h-[90%] bg-primary/[4%]">
     <Swiper
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
       :loop="true"
