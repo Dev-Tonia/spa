@@ -3,7 +3,6 @@ const isOpen = ref(false);
 
 function updateIsOpen() {
   isOpen.value = !isOpen.value;
-  console.log(isOpen.value);
 }
 </script>
 
@@ -22,7 +21,11 @@ function updateIsOpen() {
             </div>
           </NuxtLink>
         </div>
-        <LayoutNavList :isOpen="isOpen" :updateIsOpen="updateIsOpen" />
+        <LayoutNavList
+          class="min-[850px]:flex hidden"
+          :isOpen="isOpen"
+          :updateIsOpen="updateIsOpen"
+        />
         <Button
           class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden min-[980px]:inline-flex"
           >Request a demo
@@ -30,11 +33,16 @@ function updateIsOpen() {
         <Icon
           @click="updateIsOpen"
           name="ri:menu-fill"
-          class="text-3xl text-secondary md:hidden cursor-pointer"
+          class="text-3xl text-secondary min-[850px]:hidden cursor-pointer"
         />
       </div>
     </nav>
   </header>
+  <LayoutMobileNavbar
+    :isOpen="isOpen"
+    :updateIsOpen="updateIsOpen"
+    class="min-[850px]:hidden"
+  />
 
   <main class="">
     <slot></slot>
