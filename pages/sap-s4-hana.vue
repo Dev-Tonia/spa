@@ -12,6 +12,7 @@ import { hana } from "../lib/images";
     }"
   />
   <S4HanaModules />
+  <CommonContact />
 </template>
 
 <style scoped></style>
