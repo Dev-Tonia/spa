@@ -59,7 +59,7 @@ const slides = [
               >
                 <Icon name="solar:star-rings-outline" class="text-3xl" />
                 <span class="text-sm font-medium">
-                  Best for Small and large businesses
+                  Best for Small and Small and mid-size enterprises
                 </span>
               </div>
             </div>
