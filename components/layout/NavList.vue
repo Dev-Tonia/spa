@@ -40,11 +40,11 @@ watch(route, () => {
 
 <template>
   <ul
-    class="space-y-3 min-[850px]:space-x-5 font-bold font-nunito min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
+    class="min-[850px]:space-x-5 font-bold font-nunito min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
     :class="{ 'hidden ': isOpen }"
   >
     <li>
-      <NuxtLink to="/" @click="updateIsOpen"> Home </NuxtLink>
+      <NuxtLink to="/"> Home </NuxtLink>
     </li>
     <li
       v-for="(link, key) in navLinks"
