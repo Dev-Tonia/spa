@@ -3,7 +3,7 @@ import { hana } from "../lib/images";
 </script>
 
 <template>
-  <CommonReusableHero
+  <LazyCommonReusableHero
     class="text-white"
     :data="{
       title: 'SAP S/4 HANA',
@@ -11,8 +11,8 @@ import { hana } from "../lib/images";
       img: hana,
     }"
   />
-  <S4HanaModules />
-  <CommonContact />
+  <LazyS4HanaModules />
+  <LazyCommonContact />
 </template>
 
 <style scoped></style>

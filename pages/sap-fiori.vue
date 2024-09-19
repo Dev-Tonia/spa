@@ -13,8 +13,8 @@ import { hana } from "../lib/images";
   />
   <FioriSubHeader />
   <FioriWhyFiori />
-  <FioriArch />
-  <CommonContact />
+  <LazyFioriArch />
+  <LazyCommonContact />
 </template>
 
 <style scoped></style>
