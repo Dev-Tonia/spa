@@ -43,7 +43,7 @@ watch(route, () => {
     class="min-[850px]:space-x-5 font-bold font-nunito min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
     :class="{ 'hidden ': isOpen }"
   >
-    <li>
+    <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/"> Home </NuxtLink>
     </li>
     <li
@@ -101,13 +101,13 @@ watch(route, () => {
         </AccordionItem>
       </Accordion>
     </li>
-    <li>
+    <li class="pt-4 min-[850px]:pt-0">
       <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
-    <li>
+    <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
     </li>
-    <li class="hidden">
+    <li class="pb-4 min-[850px]:hidden">
       <Button
         class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito"
         >Request a demo
