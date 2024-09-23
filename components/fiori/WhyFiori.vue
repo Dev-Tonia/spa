@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const goToSearch = () => {
+  navigateTo("/search");
+};
+</script>
 <template>
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
@@ -8,8 +12,8 @@
           description: `Empower your workforce with modern, role-based interfaces that simplify complex tasks, enhance productivity, and reduce training time, all while ensuring a consistent experience across all devices and platforms.`,
         }"
       />
-      <div class="flex gap-14 py-12">
-        <div class="w-1/2">
+      <div class="sm:flex gap-14 py-12">
+        <div class="sm:w-1/2 pb-8">
           <h5 class="font-bold text-lg font-grifter text-baseBlack">
             Experience the Future of SAP with Fiori 3.0: A Unified, Role-Based,
             and Mobile-Optimized User Interface
@@ -24,15 +28,15 @@
             compatible hand devices.
           </p>
           <div class="py-5">
-            <NuxtLink
-              class="text-lg font-bold text-white bg-primary rounded-[8px] py-3 px-5"
-              to="/contact"
+            <button
+              class="sm:text-base text-sm md:text-lg font-bold text-white bg-primary rounded-[8px] py-3 px-3 sm:px-5"
+              @click="navigateTo('/contact')"
             >
               Contact Our Expert
-            </NuxtLink>
+            </button>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="sm:w-1/2">
           <div>
             <div
               class="bg-primary flex items-center justify-center text-white w-12 h-12 rounded-[8px] p-2"

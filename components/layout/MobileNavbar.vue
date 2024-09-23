@@ -13,7 +13,7 @@ const dropdownOpen = ref(null);
 <template>
   <div
     :class="[
-      'fixed h-full inset-0 flex  items-center  z-10 transition-transform duration-300 ease-in-out',
+      'fixed h-full inset-0 flex  items-center  z-20 transition-transform duration-300 ease-in-out',
       isOpen ? 'translate-x-0' : '-translate-x-full',
     ]"
   >

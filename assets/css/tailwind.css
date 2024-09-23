@@ -17,3 +17,6 @@
 body {
   @apply font-nunito text-baseBlack;
 }
+html {
+  scroll-behavior: smooth;
+}

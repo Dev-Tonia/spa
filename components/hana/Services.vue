@@ -10,8 +10,8 @@ import { sap_hana } from "../../lib/images";
           description: `Transform your business with SAP HANA Services, offering real-time analytics, simplified data management, and accelerated decision-making.`,
         }"
       />
-      <div class="flex gap-14 py-12">
-        <div class="w-1/2">
+      <div class="sm:flex gap-14 space-y-5 sm:space-y-0 py-12">
+        <div class="sm:w-1/2">
           <div class="">
             <div
               class="bg-primary flex items-center justify-center text-white w-12 h-12 rounded-[8px] p-2"
@@ -28,7 +28,7 @@ import { sap_hana } from "../../lib/images";
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="sm:w-1/2">
           <div>
             <div
               class="bg-primary flex items-center justify-center text-white w-12 h-12 rounded-[8px] p-2"

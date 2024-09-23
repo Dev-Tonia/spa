@@ -89,6 +89,7 @@ const slides = [
               </Button>
               <Button
                 class="hover:bg-primary cursor-pointer bg-primary text-white font-medium"
+                @click="navigateTo('/contact')"
                 >Contact Us
               </Button>
             </div>

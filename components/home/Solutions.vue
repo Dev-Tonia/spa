@@ -20,9 +20,8 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
         <div class="flex pt-4">
           <NuxtLink
             class="text-lg font-bold flex items-center bg-primary rounded-[8px] py-3 px-5"
-            to="
-          "
-            ><span> Explore All</span
+            to="/contact"
+            ><span> Reach out</span
             ><Icon class="text-3xl" name="flowbite:arrow-right-outline"
           /></NuxtLink>
         </div>
