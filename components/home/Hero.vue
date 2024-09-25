@@ -1,5 +1,5 @@
 <script setup>
-import { heroImg, heroImg2, heroImg3 } from "../../lib/images";
+import { heroImg, heroImg2, heroImg3, heroImg4 } from "../../lib/images";
 const slides = [
   {
     title: "Transform Your Business with Our ERP",
@@ -19,6 +19,12 @@ const slides = [
     highlight: " businesses.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg3,
+  },
+  {
+    title: "IDM@School, The future of",
+    highlight: "learning.",
+    subtitle: "Leading the next frontier of innovation and technology",
+    bgImage: heroImg4,
   },
 ];
 </script>
