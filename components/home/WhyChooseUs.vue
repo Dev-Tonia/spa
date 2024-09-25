@@ -67,7 +67,9 @@ const contents = [
               </div>
             </div>
           </div>
-          <Button class="bg-primary text-white hover:bg-primary px-3"
+          <Button
+            class="bg-primary text-white hover:bg-primary px-3 cursor-pointer"
+            @click="navigateTo('/about')"
             >Learn More
           </Button>
         </div>

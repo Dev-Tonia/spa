@@ -2,9 +2,9 @@
 import { sap_hana } from "../../lib/images";
 </script>
 <template>
-  <section class="bg-[#FAFAFA] py-16">
+  <section class="bg-[#FAFAFA] py-16" id="sap-hana-services">
     <div class="wrapper">
-      <CommonSectionTitle
+      <LazyCommonSectionTitle
         :data="{
           title: 'SAP HANA Services',
           description: `Transform your business with SAP HANA Services, offering real-time analytics, simplified data management, and accelerated decision-making.`,

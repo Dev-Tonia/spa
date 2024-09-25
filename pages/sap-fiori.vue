@@ -10,6 +10,7 @@ import { hana } from "../lib/images";
       description: `SAP’s UX strategy is about the design and development of delightful applications according to the SAP Fiori concept. SAP Fiori apps adhere to this concept and can be deployed on-cloud or on-premise.`,
       img: hana,
     }"
+    scroll-to="sap-fiori-arch"
   />
   <LazyCommonSubHeader
     :data="{
@@ -23,7 +24,7 @@ import { hana } from "../lib/images";
             the UX across all lines of business, tasks, and devices`,
     }"
   />
-  <FioriWhyFiori />
+  <LazyFioriWhyFiori />
   <LazyFioriArch />
   <LazyCommonContact />
 </template>

@@ -5,6 +5,9 @@ const props = defineProps({
   data: {
     type: Object,
   },
+  scrollTo: {
+    type: String,
+  },
 });
 </script>
 
@@ -22,6 +25,7 @@ const props = defineProps({
         </p>
         <Button
           class="hover:bg-primary cursor-pointer bg-primary text-white font-medium space-x-2"
+          @click="navigateTo(`#${scrollTo}`)"
         >
           <span> Learn more</span>
 

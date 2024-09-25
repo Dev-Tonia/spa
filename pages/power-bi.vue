@@ -3,17 +3,18 @@ import { powerBi } from "../lib/images";
 </script>
 
 <template>
-  <CommonReusableHero
+  <LazyCommonReusableHero
     :data="{
       title:
         'Gain valuable insights with the assistance of our Power BI experts',
       description: `Integrate high impact analytics and business intelligence products with minimal upfront costs.`,
       img: powerBi,
     }"
+    scroll-to="why-power-bi"
   />
-  <PowerWhyPowerBi />
-  <PowerWhatBiCanDo />
-  <CommonContact />
+  <LazyPowerWhyPowerBi />
+  <LazyPowerWhatBiCanDo />
+  <LazyCommonContact />
 </template>
 
 <style lang="scss" scoped></style>

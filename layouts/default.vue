@@ -26,10 +26,14 @@ function updateIsOpen() {
           :isOpen="isOpen"
           :updateIsOpen="updateIsOpen"
         />
-        <Button
-          class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden xl:inline-flex"
+        <!-- <Button
+          class="text-white cursor-pointer bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden xl:inline-flex"
           >Request a demo
-        </Button>
+        </Button> -->
+        <CommonModal
+          title="Request A Demo"
+          class="text-white cursor-pointer bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden xl:inline-flex"
+        />
         <Icon
           @click="updateIsOpen"
           name="ri:menu-fill"

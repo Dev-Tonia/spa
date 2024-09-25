@@ -2,7 +2,7 @@
 import { Fiori_arch } from "../../lib/images";
 </script>
 <template>
-  <section class="py-16 bg-secondary">
+  <section class="py-16 bg-secondary" id="sap-fiori-arch">
     <div class="wrapper">
       <!-- section title -->
       <div class="py-4">

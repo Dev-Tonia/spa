@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-neutral-50 py-16">
+  <section class="bg-neutral-50 py-16" id="features">
     <div class="wrapper">
-      <CommonSectionTitle
+      <LazyCommonSectionTitle
         class="text-center"
         :data="{
           title: 'Features of SAP Business one Add-ons',
@@ -9,7 +9,7 @@
         }"
       />
       <div class="py-7">
-        <AddOnSubTitle
+        <LazyAddOnSubTitle
           :data="{
             title: 'Quality control',
             description: `A Quality Control Module with the functionalities you mentioned—Inward, Predispatch, Inprocess, and ReQC—can be a crucial component in various manufacturing and production environments. Each functionality serves a specific purpose in ensuring product quality throughout the production process. `,
@@ -30,7 +30,7 @@
       </div>
 
       <div class="py-7">
-        <AddOnSubTitle
+        <LazyAddOnSubTitle
           :data="{
             title: 'EIXM(Export and Import Management)',
             description: `An Import and Export Management Module with functionalities such as handling Letters of Credit (LC), managing licenses, tracking shipments, and monitoring shipment costs is essential for companies engaged in international trade. Here's a breakdown of the functionalities and key features of such a module`,
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="py-7">
-        <AddOnSubTitle
+        <LazyAddOnSubTitle
           :data="{
             title: 'WhatsApp Integration',
             description: `Integrating WhatsApp with SAP Business One offers numerous benefits that can significantly enhance business operations, customer service, and overall communication efficiency.`,
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="py-7">
-        <AddOnSubTitle
+        <LazyAddOnSubTitle
           :data="{
             title: 'Report scheduler with email and WhatsApp Integration',
             description: `Integrating a report scheduler with email and WhatsApp within SAP Business One offers numerous benefits. This integration allows businesses to automate the distribution of critical reports and information to stakeholders through preferred communication channels`,

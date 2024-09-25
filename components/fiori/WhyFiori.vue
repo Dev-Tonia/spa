@@ -6,7 +6,7 @@ const goToSearch = () => {
 <template>
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
-      <CommonSectionTitle
+      <LazyCommonSectionTitle
         :data="{
           title: 'Why SAP Fiori',
           description: `Empower your workforce with modern, role-based interfaces that simplify complex tasks, enhance productivity, and reduce training time, all while ensuring a consistent experience across all devices and platforms.`,

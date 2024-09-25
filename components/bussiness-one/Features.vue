@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-secondary">
+  <section class="py-16 bg-secondary" id="features">
     <div class="wrapper">
       <!-- section title -->
       <div class="py-4">

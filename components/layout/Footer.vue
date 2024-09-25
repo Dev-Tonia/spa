@@ -54,17 +54,17 @@ const toggleIsOpen = () => {
                   class="hover:underline block text-sm mb-2"
                   v-for="(service, index) in navLinks.services.items"
                   :key="index"
-                  :herf="service.to"
+                  :href="service.to"
                 >
                   {{ service.name }}
                 </NuxtLink>
               </div>
             </li>
-            <li>
+            <!-- <li>
               <NuxtLink class="hover:underline text-sm font-medium" to="/">
                 Schools
               </NuxtLink>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div>

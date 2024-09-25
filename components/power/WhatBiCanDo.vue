@@ -1,7 +1,7 @@
 <template>
   <section class="py-16">
     <div class="wrapper">
-      <CommonSectionTitle
+      <LazyCommonSectionTitle
         class="text-center py-4"
         :data="{
           title: 'What we can do with Power BI',
@@ -9,7 +9,7 @@
         }"
       />
       <div class="space-y-10">
-        <PowerBiCanDoCard
+        <LazyPowerBiCanDoCard
           class="bg-secondary text-white flex-col-reverse md:flex-row-reverse"
           :data="{
             img: biIntergration,
@@ -22,7 +22,7 @@
             decClass: 'text-neutral-200',
           }"
         />
-        <PowerBiCanDoCard
+        <LazyPowerBiCanDoCard
           class="bg-[#D9D9D9]"
           :data="{
             img: biImplemention,
@@ -35,7 +35,7 @@
             decClass: 'text-neutral-500',
           }"
         />
-        <PowerBiCanDoCard
+        <LazyPowerBiCanDoCard
           class="bg-secondary text-white flex-col-reverse md:flex-row-reverse"
           :data="{
             img: biDevelopment,
@@ -48,7 +48,7 @@
             decClass: 'text-neutral-200',
           }"
         />
-        <PowerBiCanDoCard
+        <LazyPowerBiCanDoCard
           class="bg-[#D9D9D9]"
           :data="{
             img: biCustomzation,

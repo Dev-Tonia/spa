@@ -83,10 +83,10 @@ const slides = [
             </div>
             <!-- CTA -->
             <div class="flex items-center space-x-5">
-              <Button
+              <CommonModal
+                title="Request A Demo"
                 class="hover:bg-white cursor-pointer bg-white text-primary border border-primary font-medium"
-                >Request A Demo
-              </Button>
+              />
               <Button
                 class="hover:bg-primary cursor-pointer bg-primary text-white font-medium"
                 @click="navigateTo('/contact')"

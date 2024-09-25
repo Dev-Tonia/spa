@@ -69,7 +69,7 @@ const content = [
 </script>
 
 <template>
-  <section class="bg-secondary text-white py-16">
+  <section class="bg-secondary text-white py-16" id="why-sap-customer-checkout">
     <div class="wrapper">
       <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
         Why you should choose SAP Customer checkout

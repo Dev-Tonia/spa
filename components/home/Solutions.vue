@@ -48,8 +48,9 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
 
                 <div>
                   <Icon
-                    class="text-5xl text-primary"
+                    class="text-5xl text-primary cursor-pointer"
                     name="ph:arrow-circle-up-right"
+                    @click="navigateTo('/sap-business-one')"
                   />
                 </div>
               </div>
@@ -76,8 +77,9 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 <div class="min-[500px]:w-1/2">
                   <div class="flex justify-end">
                     <Icon
-                      class="text-5xl text-primary"
+                      class="text-5xl text-primary cursor-pointer"
                       name="ph:arrow-circle-up-right"
+                      @click="navigateTo('/cloud-services')"
                     />
                   </div>
                   <h2
@@ -110,8 +112,9 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 <div class="min-[500px]:w-1/2">
                   <div class="flex justify-end">
                     <Icon
-                      class="text-5xl text-primary"
+                      class="text-5xl text-primary cursor-pointer"
                       name="ph:arrow-circle-up-right"
+                      @click="navigateTo('/power-bi')"
                     />
                   </div>
                   <h2
@@ -147,8 +150,9 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
 
                 <div>
                   <Icon
-                    class="text-5xl text-primary"
+                    class="text-5xl text-primary cursor-pointer"
                     name="ph:arrow-circle-up-right"
+                    @click="navigateTo('/idm-@-school')"
                   />
                 </div>
               </div>

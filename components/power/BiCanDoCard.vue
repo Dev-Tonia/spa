@@ -24,6 +24,7 @@
       </p>
       <Button
         class="hover:bg-primary cursor-pointer bg-primary text-white font-medium space-x-2"
+        @click="navigateTo('/contact')"
       >
         Contact us
       </Button>

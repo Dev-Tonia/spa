@@ -9,6 +9,7 @@ import { business_one } from "../lib/images";
       description: `IDM is a leading ERP consulting team specializing in SAP Business One, tailored for small, medium, and large businesses. As one of the largest SAP Business One partners in West Africa, we have completed numerous implementations, including SAP Business One for HANA, helping clients maximize ROI and achieve business growth through expert support and turnaround services.`,
       img: business_one,
     }"
+    scroll-to="features"
   />
 
   <LazyCommonSubHeader

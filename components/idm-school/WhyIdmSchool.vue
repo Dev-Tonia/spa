@@ -31,16 +31,16 @@ const contents = [
 </script>
 
 <template>
-  <section class="bg-neutral-50 py-16">
+  <section class="bg-neutral-50 py-16" id="why-idm@school">
     <div class="wrapper">
-      <CommonSectionTitle
+      <LazyCommonSectionTitle
         :data="{
           title: 'Why IDM@School',
           description: `The curriculum covers from pre-primary to senior secondary school.`,
         }"
       />
       <div class="grid sm:grid-cols-2 gap-6 md:gap-10 py-9">
-        <CommonWhyCard
+        <LazyCommonWhyCard
           v-for="content in contents"
           :key="content.id"
           :content="content"

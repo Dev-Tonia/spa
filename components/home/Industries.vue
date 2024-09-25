@@ -71,8 +71,7 @@ const contents = [
         <div class="md:w-2/12 lg:w-5/12 pt-6 md:pt-0 flex justify-end">
           <NuxtLink
             class="text-lg font-bold flex items-center"
-            to="
-          "
+            href="/industries"
             ><span>View All</span
             ><Icon class="text-3xl" name="flowbite:arrow-right-outline"
           /></NuxtLink>

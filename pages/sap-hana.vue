@@ -10,6 +10,7 @@ import { hana } from "../lib/images";
 An in-memory database (IMDB, also main memory database system or MMDB or memory resident database) is a database management system that primarily relies on main memory for computer data storage.`,
       img: hana,
     }"
+    scroll-to="sap-hana-services"
   />
 
   <LazyCommonSubHeader

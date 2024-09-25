@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <ContactHero />
-  <ContactGetInTouch />
-  <CommonClients />
+  <LazyContactHero />
+  <LazyContactGetInTouch />
+  <Lazy CommonClients />
 </template>
 
 <style lang="scss" scoped></style>

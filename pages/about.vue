@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <AboutHero />
-  <AboutVision />
-  <CommonClients />
-  <CommonContact />
+  <LazyAboutHero />
+  <LazyAboutVision />
+  <LazyCommonClients />
+  <LazyCommonContact />
 </template>
 
 <style lang="scss" scoped></style>

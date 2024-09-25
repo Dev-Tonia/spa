@@ -10,6 +10,7 @@ import { hana } from "../lib/images";
       description: `Our SAP S/4 HANA is designed to run on the SAP HANA in-memory database, providing real-time processing speeds, advanced analytics, and simplified data models.`,
       img: hana,
     }"
+    scroll-to="sap-s4-hana-modules"
   />
   <LazyS4HanaModules />
   <LazyCommonContact />
