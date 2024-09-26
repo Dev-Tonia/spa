@@ -19,7 +19,7 @@
       <Icon name="akar-icons:twitter-fill" class="text-xl" />
     </NuxtLink>
     <NuxtLink
-      herf="https://www.linkedin.com/company/international-data-management-serivces-plc---nigeria/about/?viewAsMember=true"
+      href="https://www.linkedin.com/company/international-data-management-serivces-plc---nigeria"
       rel="noreferrer noopener"
       target="_blank"
       external

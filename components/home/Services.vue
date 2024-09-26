@@ -1,20 +1,21 @@
 <script setup>
-import { idmSchool, sapBusiness, sapHana, sapCloud } from "../../lib/images";
+import { idmSchool, sapBusiness, idmErp, sapCloud } from "../../lib/images";
 
 const contents = [
+  {
+    id: 2,
+    img: sapBusiness,
+    title: "SAP Business One",
+    description:
+      "SAP Business One: Unparalleled ERP for small and medium-sized enterprises, integrating CRM, sales, inventory, and financials.",
+  },
+
   {
     id: 3,
     img: sapCloud,
     title: "SAP Cloud",
     description:
       "B1Cloud is a Premium Cloud Hosting for SAP Business One, SQL & HANA at the fraction of the cost. It's an ideal cloud-based solution for MSMEs to run and reap all the benefits of SAP Business One without having to invest in infrastructure & complete peace of mind.",
-  },
-  {
-    id: 1,
-    img: sapHana,
-    title: "SAP S/4HANA",
-    description:
-      "S/4HANA: A cutting-edge Enterprise Resource Planning (ERP) system that streamlines business processes, accelerates decision-making, and enables real-time insights",
   },
   {
     id: 4,
@@ -24,11 +25,11 @@ const contents = [
       "Realizing the importance of starting ICT education early, IDM has a fully developed program to offer IT education to school children from elementary levels.",
   },
   {
-    id: 2,
-    img: sapBusiness,
-    title: "SAP Business One",
+    id: 1,
+    img: idmErp,
+    title: "School ERP",
     description:
-      "SAP Business One: Unparalleled ERP for small and medium-sized enterprises, integrating CRM, sales, inventory, and financials.",
+      "School ERP systems help schools maintain accurate records, ensure smooth operations, and improve transparency and accountability.",
   },
 ];
 </script>
@@ -41,7 +42,8 @@ const contents = [
           <h3
             class="text-2xl sm:text-3xl lg:text-4xl font-bold font-grifter leading-9 md:leading-[48px] py-2"
           >
-            Complete Consulting Services We Provider
+            We provide complete consulting services to transform / perfect
+            business process
           </h3>
           <p class="font-medium text-lg">
             We are committed to meticulously planning, executing, and delivering

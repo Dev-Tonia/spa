@@ -11,7 +11,7 @@ import {
   hoesch,
   interdialog,
   kolorkote,
-  Logo_digischool,
+  oxford,
 } from "../../lib/images";
 
 const clients = [
@@ -26,7 +26,7 @@ const clients = [
   hoesch,
   interdialog,
   kolorkote,
-  Logo_digischool,
+  oxford,
 ];
 </script>
 

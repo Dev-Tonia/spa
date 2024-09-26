@@ -2,21 +2,20 @@
 import { heroImg, heroImg2, heroImg3, heroImg4 } from "../../lib/images";
 const slides = [
   {
-    title: "Transform Your Business with Our ERP",
-    highlight: " Expertise.",
+    title: "Perfecting business ",
+    highlight: " processes.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg,
   },
   {
-    title: "We provide solution to grow your",
-    highlight: "Business.",
+    title: "WPioneering IT-Enabled services in ",
+    highlight: "Africa.",
     subtitle: "Everything you need to grow your business. Contact us today!",
     bgImage: heroImg2,
   },
   {
-    title:
-      "IDM help clients in the intelligent automation & transformation of their",
-    highlight: " businesses.",
+    title: "Preparing young minds for global  ",
+    highlight: " ICT.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg3,
   },
@@ -65,7 +64,7 @@ const slides = [
               >
                 <Icon name="solar:star-rings-outline" class="text-3xl" />
                 <span class="text-sm font-medium">
-                  Best for Small and Small and mid-size enterprises
+                  Best for small and mid-sized Enterprises
                 </span>
               </div>
             </div>
