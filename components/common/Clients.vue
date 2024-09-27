@@ -9,7 +9,6 @@ import {
   asaba,
   buildingTower,
   hoesch,
-  interdialog,
   kolorkote,
   oxford,
 } from "../../lib/images";
@@ -24,7 +23,6 @@ const clients = [
   asaba,
   buildingTower,
   hoesch,
-  interdialog,
   kolorkote,
   oxford,
 ];
@@ -65,8 +63,10 @@ const clients = [
       :modules="[SwiperAutoplay, SwiperEffectCreative]"
     >
       <swiperSlide v-for="(item, index) in clients" :key="index">
-        <div class="shadow-xl border p-3">
-          <img :src="item" alt="" class="w-full h-auto" />
+        <div
+          class="shadow-xl border p-3 h-full flex items-center justify-center"
+        >
+          <img :src="item" alt="" class="w-full" />
         </div>
       </swiperSlide>
     </swiper>

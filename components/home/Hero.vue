@@ -8,7 +8,7 @@ const slides = [
     bgImage: heroImg,
   },
   {
-    title: "WPioneering IT-Enabled services in ",
+    title: "Pioneering IT Enables Services in  ",
     highlight: "Africa.",
     subtitle: "Everything you need to grow your business. Contact us today!",
     bgImage: heroImg2,
