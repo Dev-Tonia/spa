@@ -38,7 +38,7 @@ const contents = [
   <section class="py-10">
     <div class="wrapper">
       <div class="flex items-center justify-center text-center">
-        <div class="md:w-9/12 lg:w-6/12">
+        <div class="md:w-11/12 lg:w-9/12">
           <h3
             class="text-2xl sm:text-3xl lg:text-4xl font-bold font-grifter leading-9 md:leading-[48px] py-2"
           >
