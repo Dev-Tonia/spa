@@ -1,5 +1,11 @@
 <script setup>
-import { heroImg, heroImg2, heroImg3, heroImg4 } from "../../lib/images";
+import {
+  heroImg,
+  heroImg2,
+  heroImg3,
+  heroImg4,
+  heroImg5,
+} from "../../lib/images";
 const slides = [
   {
     title: "Perfecting business ",
@@ -24,6 +30,13 @@ const slides = [
     highlight: "learning.",
     subtitle: "Leading the next frontier of innovation and technology",
     bgImage: heroImg4,
+  },
+  {
+    title: "Empowering Education Through Seamless",
+    highlight: "Management.",
+    subtitle:
+      "Streamlining education processes to enhance learning outcomes and student success",
+    bgImage: heroImg5,
   },
 ];
 </script>
