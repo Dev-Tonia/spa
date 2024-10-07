@@ -13,6 +13,7 @@ import { businessSap } from "../lib/images";
     scroll-to="features"
   />
   <LazyAddOnFeatures />
+  <LazyAddOnAdditionalAddOns />
   <LazyCommonContact />
 </template>
 

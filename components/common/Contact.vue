@@ -17,7 +17,7 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
               Book a consultation today
             </h3>
             <p class="text-[#4E4949]">
-              Learn how IDM can your business scale the final piece in the
+              Learn how IDM can help your business scale the final piece in the
               puzzle of uninterrupted growth of your business.
             </p>
             <div class="pt-9">
