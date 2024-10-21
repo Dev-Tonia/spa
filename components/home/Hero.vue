@@ -16,13 +16,15 @@ const slides = [
   {
     title: "Pioneering IT Enables Services in  ",
     highlight: "Africa.",
-    subtitle: "Everything you need to grow your business. Contact us today!",
+    subtitle:
+      "Shaping Africa’s future with reliable, transformative IT solutions.",
     bgImage: heroImg2,
   },
   {
     title: "Preparing young minds for global  ",
     highlight: " ICT.",
-    subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
+    subtitle:
+      "Equipping the next generation with the tools to shape the global ICT landscape",
     bgImage: heroImg3,
   },
   {

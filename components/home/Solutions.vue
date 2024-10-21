@@ -28,7 +28,8 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
       </div>
       <div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 my-20">
-          <div class="space-y-10">
+          <div class="space-y-10 h-full">
+            <!-- card 1 -->
             <div class="bg-white shadow-md rounded-lg p-6">
               <div class="flex justify-between pb-4">
                 <div class="w-10/12">
@@ -48,7 +49,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
 
                 <div>
                   <Icon
-                    class="text-5xl text-primary cursor-pointer"
+                    class="text-4xl md:text-5xl text-primary cursor-pointer transition-all duration-700 hover:text-secondary hover:text-5xl md:hover:text-6xl"
                     name="ph:arrow-circle-up-right"
                     @click="navigateTo('/sap-business-one')"
                   />
@@ -58,26 +59,26 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 <img
                   :src="addOn"
                   alt="SAP Business One Add-ons Image"
-                  class="rounded-lg"
+                  class="rounded-lg h-[300px]"
                 />
               </div>
             </div>
-            <!-- Card 3 -->
+            <!-- Card 2 -->
             <div class="bg-white shadow-md rounded-lg p-6">
               <div
-                class="flex flex-col-reverse min-[500px]:flex-row items-center justify-between gap-7"
+                class="flex flex-col-reverse min-[900px]:flex-row items-center justify-between gap-7"
               >
-                <div class="min-[500px]:w-1/2">
+                <div class="min-[900px]:w-1/2">
                   <img
                     :src="clouds"
                     alt="Cloud Services Image"
-                    class="rounded-lg"
+                    class="rounded-lg min-[900px]:w-fit w-full"
                   />
                 </div>
-                <div class="min-[500px]:w-1/2">
+                <div class="min-[900px]:w-1/2">
                   <div class="flex justify-end">
                     <Icon
-                      class="text-5xl text-primary cursor-pointer"
+                      class="text-4xl md:text-5xl text-primary cursor-pointer transition-all duration-700 hover:text-secondary hover:text-5xl md:hover:text-6xl"
                       name="ph:arrow-circle-up-right"
                       @click="navigateTo('/cloud-services')"
                     />
@@ -95,24 +96,25 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 </div>
               </div>
             </div>
-            <!-- Card 4 -->
           </div>
-          <div class="space-y-10">
+          <div class="space-y-10 h-full">
+            <!-- Card 3-->
+
             <div class="bg-white shadow-md rounded-lg p-6">
               <div
-                class="flex flex-col-reverse min-[500px]:flex-row items-center justify-between gap-7"
+                class="flex flex-col-reverse min-[900px]:flex-row items-center justify-between gap-7"
               >
-                <div class="min-[500px]:w-1/2">
+                <div class="min-[900px]:w-1/2">
                   <img
                     :src="bi"
                     alt="Power BI Image"
                     class="rounded-lg w-full"
                   />
                 </div>
-                <div class="min-[500px]:w-1/2">
+                <div class="min-[900px]:w-1/2">
                   <div class="flex justify-end">
                     <Icon
-                      class="text-5xl text-primary cursor-pointer"
+                      class="text-4xl md:text-5xl text-primary cursor-pointer transition-all duration-700 hover:text-secondary hover:text-5xl md:hover:text-6xl"
                       name="ph:arrow-circle-up-right"
                       @click="navigateTo('/power-bi')"
                     />
@@ -132,7 +134,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 </div>
               </div>
             </div>
-            <!-- Card 1 -->
+            <!-- Card 4 -->
             <div class="bg-white shadow-md rounded-lg p-6">
               <div class="flex justify-between pb-4">
                 <div class="w-10/12">
@@ -150,7 +152,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
 
                 <div>
                   <Icon
-                    class="text-5xl text-primary cursor-pointer"
+                    class="text-4xl md:text-5xl text-primary cursor-pointer transition-all duration-700 hover:text-secondary hover:text-5xl md:hover:text-6xl"
                     name="ph:arrow-circle-up-right"
                     @click="navigateTo('/idm-@-school')"
                   />
@@ -161,12 +163,10 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                 <img
                   :src="idmSoln"
                   alt="IDM @ School Image"
-                  class="rounded-lg w-full"
+                  class="rounded-lg w-full h-[300px]"
                 />
               </div>
             </div>
-
-            <!-- Card 2 -->
           </div>
         </div>
       </div>
