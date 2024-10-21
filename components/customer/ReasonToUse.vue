@@ -69,37 +69,10 @@ const content = [
 </script>
 
 <template>
-  <section class="bg-secondary text-white py-16" id="why-sap-customer-checkout">
-    <div class="wrapper">
-      <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
-        Why you should choose SAP Customer checkout
-      </h3>
-      <p class="py-4 text-lg md:text-xl">
-        With real-time insights, streamlined processes, and robust security, our
-        solution empowers your business to stay ahead in a competitive market.
-      </p>
-
-      <div
-        class="grid md:grid-cols-2 min-[900px]:grid-cols-3 gap-6 lg:gap-8 my-16"
-      >
-        <div v-for="(item, index) in content" :key="index">
-          <div
-            class="bg-primary flex items-center justify-center text-white w-12 h-12 rounded-[8px] p-2"
-          >
-            <Icon :name="item.icon" class="text-5xl" />
-          </div>
-          <div class="">
-            <h2 class="font-bold text-xl py-6">{{ item.title }}</h2>
-            <ul class="list-disc pl-8">
-              <li v-for="(item, index) in item.items" :key="index">
-                {{ item }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <CommonReason
+    extra-class=" md:grid-cols-2 min-[900px]:grid-cols-3"
+    :contents="content"
+    title="Why you should choose SAP Customer checkout"
+    description="With real-time insights, streamlined processes, and robust security, our solution empowers your business to stay ahead in a competitive market."
+  />
 </template>
-
-<style lang="scss" scoped></style>

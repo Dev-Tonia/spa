@@ -64,22 +64,52 @@ watch(route, () => {
           <span> {{ link.title }} </span>
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent
-          class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
-        >
-          <DropdownMenuItem v-for="(item, index) in link.items" :key="index">
-            <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
-              <div
-                class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
-              >
-                <Icon :name="item.icon" class="text-4xl" />
+
+        <DropdownMenuContent class="overflow-hidden">
+          <div class="max-h-[80vh] overflow-y-auto">
+            <div
+              class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
+            >
+              <div v-for="(item, index) in link.items" :key="index">
+                <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
+                  <div
+                    class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
+                  >
+                    <Icon :name="item.icon" class="text-4xl" />
+                  </div>
+                  <div>
+                    <h6>{{ item.name }}</h6>
+                    <p class="min-[980px]:flex hidden">
+                      {{ item.description }}
+                    </p>
+                  </div>
+                </NuxtLink>
               </div>
-              <div>
-                <h6>{{ item.name }}</h6>
-                <p class="min-[980px]:flex hidden">{{ item.description }}</p>
+            </div>
+
+            <!-- If the title is services to display extra items -->
+            <div class="w-screen wrapper" v-if="link.title === 'Services'">
+              <hr class="bg-neutral-200" />
+
+              <div class="grid min-[980px]:grid-cols-3 gap-6 p-4">
+                <div v-for="(exItem, index) in link.extra" :key="index">
+                  <NuxtLink :to="exItem.to" class="min-[980px]:flex gap-4">
+                    <div
+                      class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
+                    >
+                      <Icon :name="exItem.icon" class="text-4xl" />
+                    </div>
+                    <div>
+                      <h6>{{ exItem.name }}</h6>
+                      <p class="min-[980px]:flex hidden">
+                        {{ exItem.description }}
+                      </p>
+                    </div>
+                  </NuxtLink>
+                </div>
               </div>
-            </NuxtLink>
-          </DropdownMenuItem>
+            </div>
+          </div>
         </DropdownMenuContent>
       </DropdownMenu>
     </li>
@@ -97,6 +127,17 @@ watch(route, () => {
             <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
               {{ item.name }}
             </NuxtLink>
+            <div v-if="link.title === 'Services'">
+              <hr />
+              <NuxtLink
+                :to="exItem.to"
+                class="min-[980px]:flex gap-4"
+                v-for="(exItem, index) in link.extra"
+                :key="index"
+              >
+                {{ exItem.name }}
+              </NuxtLink>
+            </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
