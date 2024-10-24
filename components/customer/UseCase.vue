@@ -7,7 +7,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
     <div class="wrapper">
       <div class="flex flex-col items-center justify-center text-center">
         <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
-          Use cases checkout
+          Use Cases
         </h3>
         <p class="py-4 text-lg md:text-xl text-[#7A7474]">
           Discover How Our SAP Solutions Drive Success Across Diverse Industries

@@ -17,7 +17,7 @@ const props = defineProps({
         {{ description }}
       </p>
 
-      <div :class="`grid  gap-6 lg:gap-8 my-16 ${extraClass}`">
+      <div :class="`grid gap-6  sm:gap-8 lg:gap-12 my-16 ${extraClass}`">
         <div v-for="(item, index) in contents" :key="index">
           <div
             class="bg-primary flex items-center justify-center text-white w-12 h-12 rounded-[8px] p-2"

@@ -51,7 +51,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
                   <Icon
                     class="text-4xl md:text-5xl text-primary cursor-pointer transition-all duration-700 hover:text-secondary hover:text-5xl md:hover:text-6xl"
                     name="ph:arrow-circle-up-right"
-                    @click="navigateTo('/sap-business-one')"
+                    @click="navigateTo('/business-add-on')"
                   />
                 </div>
               </div>
