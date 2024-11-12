@@ -9,12 +9,12 @@ import {
 const slides = [
   {
     title: "Perfecting business ",
-    highlight: " processes.",
+    highlight: "process.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg,
   },
   {
-    title: "Pioneering IT Enables Services in  ",
+    title: "Pioneering IT-Enabled Services in  ",
     highlight: "Africa.",
     subtitle:
       "Shaping Africa’s future with reliable, transformative IT solutions.",
