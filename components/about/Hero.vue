@@ -7,12 +7,12 @@ import { aboutImg } from "../../lib/images";
   <section>
     <div class="wrapper py-16">
       <div class="flex gap-10">
-        <div
+        <!-- <div
           class="w-5/12 h-[419px] hidden min-[800px]:block overflow-hidden rounded-lg"
         >
           <img :src="aboutUsImg" alt="" class="w-full h-auto object-contain" />
-        </div>
-        <div class="min-[800px]:w-7/12">
+        </div> -->
+        <div class="">
           <small class="text-baseBlack text-lg">About Us</small>
 
           <CommonSectionTitle
