@@ -9,8 +9,10 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
         class="bg-[#FFDADA] relative rounded-xl px-10 py-24 min-[450px]:py-16 sm:px-16 overflow-hidden"
       >
         <img :src="vector" alt="" class="absolute top-0 -left-4" />
-        <div class="flex">
-          <div class="min-[400px]:w-10/12 sm:w-7/12 z-[12]">
+        <div class="flex items-center justify-center">
+          <div
+            class="min-[400px]:w-10/12 sm:w-7/12 z-[12] flex items-center justify-center flex-col"
+          >
             <!-- <h3
               class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-4"
             >
