@@ -11,11 +11,11 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
         <img :src="vector" alt="" class="absolute top-0 -left-4" />
         <div class="flex">
           <div class="min-[400px]:w-10/12 sm:w-7/12 z-[12]">
-            <h3
+            <!-- <h3
               class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-4"
             >
               Book a consultation today
-            </h3>
+            </h3> -->
             <p class="text-[#4E4949]">
               Learn how IDM can help your business scale the final piece in the
               puzzle of uninterrupted growth of your business.

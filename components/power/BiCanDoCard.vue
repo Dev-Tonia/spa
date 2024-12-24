@@ -4,13 +4,13 @@
       <img :src="data.img" alt="" class="w-full" />
     </div>
     <div class="md:w-7/12">
-      <small
+      <!-- <small
         :class="[
           'text-neutral-200 font-bold text-xl md:text-2xl',
           data.numClass,
         ]"
         >{{ data.number }}</small
-      >
+      > -->
       <h5
         :class="[
           ' font-bold font-grifter text-2xl md:text-3xl',

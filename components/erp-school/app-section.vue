@@ -7,7 +7,7 @@
             <h1
               class="text-3xl md:text-4xl lg:text-5xl font-bold font-grifter mb-4"
             >
-              Edunext Mobile App
+              Our Mobile App
             </h1>
             <p class="text-2xl mb-6">
               A Revolutionary Mobile Application for Schools

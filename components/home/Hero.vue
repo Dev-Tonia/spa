@@ -44,7 +44,11 @@ const slides = [
 </script>
 
 <template>
-  <section class="h-[90%] bg-primary/[4%]">
+  <!-- Background with radial gradients -->
+  <div class="hero-sec"></div>
+
+  <!-- Main content section -->
+  <section class="relative z-10 h-[90%]">
     <Swiper
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
       :loop="true"
@@ -73,7 +77,7 @@ const slides = [
         <div class="flex items-center justify-center pt-6">
           <!-- intro text -->
           <div class="px-6 sm:px-10 md:pr-0 md:pl-16 lg:pl-24 md:w-8/12">
-            <div class="flex items-center py-5">
+            <!-- <div class="flex items-center py-5">
               <div
                 class="text-primary bg-primary/5 rounded-3xl p-2 flex items-center space-x-2"
               >
@@ -82,7 +86,7 @@ const slides = [
                   Best for small and mid-sized Enterprises
                 </span>
               </div>
-            </div>
+            </div> -->
             <!-- Title -->
             <div class="">
               <img
@@ -137,5 +141,31 @@ const slides = [
 }
 .--swiper-pagination-bullet-inactive-color {
   background: #000 !important;
+}
+
+.hero-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: radial-gradient(
+      circle at 12% 33%,
+      rgba(238, 9, 9, 0.25),
+      rgba(222, 28, 28, 0.1) 15%,
+      hsla(0, 90%, 47%, 0) 35%
+    ),
+    radial-gradient(
+      circle at 85% 55%,
+      rgba(51, 51, 51, 0.25),
+      rgba(51, 51, 51, 0.1) 15%,
+      hsla(0, 0%, 100%, 0) 35%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 255, 255, 0.8),
+      transparent 70%
+    );
 }
 </style>

@@ -150,25 +150,16 @@ const graphicsContents = [
             title: 'Software Programming (Coding)',
           }"
         >
-          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
-            <div class="md:w-[70%]">
+          <div class="flex flex-col gap-6 lg:gap-10 py-4">
+            <div class="">
               <p class="text-neutral-500">
                 Introducing students to the language of the future, our coding
                 courses range from basic programming concepts to advanced
                 software development, empowering students to build their own
                 applications and solutions.
               </p>
-              <div
-                class="mt-4 grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-8"
-              >
-                <IdmSchoolAccordionCard
-                  v-for="(item, index) in codingContents"
-                  :key="index"
-                  :data="item"
-                />
-              </div>
             </div>
-            <div class="md:w-[30%]">
+            <div class="">
               <img :src="coding" alt="" class="w-full" />
             </div>
           </div>
@@ -187,35 +178,24 @@ const graphicsContents = [
                 our game development courses teach the fundamentals of game
                 design, programming, and interactive storytelling.
               </p>
-              <IdmSchoolAccordionCard
-                :data="{
-                  title: 'GDevelop',
-                  description: `Allows you to simply and quickly create your own video games.
-                  Just fire up the editor and start creating, no programming
-                  knowledge required. Its flexible architecture allows you to
-                  choose if you want to create an HTML5 game that can be played
-                  on the web and exported to iOS and Android, or a native game
-                  for your operating system. or activate both platforms and
-                  export your game everywhere.`,
-                }"
-              />
             </div>
             <div>
               <img :src="gameDev" alt="" />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
-        <!-- my sql -->
+        <!-- Database Management -->
         <IdmSchoolIdmAccordion
           :data="{
-            value: 'MY SQL',
-            title: 'MY SQL',
+            value: 'Database Management',
+            title: 'Database Management',
           }"
         >
           <div class="py-4">
             <p class="text-neutral-500">
-              MYSQL is a free open source database management system (DBMS). It
-              manages databases and connects them to software’s.
+              Database Management is a free open source database management
+              system (DBMS). It manages databases and connects them to
+              software’s.
             </p>
             <div class="mt-4">
               <img :src="biIntergration" alt="" />
@@ -281,7 +261,7 @@ const graphicsContents = [
           </div>
         </IdmSchoolIdmAccordion>
         <!-- paint -->
-        <IdmSchoolIdmAccordion
+        <!-- <IdmSchoolIdmAccordion
           :data="{
             value: 'Paint Brush',
             title: 'Paint Brush',
@@ -305,7 +285,7 @@ const graphicsContents = [
               <img :src="paint" alt="" class="h-[335px]" />
             </div>
           </div>
-        </IdmSchoolIdmAccordion>
+        </IdmSchoolIdmAccordion> -->
         <!-- graphics -->
         <IdmSchoolIdmAccordion
           :data="{
@@ -313,24 +293,15 @@ const graphicsContents = [
             title: 'Graphics Design',
           }"
         >
-          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
-            <div class="md:w-[70%]">
+          <div class="flex flex-col gap-6 lg:gap-10 py-4">
+            <div class="">
               <p class="text-neutral-500">
                 Fostering artistic expression, our graphics design courses cover
                 principles of design, digital illustration, and multimedia,
                 allowing students to create visually stunning projects.
               </p>
-              <div
-                class="mt-4 grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-8"
-              >
-                <IdmSchoolAccordionCard
-                  v-for="(item, index) in graphicsContents"
-                  :key="index"
-                  :data="item"
-                />
-              </div>
             </div>
-            <div class="md:w-[30%]">
+            <div class="">
               <img :src="graphics" alt="" class="w-full" />
             </div>
           </div>

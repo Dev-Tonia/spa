@@ -54,7 +54,7 @@ const content = [
   <CommonReason
     extra-class=" sm:grid-cols-2"
     :contents="content"
-    title="Benefits of Edunext mobile App"
+    title="Benefits of our mobile app"
     description="TSM benefits everyone involved in schooling, including school management, teachers, and students, by streamlining processes and enhancing overall efficiency."
   />
 </template>
