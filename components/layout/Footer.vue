@@ -49,7 +49,7 @@ const toggleIsOpen = () => {
               <div class="space-x-8 font-medium mb-4" @click="toggleIsOpen">
                 <span>SAP</span> <Icon name="ep:arrow-down-bold" />
               </div>
-              <div v-if="isOpen" class="ml-3">
+              <!-- <div v-if="isOpen" class="ml-3">
                 <NuxtLink
                   class="hover:underline block text-sm mb-2"
                   v-for="(service, index) in navLinks.services.items"
@@ -58,7 +58,7 @@ const toggleIsOpen = () => {
                 >
                   {{ service.name }}
                 </NuxtLink>
-              </div>
+              </div> -->
             </li>
             <!-- <li>
               <NuxtLink class="hover:underline text-sm font-medium" to="/">

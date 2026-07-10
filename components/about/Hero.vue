@@ -1,5 +1,5 @@
 <script setup>
-import { aboutUsImg } from "../../lib/images";
+// import { aboutUsImg } from "../../lib/images";
 import { aboutImg } from "../../lib/images";
 </script>
 
@@ -17,7 +17,8 @@ import { aboutImg } from "../../lib/images";
 
           <CommonSectionTitle
             :data="{
-              title: 'We Are Increasing Business Success With IT Solution',
+              title:
+                'Driving Business Success Through Innovative IT Solutions.',
               description: `  International Data Management Services Limited (IDM), incorporated
             in Nigeria in the year 1981 is affiliated with Comcraft Services
             Limited, United Kingdom. Partnering with SAP, IDM specializes in

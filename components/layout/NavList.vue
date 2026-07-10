@@ -31,7 +31,6 @@ const toggleDropdown = (key) => {
   activeDropdown.value = activeDropdown.value === key ? null : key;
 };
 watch(route, () => {
-  console.log("object");
   if (window.innerWidth <= 850 && typeof props.updateIsOpen === "function") {
     props.updateIsOpen();
   }
@@ -46,22 +45,22 @@ watch(route, () => {
     <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/"> Home </NuxtLink>
     </li>
-    <li
-      v-for="(link, key) in navLinks"
-      :key="link.id"
-      class="cursor-pointer hidden min-[850px]:flex"
-    >
+    <li class="pt-4 min-[850px]:pt-0">
+      <NuxtLink to="/about"> About Us </NuxtLink>
+    </li>
+
+    <li class="cursor-pointer hidden min-[850px]:flex">
       <!-- This used on the lager screen  -->
       <DropdownMenu class="">
         <DropdownMenuTrigger
-          @click="toggleDropdown(key)"
+          @click="toggleDropdown('solutions')"
           class="flex space-x-2 items-center"
           :class="{
             'text-primary border-b-2 border-b-primary pb-1':
-              isDropdownActive(key),
+              isDropdownActive('solutions'),
           }"
         >
-          <span> {{ link.title }} </span>
+          <span> {{ navLinks.solutions.title }} </span>
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
 
@@ -70,7 +69,10 @@ watch(route, () => {
             <div
               class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
             >
-              <div v-for="(item, index) in link.items" :key="index">
+              <div
+                v-for="(item, index) in navLinks.solutions.items"
+                :key="index"
+              >
                 <DropdownMenuItem>
                   <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
                     <div
@@ -93,16 +95,15 @@ watch(route, () => {
       </DropdownMenu>
     </li>
 
-    <li
-      v-for="(link, key) in navLinks"
-      :key="link.id"
-      class="cursor-pointer min-[850px]:hidden"
-    >
+    <li class="cursor-pointer min-[850px]:hidden">
       <!-- This used on the small screen  -->
       <Accordion type="single" collapsible class="">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>{{ link.title }}</AccordionTrigger>
-          <AccordionContent v-for="(item, index) in link.items" :key="index">
+        <AccordionItem value="solutions">
+          <AccordionTrigger>{{ navLinks.solutions.title }}</AccordionTrigger>
+          <AccordionContent
+            v-for="(item, index) in navLinks.solutions.items"
+            :key="index"
+          >
             <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
               {{ item.name }}
             </NuxtLink>
@@ -110,8 +111,72 @@ watch(route, () => {
         </AccordionItem>
       </Accordion>
     </li>
-    <li class="pt-4 min-[850px]:pt-0">
-      <NuxtLink to="/about"> About Us </NuxtLink>
+
+    <li class="py-4 min-[850px]:py-0">
+      <NuxtLink to="/idm-@-school"> School Education </NuxtLink>
+    </li>
+
+    <li class="cursor-pointer hidden min-[850px]:flex">
+      <!-- This used on the lager screen  -->
+      <DropdownMenu class="">
+        <DropdownMenuTrigger
+          @click="toggleDropdown('industries')"
+          class="flex space-x-2 items-center"
+          :class="{
+            'text-primary border-b-2 border-b-primary pb-1':
+              isDropdownActive('industries'),
+          }"
+        >
+          <span> {{ navLinks.industries.title }} </span>
+          <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
+        </DropdownMenuTrigger>
+
+        <DropdownMenuContent class="overflow-hidden">
+          <div class="max-h-[80vh] overflow-y-auto">
+            <div
+              class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
+            >
+              <div
+                v-for="(item, index) in navLinks.industries.items"
+                :key="index"
+              >
+                <DropdownMenuItem>
+                  <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
+                    <div
+                      class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
+                    >
+                      <Icon :name="item.icon" class="text-4xl" />
+                    </div>
+                    <div>
+                      <h6>{{ item.name }}</h6>
+                      <p class="min-[980px]:flex hidden">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </NuxtLink>
+                </DropdownMenuItem>
+              </div>
+            </div>
+          </div>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </li>
+
+    <li class="cursor-pointer min-[850px]:hidden">
+      <!-- This used on the small screen  -->
+      <Accordion type="single" collapsible class="">
+        <AccordionItem value="industries">
+          <AccordionTrigger>{{ navLinks.industries.title }}</AccordionTrigger>
+          <AccordionContent
+            v-for="(item, index) in navLinks.industries.items"
+            :key="index"
+          >
+            <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
+              {{ item.name }}
+            </NuxtLink>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </li>
     <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>

@@ -107,6 +107,13 @@ const graphicsContents = [
                 they learn to design, build, and program robots, enhancing their
                 problem-solving and critical-thinking skills.
               </p>
+              <NuxtLink
+                to="/ai-robotics"
+                class="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-bold text-white transition-colors hover:bg-white hover:text-secondary"
+              >
+                Learn more about our AI & Robotics programme
+                <Icon name="ri:arrow-right-line" class="text-xl" />
+              </NuxtLink>
               <IdmSchoolAccordionCard
                 :data="{
                   title: 'IDM ROBO CAMP',
@@ -138,6 +145,13 @@ const graphicsContents = [
               analysis, preparing students for a future driven by intelligent
               systems.
             </p>
+            <NuxtLink
+              to="/ai-robotics"
+              class="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-bold text-white transition-colors hover:bg-white hover:text-secondary"
+            >
+              Learn more about our AI & Robotics programme
+              <Icon name="ri:arrow-right-line" class="text-xl" />
+            </NuxtLink>
             <div class="mt-4">
               <img :src="ai" alt="" />
             </div>

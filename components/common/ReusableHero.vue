@@ -8,6 +8,9 @@ const props = defineProps({
   scrollTo: {
     type: String,
   },
+  className: {
+    type: String,
+  },
 });
 </script>
 
@@ -31,7 +34,7 @@ const props = defineProps({
 
           <Icon name="ri:arrow-down-line" class="text-2xl pl-1" />
         </Button>
-        <div class="py-8">
+        <div class="py-8" :class="className">
           <img :src="data.img" alt="" />
         </div>
       </div>

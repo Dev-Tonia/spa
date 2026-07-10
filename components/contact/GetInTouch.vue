@@ -16,6 +16,9 @@
           <span>
             <a href="mailto:enquiry@idmng.com"> enquiry@idmng.com</a></span
           >
+          <span>
+            <a href="mailto:ticket@idmng.com"> ticket@idmng.com</a>
+          </span>
         </div>
         <div class="mb-5 flex gap-5 items-center">
           <span
@@ -35,7 +38,7 @@
             <Icon name="ri-smartphone-fill" class="text-4xl" />
           </span>
           <span class="flex flex-col">
-            <a href="tel:+23456565656">+2345656565655</a>
+            <a href="tel:+23407011048875">+23407011048875</a>
           </span>
         </div>
       </div>

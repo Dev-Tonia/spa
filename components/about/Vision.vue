@@ -5,10 +5,18 @@ import { visionImg } from "../../lib/images";
 <template>
   <section class="py-16">
     <div class="wrapper">
+      <!-- Mission -->
+      <CommonSectionTitle
+        :data="{
+          title: 'Our Mission',
+          description:
+            'To perfect business processes and transform education across Africa through innovative ERP, digital transformation, customer care, AI, and smart learning solutions that drive operational excellence, enhance customer experiences, and prepare organizations and learners for a globally competitive future.',
+        }"
+      />
       <CommonSectionTitle
         :data="{
           title: 'Our Vision',
-          description: `Increasing the global competitiveness of African enterprises is our main goal.`,
+          description: `To be Africa's most trusted technology partner, transforming businesses and education through innovation and digital excellence.`,
         }"
       />
       <div class="py-6">

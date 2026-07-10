@@ -3,7 +3,7 @@
 <template>
   <LazyContactHero />
   <LazyContactGetInTouch />
-  <Lazy CommonClients />
+  <LazyCommonClients />
 </template>
 
 <style lang="scss" scoped></style>
