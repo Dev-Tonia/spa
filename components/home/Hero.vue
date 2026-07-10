@@ -150,7 +150,8 @@ const slides = [
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 12% 33%,
       rgba(238, 9, 9, 0.25),
       rgba(222, 28, 28, 0.1) 15%,

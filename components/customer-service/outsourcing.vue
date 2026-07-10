@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { outsourcing } from "../lib/images";
+import { outsourcing } from "../../lib/images";
 </script>
 
 <style lang="scss" scoped></style>

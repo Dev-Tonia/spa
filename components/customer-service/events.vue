@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { event1, event2, event3 } from "../lib/images";
+import { event1, event2, event3 } from "../../lib/images";
 </script>
 
 <style scoped></style>

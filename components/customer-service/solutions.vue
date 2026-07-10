@@ -52,7 +52,7 @@
 </template>
 
 <script setup>
-import { solution } from "../lib/images";
+import { solution } from "../../lib/images";
 </script>
 
 <style scoped></style>
