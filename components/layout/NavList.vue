@@ -48,7 +48,6 @@ watch(route, () => {
     <li class="pt-4 min-[850px]:pt-0">
       <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
-
     <li class="cursor-pointer hidden min-[850px]:flex">
       <!-- This used on the lager screen  -->
       <DropdownMenu class="">
@@ -110,6 +109,10 @@ watch(route, () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+    </li>
+
+    <li class="py-4 min-[850px]:py-0">
+      <NuxtLink to="/it-training"> IT Training </NuxtLink>
     </li>
 
     <li class="py-4 min-[850px]:py-0">
@@ -177,6 +180,9 @@ watch(route, () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+    </li>
+    <li class="py-4 min-[850px]:py-0">
+      <NuxtLink to="/gallery"> Gallery </NuxtLink>
     </li>
     <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
