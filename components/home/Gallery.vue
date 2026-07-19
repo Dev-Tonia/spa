@@ -3,42 +3,104 @@
     <div class="wrapper">
       <div class="mb-10 text-center sm:mb-14">
         <h2 class="font-grifter text-3xl font-bold text-baseBlack sm:text-4xl">
-          Image Gallery
+          Media Center
         </h2>
         <p class="mt-3 text-neutral-600">
           Explore IDM’s technology, training, and customer solutions in action.
         </p>
       </div>
 
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mb-6 flex flex-wrap gap-3">
         <button
-          v-for="(image, index) in images"
-          :key="image.alt"
+          v-for="tab in tabs"
+          :key="tab.key"
+          @click="currentTab = tab.key"
+          :class="{
+            'px-4 py-2 rounded-full border': true,
+            'bg-baseBlack text-white': currentTab === tab.key,
+            'bg-white text-baseBlack': currentTab !== tab.key,
+          }"
+        >
+          {{ tab.label }}
+        </button>
+      </div>
+
+      <div v-if="currentTab === 'brochure'" class="space-y-4">
+        <p class="text-sm text-neutral-600">
+          Browse brochures below — open in a new tab or download.
+        </p>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            v-for="(item, idx) in filteredItems"
+            :key="item.title + idx"
+            class="rounded-2xl border bg-white p-4"
+          >
+            <h4 class="font-semibold">{{ item.title }}</h4>
+            <p class="text-sm text-neutral-500 mt-1">{{ item.caption }}</p>
+            <div class="mt-3 flex gap-2">
+              <a
+                :href="item.src"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center gap-2 rounded-md bg-baseBlack px-3 py-2 text-white"
+                >Open</a
+              >
+              <a
+                :href="item.src"
+                :download="item.downloadName || ''"
+                class="inline-flex items-center gap-2 rounded-md border px-3 py-2"
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <button
+          v-for="(media, index) in filteredItems"
+          :key="media.alt + index"
           type="button"
-          @click="openImage(index)"
+          @click="openMedia(index)"
           class="group overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
         >
-          <img
-            :src="image.src"
-            :alt="image.alt"
-            class="h-60 w-full object-cover transition duration-300 group-hover:scale-105"
-          />
+          <div class="h-60 w-full overflow-hidden bg-black/5">
+            <img
+              v-if="media.type === 'image'"
+              :src="media.src"
+              :alt="media.alt"
+              class="h-60 w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+            <video
+              v-else-if="media.type === 'video'"
+              :src="media.src"
+              class="h-60 w-full object-cover"
+              muted
+              playsinline
+            />
+            <div
+              v-else
+              class="h-60 w-full flex items-center justify-center text-sm text-neutral-500"
+            >
+              Unsupported
+            </div>
+          </div>
           <div class="p-5 text-left">
-            <h3 class="font-semibold text-baseBlack">{{ image.title }}</h3>
-            <p class="mt-2 text-sm text-neutral-500">{{ image.caption }}</p>
+            <h3 class="font-semibold text-baseBlack">{{ media.title }}</h3>
+            <p class="mt-2 text-sm text-neutral-500">{{ media.caption }}</p>
           </div>
         </button>
       </div>
 
       <div
-        v-if="selectedImage !== null"
+        v-if="selectedMedia !== null"
         class="fixed inset-0 z-50 grid place-items-center bg-black/70 p-4"
       >
         <button
           type="button"
-          @click="closeImage"
+          @click="closeMedia"
           class="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-baseBlack shadow-lg transition hover:bg-neutral-100"
-          aria-label="Close image preview"
+          aria-label="Close media preview"
         >
           ×
         </button>
@@ -46,18 +108,26 @@
         <div
           class="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl"
         >
-          <img
-            :src="images[selectedImage].src"
-            :alt="images[selectedImage].alt"
-            class="h-[70vh] w-full object-contain bg-black/5"
-          />
+          <template v-if="selectedMedia.type === 'image'">
+            <img
+              :src="selectedMedia.src"
+              :alt="selectedMedia.alt"
+              class="h-[70vh] w-full object-contain bg-black/5"
+            />
+          </template>
+          <template v-else-if="selectedMedia.type === 'video'">
+            <video
+              :src="selectedMedia.src"
+              controls
+              autoplay
+              class="h-[70vh] w-full object-contain bg-black/5"
+            />
+          </template>
           <div class="p-6">
             <h3 class="font-grifter text-2xl font-bold text-baseBlack">
-              {{ images[selectedImage].title }}
+              {{ selectedMedia.title }}
             </h3>
-            <p class="mt-3 text-neutral-600">
-              {{ images[selectedImage].caption }}
-            </p>
+            <p class="mt-3 text-neutral-600">{{ selectedMedia.caption }}</p>
           </div>
         </div>
       </div>
@@ -66,81 +136,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import aiRoboticsTraining from "@/assets/imgs/ai-robotics-training.png";
-import idmSchool from "@/assets/imgs/idm@school.png";
-import cloud from "@/assets/imgs/cloud.png";
-import sapHana from "@/assets/imgs/sap-hana.png";
-import powerBi from "@/assets/imgs/powerBi.png";
-import robotics from "@/assets/imgs/robotics.png";
-import coding from "@/assets/imgs/coding.png";
-import customerCareHero from "@/assets/imgs/customer-care-hero.png";
+import { ref, computed } from "vue";
+import type { MediaItem } from "../../lib/media";
+import { tabs, mediaItems } from "../../lib/media";
 
-interface GalleryImage {
-  title: string;
-  caption: string;
-  src: string;
-  alt: string;
+const currentTab = ref<string>(tabs[0].key);
+const selectedMedia = ref<MediaItem | null>(null);
+
+const filteredItems = computed(() =>
+  mediaItems.filter((m) => m.tab === currentTab.value),
+);
+
+function openMedia(index: number) {
+  const list = filteredItems.value;
+  selectedMedia.value = list[index] || null;
 }
 
-const images: GalleryImage[] = [
-  {
-    title: "AI & Robotics Training",
-    caption: "Hands-on learning for tomorrow’s technology leaders.",
-    src: aiRoboticsTraining,
-    alt: "AI robotics training",
-  },
-  {
-    title: "IDM@School Program",
-    caption: "Building future-ready skills across classrooms and labs.",
-    src: idmSchool,
-    alt: "IDM school program",
-  },
-  {
-    title: "Cloud and Infrastructure",
-    caption: "Modern cloud solutions that power business transformation.",
-    src: cloud,
-    alt: "Cloud infrastructure services",
-  },
-  {
-    title: "SAP HANA Solutions",
-    caption: "Fast, intelligent business systems for enterprise growth.",
-    src: sapHana,
-    alt: "SAP HANA solutions",
-  },
-  {
-    title: "Power BI Analytics",
-    caption: "Visualizing data to reveal insights and drive better decisions.",
-    src: powerBi,
-    alt: "Power BI analytics",
-  },
-  {
-    title: "Robotic Automation",
-    caption: "Designing automation solutions for smarter business operations.",
-    src: robotics,
-    alt: "Robotic automation",
-  },
-  {
-    title: "Coding & Development",
-    caption: "Creative software projects that bring ideas to life.",
-    src: coding,
-    alt: "Coding development",
-  },
-  {
-    title: "Customer Care Services",
-    caption: "Supporting clients with responsive, professional service.",
-    src: customerCareHero,
-    alt: "Customer care services",
-  },
-];
-
-const selectedImage = ref<number | null>(null);
-
-function openImage(index: number) {
-  selectedImage.value = index;
-}
-
-function closeImage() {
-  selectedImage.value = null;
+function closeMedia() {
+  selectedMedia.value = null;
 }
 </script>

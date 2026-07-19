@@ -1,6 +1,6 @@
 <script setup>
 // import { aboutUsImg } from "../../lib/images";
-import { aboutImg } from "../../lib/images";
+import { image5 } from "../../lib/images";
 </script>
 
 <template>
@@ -30,8 +30,12 @@ import { aboutImg } from "../../lib/images";
           />
         </div>
       </div>
-      <div class="mt-10">
-        <img :src="aboutImg" alt="" class="w-full h-fit" />
+      <div class="mt-10 h-[75vh] overflow-hidden">
+        <img
+          :src="image5"
+          alt=""
+          class="h-full object-cover w-full object-top"
+        />
       </div>
     </div>
   </section>

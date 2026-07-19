@@ -19,9 +19,9 @@ import { visionImg } from "../../lib/images";
           description: `To be Africa's most trusted technology partner, transforming businesses and education through innovation and digital excellence.`,
         }"
       />
-      <div class="py-6">
+      <!-- <div class="py-6">
         <img :src="visionImg" alt="" />
-      </div>
+      </div> -->
       <div class="flex flex-col sm:flex-row gap-16">
         <div class="sm:w-1/2">
           <p class="font-grifter font-bold text-3xl py-2 text-baseBlack">01</p>

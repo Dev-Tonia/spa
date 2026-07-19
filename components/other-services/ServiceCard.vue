@@ -39,10 +39,10 @@
       </div>
 
       <NuxtLink
-        to="/contact"
+        :to="service.to || '/contact'"
         class="mt-7 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-white transition-colors hover:bg-secondary"
       >
-        Talk to our team
+        {{ service.to ? "View service" : "Talk to our team" }}
         <Icon name="ri:arrow-right-line" class="text-lg" />
       </NuxtLink>
     </div>
@@ -96,6 +96,7 @@ defineProps<{
     description: string;
     icon: string;
     image?: string | null;
+    to?: string;
     featureTitle?: string;
     features?: string[];
   };

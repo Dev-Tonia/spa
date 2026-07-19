@@ -11,6 +11,9 @@ const props = defineProps({
   className: {
     type: String,
   },
+  imgClass: {
+    type: String,
+  },
 });
 </script>
 
@@ -35,7 +38,7 @@ const props = defineProps({
           <Icon name="ri:arrow-down-line" class="text-2xl pl-1" />
         </Button>
         <div class="py-8" :class="className">
-          <img :src="data.img" alt="" />
+          <img :src="data.img" alt="" :class="imgClass" />
         </div>
       </div>
     </div>

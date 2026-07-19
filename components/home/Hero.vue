@@ -4,12 +4,13 @@ import {
   heroImg2,
   heroImg3,
   heroImg4,
+  studentsTheirUniforms,
   heroImg5,
 } from "../../lib/images";
 const slides = [
   {
     title: "Perfecting business ",
-    highlight: "process.",
+    highlight: "processes.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg,
   },
@@ -31,7 +32,7 @@ const slides = [
     title: "IDM@School, The future of",
     highlight: "learning.",
     subtitle: "Leading the next frontier of innovation and technology",
-    bgImage: heroImg4,
+    bgImage: studentsTheirUniforms,
   },
   {
     title: "Empowering Education Through Seamless",
@@ -95,7 +96,7 @@ const slides = [
                 alt="Logo"
               />
               <p
-                class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-baseBlack font-bold font-grifter leading-[57.6px]"
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-baseBlack font-bold font-grifter leading-[57.6px]"
               >
                 {{ slide.title }}
                 <span class="text-primary">{{ slide.highlight }}</span>

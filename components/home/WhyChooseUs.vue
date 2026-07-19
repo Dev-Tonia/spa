@@ -1,5 +1,5 @@
 <script setup>
-import { whyChooseImg } from "../../lib/images";
+import { whyChooseImg, idmSap6 } from "../../lib/images";
 
 const sapContents = [
   {
@@ -90,7 +90,7 @@ const contents = [
     <div class="wrapper">
       <div class="flex gap-x-10 lg:gap-x-16 justify-center items-center">
         <div class="w-7/12 hidden md:block">
-          <img :src="whyChooseImg" alt="" class="rounded-xl h-auto w-full" />
+          <img :src="idmSap6" alt="" class="rounded-xl h-auto w-full" />
         </div>
         <div class="md:w-5/12">
           <div>

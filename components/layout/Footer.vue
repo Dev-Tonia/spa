@@ -42,14 +42,14 @@ const toggleIsOpen = () => {
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:col-span-2">
         <div>
           <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">
-            Service
+            Company
           </h2>
           <ul class="">
-            <li class="mb-2">
+            <!-- <li class="mb-2">
               <div class="space-x-8 font-medium mb-4" @click="toggleIsOpen">
                 <span>SAP</span> <Icon name="ep:arrow-down-bold" />
               </div>
-              <!-- <div v-if="isOpen" class="ml-3">
+              <div v-if="isOpen" class="ml-3">
                 <NuxtLink
                   class="hover:underline block text-sm mb-2"
                   v-for="(service, index) in navLinks.services.items"
@@ -58,13 +58,29 @@ const toggleIsOpen = () => {
                 >
                   {{ service.name }}
                 </NuxtLink>
-              </div> -->
-            </li>
-            <!-- <li>
-              <NuxtLink class="hover:underline text-sm font-medium" to="/">
-                Schools
-              </NuxtLink>
+              </div>
             </li> -->
+            <li>
+              <NuxtLink class="hover:underline text-sm font-medium" to="/about">
+                About Us
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink
+                class="hover:underline text-sm font-medium"
+                to="/idm-@-school"
+              >
+                School Education
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink
+                class="hover:underline text-sm font-medium"
+                to="/it-training"
+              >
+                IT Training
+              </NuxtLink>
+            </li>
           </ul>
         </div>
         <div>

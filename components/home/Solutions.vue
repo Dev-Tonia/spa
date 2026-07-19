@@ -1,5 +1,5 @@
 <script setup>
-import { addOn, bi, clouds, idmSoln } from "../../lib/images";
+import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
           <h3
             class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-4"
           >
-            Explore our solution
+            Explore our solutions
           </h3>
           <p class="text-xl">
             We strive to consistently and efficiently plan, execute and deliver
@@ -20,8 +20,8 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
         <div class="flex pt-4">
           <NuxtLink
             class="text-lg font-bold flex items-center bg-primary rounded-[8px] py-3 px-5"
-            to="/contact"
-            ><span> Reach out</span
+            to="/all-solutions"
+            ><span>See All Solutions</span
             ><Icon class="text-3xl" name="flowbite:arrow-right-outline"
           /></NuxtLink>
         </div>
@@ -161,7 +161,7 @@ import { addOn, bi, clouds, idmSoln } from "../../lib/images";
 
               <div class="">
                 <img
-                  :src="idmSoln"
+                  :src="schoolKid"
                   alt="IDM @ School Image"
                   class="rounded-lg w-full h-[300px]"
                 />

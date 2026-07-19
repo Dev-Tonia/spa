@@ -5,7 +5,7 @@ import HomeGallery from "@/components/home/Gallery.vue";
 <template>
   <HomeHero />
   <HomeServices />
-  <HomeGallery />
+  <!-- <HomeGallery /> -->
   <HomeWhyChooseUs />
   <HomeIndustries />
   <HomeSolutions />

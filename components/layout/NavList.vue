@@ -103,7 +103,7 @@ watch(route, () => {
             v-for="(item, index) in navLinks.solutions.items"
             :key="index"
           >
-            <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
+            <NuxtLink :to="item.to" class="min-[980px]:flex gap-y-2 gap-x-4">
               {{ item.name }}
             </NuxtLink>
           </AccordionContent>
@@ -137,7 +137,7 @@ watch(route, () => {
         <DropdownMenuContent class="overflow-hidden">
           <div class="max-h-[80vh] overflow-y-auto">
             <div
-              class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
+              class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 mt-5"
             >
               <div
                 v-for="(item, index) in navLinks.industries.items"
@@ -182,7 +182,7 @@ watch(route, () => {
       </Accordion>
     </li>
     <li class="py-4 min-[850px]:py-0">
-      <NuxtLink to="/gallery"> Gallery </NuxtLink>
+      <NuxtLink to="/media-center"> Media Center </NuxtLink>
     </li>
     <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
