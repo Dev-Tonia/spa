@@ -11,7 +11,7 @@
         <h1
           class="mt-5 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
         >
-          Skills your team can put to work on Monday.
+          Skills your team can put to work.
         </h1>
         <p class="mx-auto mt-5 max-w-2xl leading-7 text-neutral-600">
           From SAP and ERP certification to AI, cybersecurity, and coding, IDM's

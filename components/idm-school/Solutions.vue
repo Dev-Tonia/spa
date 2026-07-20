@@ -84,13 +84,13 @@ const graphicsContents = [
       <div class="bg-white -mt-24 p-10 rounded">
         <div>
           <h3 class="font-grifter text-primary font-bold text-5xl py-2">
-            Our Solutions
+            Our Training Solutions
           </h3>
 
           <p class="py-4 text-xl text-[#7A7474]">
             This solution are designed to respond to the demands of the 21st
-            century, offering a comprehensive solution for tech education from
-            primary to senior secondary school.
+            century, offering a comprehensive IT Solutions from primary to
+            senior secondary school.
           </p>
         </div>
         <!-- robotics -->

@@ -19,7 +19,6 @@ import {
   image8,
   midgalSimba,
   polyProduct,
-  retailMp4,
   sapPic1jpeg,
   schoolVideoMp4,
   school1Img,
@@ -60,7 +59,7 @@ export const tabs = [
   { key: "idms", label: "IDMS" },
   { key: "outing", label: "Outing" },
   { key: "schoolRobotics", label: "School Robotics" },
-  { key: "brochure", label: "Brochure" },
+  { key: "brochure", label: "Resources " },
 ];
 
 export const mediaItems: MediaItem[] = [

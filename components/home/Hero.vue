@@ -49,8 +49,9 @@ const slides = [
   <div class="hero-sec"></div>
 
   <!-- Main content section -->
-  <section class="relative z-10 h-[90%]">
+  <section class="hero-carousel relative z-10 h-[90%]">
     <Swiper
+      class="hero-swiper"
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
       :loop="true"
       :effect="'creative'"
@@ -90,11 +91,11 @@ const slides = [
             </div> -->
             <!-- Title -->
             <div class="">
-              <img
+              <!-- <img
                 src="../../assets/imgs/Group.svg"
                 class="w-[120px] md:w-[140px] h-auto float-left pr-3"
                 alt="Logo"
-              />
+              /> -->
               <p
                 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-baseBlack font-bold font-grifter leading-[57.6px]"
               >
@@ -133,6 +134,19 @@ const slides = [
 </template>
 
 <style scoped>
+.hero-carousel :deep(.swiper),
+.hero-carousel :deep(.swiper-wrapper),
+.hero-carousel :deep(.swiper-slide) {
+  cursor: grab;
+  user-select: none;
+}
+
+.hero-carousel :deep(.swiper:active),
+.hero-carousel :deep(.swiper-wrapper:active),
+.hero-carousel :deep(.swiper-slide:active) {
+  cursor: grabbing;
+}
+
 .swiper-slide {
   transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
 }
