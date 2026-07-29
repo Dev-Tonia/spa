@@ -26,6 +26,7 @@ const props = defineProps({
   },
 });
 const isDropdownActive = computed(() => (key) => activeDropdown.value === key);
+const isRouteInDropdown = (items) => items.some((item) => route.path === item.to);
 
 const toggleDropdown = (key) => {
   activeDropdown.value = activeDropdown.value === key ? null : key;
@@ -39,7 +40,7 @@ watch(route, () => {
 
 <template>
   <ul
-    class="min-[850px]:space-x-5 font-bold font-nunito min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
+    class="min-[850px]:space-x-5 font-semibold font-nunito text-sm lg:text-base min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
     :class="{ 'hidden ': isOpen }"
   >
     <li class="py-4 min-[850px]:py-0">
@@ -55,8 +56,9 @@ watch(route, () => {
           @click="toggleDropdown('solutions')"
           class="flex space-x-2 items-center"
           :class="{
-            'text-primary border-b-2 border-b-primary pb-1':
-              isDropdownActive('solutions'),
+            'text-primary border-b-2 border-b-primary pb-1': isRouteInDropdown(
+              navLinks.solutions.items,
+            ),
           }"
         >
           <span> {{ navLinks.solutions.title }} </span>
@@ -80,8 +82,8 @@ watch(route, () => {
                       <Icon :name="item.icon" class="text-4xl" />
                     </div>
                     <div>
-                      <h6>{{ item.name }}</h6>
-                      <p class="min-[980px]:flex hidden">
+                      <h6 class="text-sm lg:text-base">{{ item.name }}</h6>
+                      <p class="min-[980px]:flex hidden text-sm leading-6">
                         {{ item.description }}
                       </p>
                     </div>
@@ -126,8 +128,9 @@ watch(route, () => {
           @click="toggleDropdown('industries')"
           class="flex space-x-2 items-center"
           :class="{
-            'text-primary border-b-2 border-b-primary pb-1':
-              isDropdownActive('industries'),
+            'text-primary border-b-2 border-b-primary pb-1': isRouteInDropdown(
+              navLinks.industries.items,
+            ),
           }"
         >
           <span> {{ navLinks.industries.title }} </span>
@@ -151,8 +154,8 @@ watch(route, () => {
                       <Icon :name="item.icon" class="text-4xl" />
                     </div>
                     <div>
-                      <h6>{{ item.name }}</h6>
-                      <p class="min-[980px]:flex hidden">
+                      <h6 class="text-sm lg:text-base">{{ item.name }}</h6>
+                      <p class="min-[980px]:flex hidden text-sm leading-6">
                         {{ item.description }}
                       </p>
                     </div>

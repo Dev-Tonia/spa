@@ -13,6 +13,7 @@ const slides = [
     highlight: "processes.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg,
+    imageClass: "scale-105",
   },
   {
     title: "Pioneering IT-Enabled Services in  ",
@@ -20,6 +21,7 @@ const slides = [
     subtitle:
       "Shaping Africa’s future with reliable, transformative IT solutions.",
     bgImage: heroImg2,
+    imageClass: "scale-110",
   },
   {
     title: "Preparing young minds for global  ",
@@ -27,12 +29,14 @@ const slides = [
     subtitle:
       "Equipping the next generation with the tools to shape the global ICT landscape",
     bgImage: heroImg3,
+    imageClass: "scale-110",
   },
   {
     title: "IDM@School, The future of",
     highlight: "learning.",
     subtitle: "Leading the next frontier of innovation and technology",
     bgImage: studentsTheirUniforms,
+    imageClass: "scale-125",
   },
   {
     title: "Empowering Education Through Seamless",
@@ -40,6 +44,7 @@ const slides = [
     subtitle:
       "Streamlining education processes to enhance learning outcomes and student success",
     bgImage: heroImg5,
+    imageClass: "scale-115",
   },
 ];
 </script>
@@ -122,7 +127,14 @@ const slides = [
           </div>
           <!-- hero image -->
           <div class="w-4/12 hidden md:block">
-            <img :src="slide.bgImage" class="w-full h-auto" alt="Hero Image" />
+            <div class="h-[420px] lg:h-[520px] overflow-hidden">
+              <img
+                :src="slide.bgImage"
+                class="h-full w-full object-cover object-center transition-transform duration-300"
+                :class="slide.imageClass"
+                alt="Hero Image"
+              />
+            </div>
           </div>
         </div>
       </SwiperSlide>

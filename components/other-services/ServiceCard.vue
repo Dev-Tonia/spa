@@ -6,7 +6,7 @@
       class="flex flex-col p-6 sm:p-8 lg:p-10"
       :class="index % 2 ? 'md:order-2' : ''"
     >
-      <div class="mb-5 flex items-center gap-3">
+      <div class="mb-5 flex items-center gap-3" v-show="index">
         <span
           class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-lg font-bold text-white"
         >

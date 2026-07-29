@@ -9,7 +9,7 @@
           IDM Training
         </span>
         <h1
-          class="mt-5 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
+          class="mt-5 capitalize font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
         >
           Skills your team can put to work.
         </h1>

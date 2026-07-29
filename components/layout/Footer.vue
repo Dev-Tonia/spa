@@ -13,7 +13,7 @@ const toggleIsOpen = () => {
 </script>
 
 <template>
-  <footer class="bg-[#000017] text-gray-300 pt-9 pb-4">
+  <footer class="bg-[#000017] text-gray-300 pt-9 pb-4 text-sm leading-7">
     <div class="md:grid md:grid-cols-3 gap-6 wrapper">
       <div class="mb-6 md:mb-0 md:col-span-1">
         <div>
@@ -41,7 +41,7 @@ const toggleIsOpen = () => {
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:col-span-2">
         <div>
-          <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">
+          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em] dark:text-white">
             Company
           </h2>
           <ul class="">
@@ -61,9 +61,9 @@ const toggleIsOpen = () => {
               </div>
             </li> -->
             <li>
-              <NuxtLink class="hover:underline text-sm font-medium" to="/about">
-                About Us
-              </NuxtLink>
+            <NuxtLink class="hover:underline text-sm font-medium" to="/about">
+              About Us
+            </NuxtLink>
             </li>
             <li>
               <NuxtLink
@@ -84,7 +84,7 @@ const toggleIsOpen = () => {
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold uppercase">Industries</h2>
+          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">Industries</h2>
           <ul class="">
             <li
               class="mb-2"
@@ -98,7 +98,7 @@ const toggleIsOpen = () => {
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold uppercase">Solutions</h2>
+          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">Solutions</h2>
           <ul class="">
             <li
               class="mb-2"
@@ -120,7 +120,7 @@ const toggleIsOpen = () => {
         <span class="text-gray-300 inline-block mb-2"> Follows on:</span>
         <LayoutSocials class="gap-x-2" />
       </div>
-      <div class="text-sm text-gray-300 sm:text-center mb-4 sm:mb-0">
+      <div class="text-sm text-gray-300 sm:text-center mb-4 sm:mb-0 leading-6">
         © {{ currentYear }}
         <NuxtLink to="/" class="hover:underline text-primary font-medium">
           IDM

@@ -10,12 +10,26 @@
     font-weight: 700;
     src: url("/font/grifter-Bold-700.otf") format("otf");
   }
+
+  html {
+    @apply text-[16px];
+  }
+
+  body {
+    @apply font-nunito text-baseBlack text-base leading-7 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-tight;
+  }
 }
 .wrapper {
   @apply px-5 sm:px-10 md:px-16 lg:px-24;
-}
-body {
-  @apply font-nunito text-baseBlack;
 }
 html {
   scroll-behavior: smooth;

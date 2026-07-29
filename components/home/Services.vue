@@ -42,8 +42,8 @@ const contents = [
           <h3
             class="text-2xl sm:text-3xl lg:text-4xl font-bold font-grifter leading-9 md:leading-[48px] py-2"
           >
-            We provide complete consulting services to transform / perfect
-            business process
+            We provide complete consulting services to transform /
+            <span class="capitalize">perfect business process</span>
           </h3>
           <p class="font-medium text-lg">
             We are committed to meticulously planning, executing, and delivering

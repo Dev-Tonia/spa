@@ -36,12 +36,6 @@ const capabilities = [
             About IDM
           </span>
 
-          <h1
-            class="font-grifter mt-5 text-4xl font-bold leading-tight text-baseBlack sm:text-5xl lg:text-6xl"
-          >
-            Driving business success through innovative IT solutions.
-          </h1>
-
           <p class="mt-6 max-w-2xl text-lg leading-8 text-[#655F5F] md:text-xl">
             International Data Management Services Limited (IDM) was
             incorporated in Nigeria in 1981 and is affiliated with Comcraft
@@ -50,7 +44,7 @@ const capabilities = [
             SCM, CRM, and technology training solutions.
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4">
+          <!-- <div class="mt-8 flex flex-wrap gap-4">
             <NuxtLink
               to="/all-solutions"
               class="rounded-[10px] bg-primary px-5 py-3 text-sm font-bold text-white transition-transform duration-300 hover:-translate-y-0.5"
@@ -63,7 +57,7 @@ const capabilities = [
             >
               Talk to Our Team
             </NuxtLink>
-          </div>
+          </div> -->
 
           <div class="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             <div
@@ -90,8 +84,8 @@ const capabilities = [
             <p class="text-xs uppercase tracking-[0.28em] text-white/70">
               Trusted focus
             </p>
-            <p class="mt-2 max-w-[170px] text-lg font-bold leading-6">
-              SAP, ERP, CRM, and education technology
+            <p class="mt-2 max-w-[170px] font-bold leading-6">
+              SAP, ERP, CRM, and Education Technology
             </p>
           </div>
 

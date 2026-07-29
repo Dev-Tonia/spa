@@ -26,21 +26,6 @@ const principles = [
 <template>
   <section class="bg-white py-16 md:py-20">
     <div class="wrapper">
-      <div class="max-w-3xl">
-        <span
-          class="inline-flex items-center rounded-full bg-[#F3F6FF] px-4 py-2 text-sm font-semibold text-primary"
-        >
-          Mission, Vision & Values
-        </span>
-        <CommonSectionTitle
-          :data="{
-            title: 'The principles that shape every IDM project.',
-            description:
-              'We combine strategy, implementation, and support to create technology solutions that feel practical, dependable, and genuinely useful for businesses and schools.',
-          }"
-        />
-      </div>
-
       <div class="grid gap-6 lg:grid-cols-2 mt-10">
         <div
           class="rounded-[28px] border border-[#ECECEC] bg-[#FAFAFA] p-8 shadow-[0_16px_50px_rgba(26,26,26,0.05)]"
@@ -90,26 +75,6 @@ const principles = [
         </div>
       </div>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <div
-          v-for="principle in principles"
-          :key="principle.title"
-          class="rounded-[24px] border border-[#EAEAEA] bg-white p-6 shadow-[0_14px_40px_rgba(26,26,26,0.04)]"
-        >
-          <div
-            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary"
-          >
-            <Icon :name="principle.icon" class="text-2xl" />
-          </div>
-          <h4 class="mt-5 text-xl font-bold text-baseBlack">
-            {{ principle.title }}
-          </h4>
-          <p class="mt-3 leading-7 text-[#655F5F]">
-            {{ principle.description }}
-          </p>
-        </div>
-      </div>
-
       <div class="mt-14 grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div
           class="overflow-hidden rounded-[32px] border border-[#ECECEC] bg-[#FAFAFA] p-3 shadow-[0_18px_55px_rgba(26,26,26,0.08)]"
@@ -125,7 +90,7 @@ const principles = [
           <p
             class="font-grifter text-sm font-bold uppercase tracking-[0.24em] text-primary"
           >
-            Why clients work with IDM
+            Why clients partner with IDM
           </p>
           <h3
             class="mt-4 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl"

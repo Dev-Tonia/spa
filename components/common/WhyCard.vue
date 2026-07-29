@@ -17,10 +17,10 @@ const props = defineProps({
     </div>
 
     <div class="pt-10">
-      <h6 class="text-baseBlack text-2xl font-bold leading-[28.80px]">
+      <h6 class="text-baseBlack text-xl sm:text-2xl font-bold leading-tight">
         {{ content.tile }}
       </h6>
-      <p class="w-11/12 text-[#7A7474] text-base font-normal">
+      <p class="w-11/12 text-[#7A7474] text-sm sm:text-base font-normal leading-7">
         {{ content.description }}
       </p>
     </div>

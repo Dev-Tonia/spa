@@ -13,7 +13,7 @@ const props = defineProps({
       <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
         {{ title }}
       </h3>
-      <p class="py-4 text-lg md:text-xl">
+      <p class="py-4 text-base md:text-lg leading-7">
         {{ description }}
       </p>
 
@@ -25,8 +25,8 @@ const props = defineProps({
             <Icon :name="item.icon" class="text-5xl" />
           </div>
           <div class="">
-            <h2 class="font-bold text-xl py-6">{{ item.title }}</h2>
-            <ul class="list-disc pl-8">
+            <h2 class="font-bold text-lg sm:text-xl py-6">{{ item.title }}</h2>
+            <ul class="list-disc pl-8 text-sm sm:text-base leading-7">
               <li v-for="(item, index) in item.items" :key="index">
                 {{ item }}
               </li>
