@@ -3,7 +3,6 @@ import {
   heroImg,
   heroImg2,
   heroImg3,
-  heroImg4,
   studentsTheirUniforms,
   heroImg5,
 } from "../../lib/images";
@@ -127,7 +126,7 @@ const slides = [
           </div>
           <!-- hero image -->
           <div class="w-4/12 hidden md:block">
-            <div class="h-[420px] lg:h-[520px] overflow-hidden">
+            <div class="h-[60vh] lg:h-[80vh] overflow-hidden">
               <img
                 :src="slide.bgImage"
                 class="h-full w-full object-cover object-center transition-transform duration-300"

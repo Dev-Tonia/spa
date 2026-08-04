@@ -52,8 +52,8 @@ const contents = [
         </div>
       </div>
 
-      <div class="py-10">
-        <div class="grid gap-10 md:grid-cols-2">
+      <div class="py-5">
+        <div class="grid gap-5 md:grid-cols-2">
           <div
             class="border-[#E7EBEF] border bg-white rounded-[8px] p-6"
             v-for="(content, index) in contents"

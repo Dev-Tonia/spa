@@ -106,6 +106,20 @@
 
 <script setup lang="ts">
 import OtherServicesServiceCard from "@/components/other-services/ServiceCard.vue";
+import {
+  sapB1Training,
+  erpnextTraining,
+  erpnextCertification,
+  ExcelTraining,
+  ArtificialIntelligence,
+  CYBERSCECURITY,
+  Cloud,
+  pythonTraining,
+  Robotics,
+  CooperateTraining,
+  studentProgram,
+  powerBi2,
+} from "../lib/images";
 
 interface TrainingProgram {
   title: string;
@@ -147,6 +161,7 @@ const programs: TrainingProgram[] = [
   {
     title: "SAP Business One Training",
     icon: "ph:cube-fill",
+    image: sapB1Training,
     description:
       "Learn to run day-to-day operations in SAP Business One, from sales and purchasing to inventory and financials, with training tailored to your role.",
     featureTitle: "Training covers",
@@ -160,6 +175,7 @@ const programs: TrainingProgram[] = [
   {
     title: "ERPNext Functional Training",
     icon: "ph:squares-four-fill",
+    image: erpnextTraining,
     description:
       "A functional walkthrough of ERPNext for teams adopting the platform, covering the modules you'll use most in daily operations.",
     featureTitle: "Training covers",
@@ -173,6 +189,7 @@ const programs: TrainingProgram[] = [
   {
     title: "ERP Implementation Certification",
     icon: "ph:certificate-fill",
+    image: erpnextCertification,
     description:
       "A certification track for consultants and internal champions who will lead or support ERP rollouts, covering implementation methodology end to end.",
     featureTitle: "Training covers",
@@ -186,6 +203,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Data Analytics (Power BI)",
     icon: "ph:chart-bar-fill",
+    image: powerBi2,
     description:
       "Turn raw business data into dashboards that drive decisions, using Power BI's modeling, visualization, and reporting tools.",
     featureTitle: "Training covers",
@@ -199,6 +217,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Microsoft Excel (Basic to Advanced)",
     icon: "ph:table-fill",
+    image: ExcelTraining,
     description:
       "A progressive course from core spreadsheet skills through advanced formulas, pivot tables, and automation with macros.",
     featureTitle: "Training covers",
@@ -212,6 +231,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Artificial Intelligence",
     icon: "ph:robot-fill",
+    image: ArtificialIntelligence,
     description:
       "An introduction to practical AI: how machine learning models work, where they fit in business, and how to start applying them.",
     featureTitle: "Training covers",
@@ -225,6 +245,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Cybersecurity Awareness",
     icon: "ph:shield-check-fill",
+    image: CYBERSCECURITY,
     description:
       "Practical security training that helps staff recognize phishing, handle data safely, and follow good password and access hygiene.",
     featureTitle: "Training covers",
@@ -238,6 +259,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Cloud Computing",
     icon: "ph:cloud-fill",
+    image: Cloud,
     description:
       "A foundations course covering cloud concepts, deployment models, and how businesses migrate and manage workloads in the cloud.",
     featureTitle: "Training covers",
@@ -251,6 +273,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Python Programming",
     icon: "ph:code-fill",
+    image: pythonTraining,
     description:
       "Learn programming fundamentals with Python, from syntax and logic through to scripting for automation and data tasks.",
     featureTitle: "Training covers",
@@ -264,6 +287,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Robotics & IoT",
     icon: "ph:cpu-fill",
+    image: Robotics,
     description:
       "A hands-on program building and programming robotics kits and IoT sensors, connecting hardware to real-world logic.",
     featureTitle: "Training covers",
@@ -277,6 +301,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Corporate Training",
     icon: "ph:briefcase-fill",
+    image: CooperateTraining,
     description:
       "Customized training built around your organization's tools, workflows, and skill gaps, delivered on-site or remotely for your team.",
     featureTitle: "Training covers",
@@ -290,6 +315,7 @@ const programs: TrainingProgram[] = [
   {
     title: "Student Programs",
     icon: "ph:backpack-fill",
+    image: studentProgram,
     description:
       "Programs designed for students from pre-primary through senior secondary, building foundational and advanced ICT skills through hands-on learning.",
     featureTitle: "Training covers",

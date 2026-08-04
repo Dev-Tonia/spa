@@ -26,7 +26,8 @@ const props = defineProps({
   },
 });
 const isDropdownActive = computed(() => (key) => activeDropdown.value === key);
-const isRouteInDropdown = (items) => items.some((item) => route.path === item.to);
+const isRouteInDropdown = (items) =>
+  items.some((item) => route.path === item.to);
 
 const toggleDropdown = (key) => {
   activeDropdown.value = activeDropdown.value === key ? null : key;
@@ -67,28 +68,83 @@ watch(route, () => {
 
         <DropdownMenuContent class="overflow-hidden">
           <div class="max-h-[80vh] overflow-y-auto">
-            <div
-              class="w-screen wrapper grid min-[980px]:grid-cols-3 gap-6 p-4 mt-5"
-            >
-              <div
-                v-for="(item, index) in navLinks.solutions.items"
-                :key="index"
-              >
-                <DropdownMenuItem>
-                  <NuxtLink :to="item.to" class="min-[980px]:flex gap-4">
+            <div class="w-screen wrapper px-4 py-3 mt-4 lg:px-6">
+              <div class="grid gap-4 min-[980px]:grid-cols-2">
+                <div>
+                  <h6
+                    class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
+                  >
+                    Solutions
+                  </h6>
+                  <div class="space-y-1">
                     <div
-                      class="bg-primary min-[980px]:flex hidden items-center justify-center text-white w-14 h-14 rounded-xl p-4"
+                      v-for="(item, index) in navLinks.solutions.items.filter(
+                        (entry) => entry.category === 'solution',
+                      )"
+                      :key="index"
                     >
-                      <Icon :name="item.icon" class="text-4xl" />
+                      <DropdownMenuItem class="rounded-md p-0">
+                        <NuxtLink
+                          :to="item.to"
+                          class="flex items-start gap-2 rounded-md px-2 py-1.5 hover:bg-neutral-100"
+                        >
+                          <Icon
+                            :name="item.icon"
+                            class="mt-0.5 text-lg text-primary"
+                          />
+                          <span class="min-w-0">
+                            <span
+                              class="block text-sm leading-5 text-neutral-700"
+                              >{{ item.name }}</span
+                            >
+                            <span
+                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
+                              >{{ item.description }}</span
+                            >
+                          </span>
+                        </NuxtLink>
+                      </DropdownMenuItem>
                     </div>
-                    <div>
-                      <h6 class="text-sm lg:text-base">{{ item.name }}</h6>
-                      <p class="min-[980px]:flex hidden text-sm leading-6">
-                        {{ item.description }}
-                      </p>
+                  </div>
+                </div>
+
+                <div>
+                  <h6
+                    class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
+                  >
+                    Services
+                  </h6>
+                  <div class="space-y-1">
+                    <div
+                      v-for="(item, index) in navLinks.solutions.items.filter(
+                        (entry) => entry.category === 'service',
+                      )"
+                      :key="index"
+                    >
+                      <DropdownMenuItem class="rounded-md p-0">
+                        <NuxtLink
+                          :to="item.to"
+                          class="flex items-start gap-2 rounded-md px-2 py-1.5 hover:bg-neutral-100"
+                        >
+                          <Icon
+                            :name="item.icon"
+                            class="mt-0.5 text-lg text-primary"
+                          />
+                          <span class="min-w-0">
+                            <span
+                              class="block text-sm leading-5 text-neutral-700"
+                              >{{ item.name }}</span
+                            >
+                            <span
+                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
+                              >{{ item.description }}</span
+                            >
+                          </span>
+                        </NuxtLink>
+                      </DropdownMenuItem>
                     </div>
-                  </NuxtLink>
-                </DropdownMenuItem>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
