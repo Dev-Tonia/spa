@@ -127,7 +127,11 @@ const graphicsContents = [
               />
             </div>
             <div>
-              <img :src="robotics" alt="" />
+              <img
+                :src="robotics"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -138,22 +142,28 @@ const graphicsContents = [
             title: 'Artificial Intelligence (AI)',
           }"
         >
-          <div class="py-4">
-            <p class="text-neutral-500">
-              We provide a foundational understanding of AI concepts, our
-              courses delve into machine learning, neural networks, and data
-              analysis, preparing students for a future driven by intelligent
-              systems.
-            </p>
-            <NuxtLink
-              to="/ai-robotics"
-              class="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-bold text-white transition-colors hover:bg-white hover:text-secondary"
-            >
-              Learn more about our AI & Robotics programme
-              <Icon name="ri:arrow-right-line" class="text-xl" />
-            </NuxtLink>
-            <div class="mt-4">
-              <img :src="ai" alt="" />
+          <div class="flex flex-col md:flex-row-reverse gap-6 lg:gap-10 py-4">
+            <div>
+              <p class="text-neutral-500">
+                We provide a foundational understanding of AI concepts, our
+                courses delve into machine learning, neural networks, and data
+                analysis, preparing students for a future driven by intelligent
+                systems.
+              </p>
+              <NuxtLink
+                to="/ai-robotics"
+                class="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-bold text-white transition-colors hover:bg-white hover:text-secondary"
+              >
+                Learn more about our AI & Robotics programme
+                <Icon name="ri:arrow-right-line" class="text-xl" />
+              </NuxtLink>
+            </div>
+            <div>
+              <img
+                :src="ai"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -164,7 +174,7 @@ const graphicsContents = [
             title: 'Software Programming (Coding)',
           }"
         >
-          <div class="flex flex-col gap-6 lg:gap-10 py-4">
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
             <div class="">
               <p class="text-neutral-500">
                 Introducing students to the language of the future, our coding
@@ -174,7 +184,11 @@ const graphicsContents = [
               </p>
             </div>
             <div class="">
-              <img :src="coding" alt="" class="w-full" />
+              <img
+                :src="coding"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -194,7 +208,11 @@ const graphicsContents = [
               </p>
             </div>
             <div>
-              <img :src="gameDev" alt="" />
+              <img
+                :src="gameDev"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -205,14 +223,20 @@ const graphicsContents = [
             title: 'Database Management',
           }"
         >
-          <div class="py-4">
-            <p class="text-neutral-500">
-              Database Management is a free open source database management
-              system (DBMS). It manages databases and connects them to
-              software’s.
-            </p>
-            <div class="mt-4">
-              <img :src="biIntergration" alt="" />
+          <div class="flex flex-col md:flex-row-reverse gap-6 lg:gap-10 py-4">
+            <div>
+              <p class="text-neutral-500">
+                Database Management is a free open source database management
+                system (DBMS). It manages databases and connects them to
+                software’s.
+              </p>
+            </div>
+            <div>
+              <img
+                :src="biIntergration"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -223,15 +247,21 @@ const graphicsContents = [
             title: 'Animation and Multimedia',
           }"
         >
-          <div class="py-4">
-            <p class="text-neutral-500">
-              Encouraging creativity and storytelling, our animation and media
-              courses cover everything from basic animation techniques to
-              advanced media production, enabling students to bring their
-              imaginations to life.
-            </p>
-            <div class="mt-4">
-              <img :src="animation" alt="" />
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
+            <div>
+              <p class="text-neutral-500">
+                Encouraging creativity and storytelling, our animation and media
+                courses cover everything from basic animation techniques to
+                advanced media production, enabling students to bring their
+                imaginations to life.
+              </p>
+            </div>
+            <div>
+              <img
+                :src="animation"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -242,16 +272,22 @@ const graphicsContents = [
             title: '3D Modelling',
           }"
         >
-          <div class="py-4">
-            <p class="text-neutral-500">
-              Blender’s features include 3D modelling, texturing, UV unwrapping,
-              raster graphics editing, rigging and skinning, fluid and smoke
-              simulation, particle simulation, soft body simulation, sculpting,
-              animating, match moving, camera tracking, rendering, video editing
-              and composting.
-            </p>
-            <div class="mt-4">
-              <img :src="modelling" alt="" />
+          <div class="flex flex-col md:flex-row-reverse gap-6 lg:gap-10 py-4">
+            <div>
+              <p class="text-neutral-500">
+                Blender’s features include 3D modelling, texturing, UV
+                unwrapping, raster graphics editing, rigging and skinning, fluid
+                and smoke simulation, particle simulation, soft body simulation,
+                sculpting, animating, match moving, camera tracking, rendering,
+                video editing and composting.
+              </p>
+            </div>
+            <div>
+              <img
+                :src="modelling"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -262,15 +298,21 @@ const graphicsContents = [
             title: 'Microsoft Suites',
           }"
         >
-          <div class="py-4">
-            <p class="text-neutral-500">
-              Equipping students with essential office productivity skills, our
-              courses on Microsoft Suites cover Word, Excel, PowerPoint, and
-              more, ensuring proficiency in essential tools for academic and
-              professional success.
-            </p>
-            <div class="mt-4">
-              <img :src="microsoft" alt="" />
+          <div class="flex flex-col md:flex-row gap-6 lg:gap-10 py-4">
+            <div>
+              <p class="text-neutral-500">
+                Equipping students with essential office productivity skills,
+                our courses on Microsoft Suites cover Word, Excel, PowerPoint,
+                and more, ensuring proficiency in essential tools for academic
+                and professional success.
+              </p>
+            </div>
+            <div>
+              <img
+                :src="microsoft"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>
@@ -307,7 +349,7 @@ const graphicsContents = [
             title: 'Graphics Design',
           }"
         >
-          <div class="flex flex-col gap-6 lg:gap-10 py-4">
+          <div class="flex flex-col md:flex-row-reverse gap-6 lg:gap-10 py-4">
             <div class="">
               <p class="text-neutral-500">
                 Fostering artistic expression, our graphics design courses cover
@@ -316,7 +358,11 @@ const graphicsContents = [
               </p>
             </div>
             <div class="">
-              <img :src="graphics" alt="" class="w-full" />
+              <img
+                :src="graphics"
+                alt=""
+                class="h-56 w-full rounded-lg object-cover md:h-64 lg:h-72"
+              />
             </div>
           </div>
         </IdmSchoolIdmAccordion>

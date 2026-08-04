@@ -17,7 +17,7 @@ import {
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const activeDropdown = ref(null);
+const hoveredDropdown = ref(null);
 
 const props = defineProps({
   isOpen: { type: Boolean },
@@ -25,13 +25,28 @@ const props = defineProps({
     type: Function,
   },
 });
-const isDropdownActive = computed(() => (key) => activeDropdown.value === key);
+
 const isRouteInDropdown = (items) =>
   items.some((item) => route.path === item.to);
 
-const toggleDropdown = (key) => {
-  activeDropdown.value = activeDropdown.value === key ? null : key;
+const setHoveredDropdown = (key) => {
+  hoveredDropdown.value = key;
 };
+
+const clearHoveredDropdown = (key) => {
+  if (hoveredDropdown.value === key) {
+    hoveredDropdown.value = null;
+  }
+};
+
+const isDropdownTriggerActive = (key, items) => {
+  if (hoveredDropdown.value) {
+    return hoveredDropdown.value === key;
+  }
+
+  return isRouteInDropdown(items);
+};
+
 watch(route, () => {
   if (window.innerWidth <= 850 && typeof props.updateIsOpen === "function") {
     props.updateIsOpen();
@@ -50,16 +65,18 @@ watch(route, () => {
     <li class="pt-4 min-[850px]:pt-0">
       <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
-    <li class="cursor-pointer hidden min-[850px]:flex">
+    <li
+      class="cursor-pointer hidden min-[850px]:flex"
+      @mouseenter="setHoveredDropdown('solutions')"
+      @mouseleave="clearHoveredDropdown('solutions')"
+    >
       <!-- This used on the lager screen  -->
       <DropdownMenu class="">
         <DropdownMenuTrigger
-          @click="toggleDropdown('solutions')"
           class="flex space-x-2 items-center"
           :class="{
-            'text-primary border-b-2 border-b-primary pb-1': isRouteInDropdown(
-              navLinks.solutions.items,
-            ),
+            'text-primary border-b-2 border-b-primary pb-1':
+              isDropdownTriggerActive('solutions', navLinks.solutions.items),
           }"
         >
           <span> {{ navLinks.solutions.title }} </span>
@@ -177,16 +194,18 @@ watch(route, () => {
       <NuxtLink to="/idm-@-school"> School Education </NuxtLink>
     </li>
 
-    <li class="cursor-pointer hidden min-[850px]:flex">
+    <li
+      class="cursor-pointer hidden min-[850px]:flex"
+      @mouseenter="setHoveredDropdown('industries')"
+      @mouseleave="clearHoveredDropdown('industries')"
+    >
       <!-- This used on the lager screen  -->
       <DropdownMenu class="">
         <DropdownMenuTrigger
-          @click="toggleDropdown('industries')"
           class="flex space-x-2 items-center"
           :class="{
-            'text-primary border-b-2 border-b-primary pb-1': isRouteInDropdown(
-              navLinks.industries.items,
-            ),
+            'text-primary border-b-2 border-b-primary pb-1':
+              isDropdownTriggerActive('industries', navLinks.industries.items),
           }"
         >
           <span> {{ navLinks.industries.title }} </span>

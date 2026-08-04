@@ -4,7 +4,7 @@ import { image5, idmSap5 } from "../../lib/images";
 const highlights = [
   { label: "Established", value: "Since 1981" },
   { label: "Core focus", value: "ERP & CRM" },
-  { label: "Education", value: "School solutions" },
+  { label: "Education", value: "School Solutions" },
   { label: "Partnering with", value: "SAP" },
 ];
 
