@@ -58,10 +58,10 @@ function closeModal() {
 <template>
   <form
     @submit.prevent="submit"
-    class="mx-auto mt-10 flex w-full flex-col bg-secondary text-white rounded-lg p-8 shadow-2xl md:mt-0 min-[900px]:w-11/12"
+    class="mx-auto mt-10 flex w-full flex-col rounded-lg border border-[#DCE6F2] bg-white p-8 text-[#12324D] shadow-xl md:mt-0 min-[900px]:w-11/12"
   >
     <div class="mb-7 pt-5">
-      <h2 class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3">
+      <h2 class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3 text-[#12324D]">
         We're Here To Help!
       </h2>
     </div>
@@ -118,18 +118,18 @@ function closeModal() {
       type="text"
       :error="v$.designation.$error"
     />
-    <div class="relative mb-4">
-      <label for="enquiry" class="text-sm leading-7 text-gray-400"
+      <div class="relative mb-4">
+      <label for="enquiry" class="text-sm leading-7 text-[#5C6B7A]"
         >Enquiry Type</label
       >
       <div class="relative">
         <select
           name="cars"
           id="cars"
-          class="w-full rounded border border-gray-600 bg-transparent bg-opacity-20 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out placeholder:text-gray-500 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-transparent"
+          class="w-full rounded border border-[#C7D6E6] bg-white py-1 px-3 text-base leading-8 text-[#12324D] outline-none transition-colors duration-200 ease-in-out placeholder:text-[#8A97A6] focus:border-[#2B6CB0] focus:ring-2 focus:ring-[#2B6CB0]/10"
           :class="{
             'border-red-500 focus:border-red-500': error,
-            'border-[#42d392] ': !error,
+            'border-[#2B6CB0] ': !error,
           }"
         >
           <optgroup label="SAP">
@@ -155,7 +155,7 @@ function closeModal() {
     <div>
       <button
         type="submit"
-        class="rounded border-0 bg-primary py-2 px-8 font-bold text-gray-100 transition-colors duration-500 focus:outline-none"
+        class="rounded border-0 bg-[#12324D] py-2 px-8 font-bold text-white transition-colors duration-500 hover:bg-[#2B6CB0] focus:outline-none"
       >
         Submit
       </button>
@@ -170,6 +170,6 @@ function closeModal() {
 </template>
 <style>
 optgroup {
-  @apply text-gray-950;
+  @apply text-[#12324D];
 }
 </style>

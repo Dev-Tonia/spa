@@ -85,6 +85,46 @@
           />
         </div>
       </div>
+      <div class="py-7">
+        <LazyAddOnSubTitle
+          :data="{
+            title: 'Flexible Packaging Production and Planning',
+            description: `A flexible packaging production and planning add-on helps manage order scheduling, material planning, production monitoring, and delivery coordination for packaging workflows. It improves visibility across raw materials, machine loading, work orders, and production timelines.`,
+          }"
+        />
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
+          <AddOnFeaturesCard
+            v-for="(flexPackagingContent, index) in flexPackagingContents"
+            :key="index"
+            :content="flexPackagingContent"
+            :class="{
+              'min-[500px]:col-span-2': isLastCard(index, flexPackagingContents),
+            }"
+          />
+        </div>
+      </div>
+      <div class="py-7">
+        <LazyAddOnSubTitle
+          :data="{
+            title: 'Corrugation Box Manufacturing Process',
+            description: `A corrugation box manufacturing process add-on supports production planning, job tracking, material usage, quality checks, and dispatch management for corrugated packaging operations. It helps businesses control each stage from board preparation to finished box delivery.`,
+          }"
+        />
+        <div
+          class="grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 py-16"
+        >
+          <AddOnFeaturesCard
+            v-for="(corrugationContent, index) in corrugationContents"
+            :key="index"
+            :content="corrugationContent"
+            :class="{
+              'min-[500px]:col-span-2': isLastCard(index, corrugationContents),
+            }"
+          />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -220,6 +260,74 @@ const reportContents = [
     id: 6,
     title: "Take your business to a new level",
     description: `Businesses can achieve higher customer satisfaction, increased sales, and streamlined operations.`,
+    btn: "Learn More",
+  },
+];
+
+const flexPackagingContents = [
+  {
+    id: 1,
+    title: "Production Planning",
+    description:
+      "Plan jobs based on customer demand, machine availability, and raw material stock.",
+  },
+  {
+    id: 2,
+    title: "Material Requirement Control",
+    description:
+      "Track film, ink, laminates, and other packaging materials required for every production run.",
+  },
+  {
+    id: 3,
+    title: "Work Order Tracking",
+    description:
+      "Monitor each order from approval through execution, packing, and dispatch.",
+  },
+  {
+    id: 4,
+    title: "Delivery Coordination",
+    description:
+      "Align production completion with logistics and customer delivery timelines.",
+  },
+  {
+    id: 5,
+    title: "Take your business to a new level",
+    description:
+      "Improve throughput, reduce shortages, and keep production schedules visible across teams.",
+    btn: "Learn More",
+  },
+];
+
+const corrugationContents = [
+  {
+    id: 1,
+    title: "Board and Material Planning",
+    description:
+      "Manage kraft paper, liners, adhesives, and other materials used in corrugation operations.",
+  },
+  {
+    id: 2,
+    title: "Box Production Scheduling",
+    description:
+      "Schedule jobs by machine capacity, order priority, and due date.",
+  },
+  {
+    id: 3,
+    title: "Process Stage Monitoring",
+    description:
+      "Track flute making, cutting, printing, slotting, folding, and gluing stages.",
+  },
+  {
+    id: 4,
+    title: "Quality and Dispatch Control",
+    description:
+      "Support inspection, rejection handling, packing, and dispatch of finished boxes.",
+  },
+  {
+    id: 5,
+    title: "Take your business to a new level",
+    description:
+      "Gain better control over production efficiency, material usage, and on-time delivery.",
     btn: "Learn More",
   },
 ];

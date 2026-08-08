@@ -47,23 +47,6 @@
       </NuxtLink>
     </div>
 
-    <!-- <div
-      class="bg-secondary/5 p-6 sm:p-8 lg:p-10"
-      :class="index % 2 ? 'md:order-1' : ''"
-    >
-      <img
-        v-if="service.image"
-        :src="service.image"
-        :alt="`${service.title} illustration`"
-        class="h-full min-h-20 w-full rounded-2xl object-cover"
-      />
-      <OtherServicesImagePlaceholder
-        v-else
-        class="h-full"
-        :label="service.title"
-        :icon="service.icon"
-      />
-    </div> -->
 
     <div
       class="min-h-0 bg-secondary/5 p-6 sm:p-8 lg:p-10"
@@ -76,7 +59,7 @@
         <img
           :src="service.image"
           :alt="`${service.title} illustration`"
-          class="h-full w-full object-contain"
+          class="h-full w-full object-cover object-center"
         />
       </div>
       <OtherServicesImagePlaceholder

@@ -27,7 +27,7 @@ const props = defineProps({
     </DialogTrigger>
     <DialogScrollContent class="w-11/12 sm:w-9/12 md:w-7/12">
       <DialogHeader class="px-8">
-        <DialogTitle class="text-center font-bold text-2xl font-grifter"
+        <DialogTitle class="text-center font-bold text-2xl font-grifter text-[#12324D]"
           >Request A Demo</DialogTitle
         >
         <!-- <DialogDescription>

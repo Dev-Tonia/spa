@@ -12,7 +12,7 @@ const slides = [
     highlight: "processes.",
     subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
     bgImage: heroImg,
-    imageClass: "scale-105",
+    imageClass: "scale-100",
   },
   {
     title: "Pioneering IT-Enabled Services in  ",
@@ -20,7 +20,7 @@ const slides = [
     subtitle:
       "Shaping Africa’s future with reliable, transformative IT solutions.",
     bgImage: heroImg2,
-    imageClass: "scale-110",
+    imageClass: "scale-100",
   },
   {
     title: "Preparing young minds for global  ",
@@ -28,14 +28,14 @@ const slides = [
     subtitle:
       "Equipping the next generation with the tools to shape the global ICT landscape",
     bgImage: heroImg3,
-    imageClass: "scale-110",
+    imageClass: "scale-100",
   },
   {
     title: "IDM@School, The future of",
     highlight: "learning.",
     subtitle: "Leading the next frontier of innovation and technology",
     bgImage: studentsTheirUniforms,
-    imageClass: "scale-125",
+    imageClass: "scale-100",
   },
   {
     title: "Empowering Education Through Seamless",
@@ -43,7 +43,7 @@ const slides = [
     subtitle:
       "Streamlining education processes to enhance learning outcomes and student success",
     bgImage: heroImg5,
-    imageClass: "scale-115",
+    imageClass: "scale-100",
   },
 ];
 </script>
@@ -53,7 +53,7 @@ const slides = [
   <div class="hero-sec"></div>
 
   <!-- Main content section -->
-  <section class="hero-carousel relative z-10 h-[90%]">
+  <section class="hero-carousel relative z-10 min-h-[90vh]">
     <Swiper
       class="hero-swiper"
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
@@ -80,7 +80,7 @@ const slides = [
       @slideChange="onSlideChange"
     >
       <SwiperSlide v-for="slide in slides" :key="slide">
-        <div class="flex items-center justify-center pt-6">
+        <div class="flex min-h-[90vh] items-center justify-center py-6">
           <!-- intro text -->
           <div class="px-6 sm:px-10 md:pr-0 md:pl-16 lg:pl-24 md:w-8/12">
             <!-- <div class="flex items-center py-5">
@@ -125,11 +125,11 @@ const slides = [
             </div>
           </div>
           <!-- hero image -->
-          <div class="w-4/12 hidden md:block">
-            <div class="h-[60vh] lg:h-[80vh] overflow-hidden">
+          <div class="hidden w-4/12 md:flex">
+            <div class="flex h-full w-full items-center justify-center">
               <img
                 :src="slide.bgImage"
-                class="h-full w-full object-cover object-center transition-transform duration-300"
+                class="h-[70vh] w-auto max-w-full object-contain object-center transition-transform duration-300"
                 :class="slide.imageClass"
                 alt="Hero Image"
               />
