@@ -25,19 +25,17 @@
           }"
           class="md:w-1/2"
         >
-          <div
-            class="relative pt-10 h-0 pb-[100%] min-[470px]:pb-[80%] min-[550px]:pb-[70%] md:pb-[110%] lg:pb-[100%] xl:pb-[80%]"
-          >
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
             <img
               :src="ams1"
               alt="Financial image 2 "
-              class="absolute w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-start rounded-lg object-cover shadow-sm"
               loading="lazy"
             />
             <img
               :src="ams2"
               alt="Financial image 1"
-              class="absolute right-0 translate-y-1/2 w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-end rounded-lg object-cover shadow-sm min-[520px]:mt-12"
               loading="lazy"
             />
           </div>
@@ -49,20 +47,18 @@
           }"
           class="md:w-1/2"
         >
-          <div
-            class="relative pt-10 h-0 pb-[100%] min-[470px]:pb-[80%] min-[550px]:pb-[70%] md:pb-[110%] lg:pb-[100%] xl:pb-[80%]"
-          >
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
             <img
               :src="sms1"
               alt="Financial image 2"
-              class="absolute w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-start rounded-lg object-cover shadow-sm"
               loading="lazy"
             />
             <img
               :src="sms2"
               alt="Financial image 1"
               loading="lazy"
-              class="absolute right-0 translate-y-1/2 w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-end rounded-lg object-cover shadow-sm min-[520px]:mt-12"
             />
           </div>
         </S4HanaS4card>
@@ -116,19 +112,17 @@
           }"
           class="md:w-1/2"
         >
-          <div
-            class="relative pt-10 h-0 pb-[100%] min-[470px]:pb-[80%] min-[550px]:pb-[70%] md:pb-[110%] lg:pb-[100%] xl:pb-[80%]"
-          >
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
             <img
               :src="lm1"
               alt="Financial image 2 "
-              class="absolute w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-start rounded-lg object-cover shadow-sm"
               loading="lazy"
             />
             <img
               :src="lm2"
               alt="Financial image 1"
-              class="absolute right-0 translate-y-1/2 w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-end rounded-lg object-cover shadow-sm min-[520px]:mt-12"
               loading="lazy"
             />
           </div>
@@ -140,20 +134,18 @@
           }"
           class="md:w-1/2"
         >
-          <div
-            class="relative pt-10 h-0 pb-[100%] min-[470px]:pb-[80%] min-[550px]:pb-[70%] md:pb-[110%] lg:pb-[100%] xl:pb-[80%]"
-          >
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
             <img
               :src="ems1"
               alt="Financial image 2"
-              class="absolute w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-start rounded-lg object-cover shadow-sm"
               loading="lazy"
             />
             <img
               :src="ems2"
               alt="Financial image 1"
               loading="lazy"
-              class="absolute right-0 translate-y-1/2 w-[250px] min-[400px]:w-[300px] sm:w-[350px]"
+              class="w-full max-w-[420px] justify-self-end rounded-lg object-cover shadow-sm min-[520px]:mt-12"
             />
           </div>
         </S4HanaS4card>

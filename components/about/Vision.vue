@@ -36,7 +36,7 @@ const principles = [
             Our Mission
           </p>
           <h3
-            class="mt-4 font-grifter text-3xl font-bold leading-tight text-baseBlack"
+            class="mt-4 font-grifter text-3xl font-bold leading-tight text-baseBlack sm:text-4xl"
           >
             Perfect business processes and transform education across Africa.
           </h3>
@@ -56,7 +56,9 @@ const principles = [
           >
             Our Vision
           </p>
-          <h3 class="mt-4 font-grifter text-3xl font-bold leading-tight">
+          <h3
+            class="mt-4 font-grifter text-3xl font-bold leading-tight sm:text-4xl"
+          >
             Africa's most trusted technology partner.
           </h3>
           <p class="mt-4 text-lg leading-8 text-white/85">
@@ -97,7 +99,7 @@ const principles = [
           >
             A practical partner for long-term growth.
           </h3>
-          <div class="mt-6 space-y-5">
+          <div class="mt-6 space-y-2">
             <div class="flex gap-4">
               <span class="mt-2 h-3 w-3 rounded-full bg-primary"></span>
               <p class="text-lg leading-8 text-[#655F5F]">
