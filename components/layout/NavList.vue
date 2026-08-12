@@ -271,12 +271,12 @@ watch(route, () => {
     <li class="py-4 min-[850px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
     </li>
-    <li class="pb-4 min-[850px]:hidden">
+    <!-- <li class="pb-4 hidden min-[850px]:block">
       <Button
         class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito"
         >Request a demo
       </Button>
-    </li>
+    </li> -->
   </ul>
 </template>
 
