@@ -82,7 +82,9 @@ const service = {
 <template>
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
-      <OtherServicesServiceCard :service="service" />
+      <div class="max-w-5xl mx-auto">
+        <OtherServicesServiceCard :service="service" :index="2" />
+      </div>
 
       <div class="text-center max-w-3xl mx-auto mt-16">
         <h3

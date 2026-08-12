@@ -93,7 +93,7 @@ const principles = [
           >
             A practical partner for long-term growth.
           </h3>
-          <div class="mt-6 space-y-2">
+          <div class="mt-6 space-y-1">
             <div class="flex gap-4">
               <span class="mt-2 h-3 w-3 rounded-full bg-primary"></span>
               <p class="text-lg leading-8 text-[#655F5F]">
