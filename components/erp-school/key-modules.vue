@@ -25,7 +25,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 ">
             <img
               :src="ams1"
               alt="Financial image 2 "
@@ -47,7 +47,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 ">
             <img
               :src="sms1"
               alt="Financial image 2"
@@ -112,7 +112,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 ">
             <img
               :src="lm1"
               alt="Financial image 2 "
@@ -134,7 +134,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2">
             <img
               :src="ems1"
               alt="Financial image 2"

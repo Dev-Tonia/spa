@@ -27,7 +27,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2">
             <img
               :src="af_1"
               alt="Financial image 2 "
@@ -49,7 +49,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2">
             <img
               :src="scm_1"
               alt="Financial image 2"
@@ -117,7 +117,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2">
             <img
               :src="ucb_1"
               alt="Quality Management image 2 "
@@ -139,7 +139,7 @@
           }"
           class="md:w-1/2"
         >
-          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2 gap-4">
+          <div class="mt-10 grid grid-cols-1 min-[520px]:grid-cols-2">
             <img
               :src="ps_1"
               alt="Project Systems image 2"
