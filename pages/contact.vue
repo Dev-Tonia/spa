@@ -1,8 +1,10 @@
 <script setup></script>
 
 <template>
-  <LazyContactHero />
-  <LazyContactGetInTouch />
+  <div class="mx-auto max-w-[1320px]">
+    <LazyContactHero />
+    <LazyContactGetInTouch />
+  </div>
   <LazyCommonClients />
 </template>
 

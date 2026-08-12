@@ -31,13 +31,13 @@ const capabilities = [
       <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           <span
-            class="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary"
+            class="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-2xl font-bold uppercase text-primary"
           >
             About IDM
           </span>
 
           <h1
-            class="mt-6 max-w-2xl font-grifter text-4xl font-bold leading-tight text-baseBlack sm:text-5xl lg:text-6xl"
+            class="mt-6 max-w-2xl font-grifter text-4xl font-semibold leading-tight text-baseBlack sm:text-5xl lg:text-6xl"
           >
             Building practical technology solutions for business and education.
           </h1>

@@ -13,13 +13,13 @@ import { vector, group1, group2, group3, group4 } from "../../lib/images";
           <div
             class="min-[400px]:w-10/12 sm:w-7/12 z-[12] flex items-center justify-center flex-col text-center"
           >
-            <p class="max-w-2xl text-base sm:text-lg leading-7 text-[#2F2A2A]">
+            <p class="max-w-2xl text-xl sm:text-2xl leading-8 text-[#0f0d0d]">
               Learn how IDM can help your business scale and become the final
               piece in the puzzle of uninterrupted growth.
             </p>
             <div class="pt-9">
               <button
-                class="sm:text-base text-sm md:text-lg font-bold text-white bg-primary rounded-[8px] py-3 px-4 sm:px-5 shadow-md"
+                class="sm:text-lg text-base md:text-xl font-bold text-white bg-primary rounded-[8px] py-3 px-4 sm:px-5 shadow-md"
                 @click="navigateTo('/contact')"
               >
                 Contact Our Expert

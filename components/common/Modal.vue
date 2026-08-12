@@ -25,9 +25,10 @@ const props = defineProps({
     <DialogTrigger as-child>
       <Button variant="outline" :class="class"> {{ title }} </Button>
     </DialogTrigger>
-    <DialogScrollContent class="w-11/12 sm:w-9/12 md:w-7/12">
+    <DialogScrollContent class="w-11/12 sm:w-6/12 md:w-4/12">
       <DialogHeader class="px-8">
-        <DialogTitle class="text-center font-bold text-2xl font-grifter text-[#12324D]"
+        <DialogTitle
+          class="text-center font-bold text-2xl font-grifter text-[#12324D]"
           >Request A Demo</DialogTitle
         >
         <!-- <DialogDescription>

@@ -47,14 +47,13 @@
       </NuxtLink>
     </div>
 
-
     <div
-      class="min-h-0 bg-secondary/5 p-6 sm:p-8 lg:p-10"
+      class="min-h-0 bg-secondary/5 p-1"
       :class="index % 2 ? 'md:order-1' : ''"
     >
       <div
         v-if="service.image"
-        class="h-[400px] bg-white rounded-2xl overflow-hidden w-[400px] mx-auto"
+        class="h-full bg-white rounded-2xl overflow-hidden w-full mx-auto"
       >
         <img
           :src="service.image"

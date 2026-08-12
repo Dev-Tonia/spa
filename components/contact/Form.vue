@@ -61,7 +61,9 @@ function closeModal() {
     class="mx-auto mt-10 flex w-full flex-col rounded-lg border border-[#DCE6F2] bg-white p-8 text-[#12324D] shadow-xl md:mt-0 min-[900px]:w-11/12"
   >
     <div class="mb-7 pt-5">
-      <h2 class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3 text-[#12324D]">
+      <h2
+        class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3 text-[#12324D]"
+      >
         We're Here To Help!
       </h2>
     </div>
@@ -100,25 +102,27 @@ function closeModal() {
       :error="v$.email.$error"
     />
     <!-- Company/school -->
-    <ContactCustomInput
-      class="w-full"
-      v-model="formData.companyType"
-      place-holder="Enter Your company or school"
-      label="Company Type"
-      id="company"
-      type="text"
-      :error="v$.companyType.$error"
-    />
-    <ContactCustomInput
-      class="w-full"
-      v-model="formData.designation"
-      place-holder="Enter Your designation"
-      label="Company Type"
-      id="company"
-      type="text"
-      :error="v$.designation.$error"
-    />
-      <div class="relative mb-4">
+    <div class="flex gap-4">
+      <ContactCustomInput
+        class="w-full"
+        v-model="formData.companyType"
+        place-holder="Enter Your company or school"
+        label="Company Type"
+        id="company"
+        type="text"
+        :error="v$.companyType.$error"
+      />
+      <ContactCustomInput
+        class="w-full"
+        v-model="formData.designation"
+        place-holder="Enter Your designation"
+        label="Company Designation"
+        id="designation"
+        type="text"
+        :error="v$.designation.$error"
+      />
+    </div>
+    <div class="relative mb-4">
       <label for="enquiry" class="text-sm leading-7 text-[#5C6B7A]"
         >Enquiry Type</label
       >

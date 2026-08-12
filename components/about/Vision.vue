@@ -30,13 +30,11 @@ const principles = [
         <div
           class="rounded-[28px] border border-[#ECECEC] bg-[#FAFAFA] p-8 shadow-[0_16px_50px_rgba(26,26,26,0.05)]"
         >
-          <p
-            class="font-grifter text-sm font-bold uppercase tracking-[0.24em] text-primary"
-          >
+          <p class="font-grifter text-2xl font-bold uppercase text-primary">
             Our Mission
           </p>
           <h3
-            class="mt-4 font-grifter text-3xl font-bold leading-tight text-baseBlack sm:text-4xl"
+            class="mt-4 font-grifter text-3xl font-semibold leading-tight text-baseBlack sm:text-4xl"
           >
             Perfect business processes and transform education across Africa.
           </h3>
@@ -51,13 +49,11 @@ const principles = [
         <div
           class="rounded-[28px] border border-[#ECECEC] bg-baseBlack p-8 text-white shadow-[0_16px_50px_rgba(26,26,26,0.12)]"
         >
-          <p
-            class="font-grifter text-sm font-bold uppercase tracking-[0.24em] text-white/70"
-          >
+          <p class="font-grifter text-2xl font-bold uppercase text-white/70">
             Our Vision
           </p>
           <h3
-            class="mt-4 font-grifter text-3xl font-bold leading-tight sm:text-4xl"
+            class="mt-4 font-grifter text-3xl font-semibold leading-tight sm:text-4xl"
           >
             Africa's most trusted technology partner.
           </h3>
@@ -89,13 +85,11 @@ const principles = [
         </div>
 
         <div>
-          <p
-            class="font-grifter text-sm font-bold uppercase tracking-[0.24em] text-primary"
-          >
+          <p class="font-grifter text-2xl font-bold uppercase text-primary">
             Why clients partner with IDM
           </p>
           <h3
-            class="mt-4 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl"
+            class="mt-4 font-grifter text-3xl font-semibold text-baseBlack sm:text-4xl"
           >
             A practical partner for long-term growth.
           </h3>
