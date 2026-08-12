@@ -17,7 +17,7 @@
       </div>
 
       <!-- first card section -->
-      <div class="md:flex space-y-6 md:space-y-0 gap-10 my-10">
+      <div class="md:flex items-end space-y-3 md:space-y-0 gap-5 my-5">
         <S4HanaS4card
           :data="{
             title: 'Admissions Management System',
@@ -66,7 +66,7 @@
 
       <!-- second card section -->
       <div
-        class="flex flex-wrap md:justify-center lg:justify-start lg:flex-nowrap gap-10 my-10"
+        class="flex flex-wrap md:items-end md:justify-center lg:justify-start lg:flex-nowrap gap-5 my-5"
       >
         <S4HanaS4card
           :data="{
@@ -104,7 +104,7 @@
       </div>
 
       <!-- third card section -->
-      <div class="md:flex space-y-6 md:space-y-0 gap-10 my-10">
+      <div class="md:flex items-end space-y-3 md:space-y-0 gap-5 my-5">
         <S4HanaS4card
           :data="{
             title: 'Library Management',

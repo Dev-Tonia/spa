@@ -17,7 +17,9 @@
       </div>
 
       <!-- first card section -->
-      <div class="md:flex space-y-6 md:space-y-0 gap-10 my-10">
+      <div
+        class="md:flex items-end justify-end space-y-3 md:space-y-0 gap-5 my-5"
+      >
         <S4HanaS4card
           :data="{
             title: 'Accounting and Financials',
@@ -65,7 +67,7 @@
       </div>
       <!-- second card section -->
       <div
-        class="flex flex-wrap md:justify-center lg:justify-start lg:flex-nowrap gap-10 my-10"
+        class="flex flex-wrap items-end md:justify-center lg:justify-start lg:flex-nowrap gap-10 my-10"
       >
         <S4HanaS4card
           :data="{
@@ -107,7 +109,7 @@
         </S4HanaS4card>
       </div>
       <!-- third card section -->
-      <div class="md:flex space-y-6 md:space-y-0 gap-10 my-10">
+      <div class="md:flex items-end space-y-3 md:space-y-0 gap-5 my-5">
         <S4HanaS4card
           :data="{
             title: 'Universal code base',
