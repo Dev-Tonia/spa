@@ -39,7 +39,7 @@ const contents = [
           description: `The curriculum covers from pre-primary to senior secondary school.`,
         }"
       />
-      <div class="grid sm:grid-cols-2 gap-6 md:gap-10 py-9">
+      <div class="grid sm:grid-cols-2 gap-5 md:gap-8 py-4">
         <LazyCommonWhyCard
           v-for="content in contents"
           :key="content.id"

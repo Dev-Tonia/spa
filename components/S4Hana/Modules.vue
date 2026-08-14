@@ -154,7 +154,7 @@
       <div class="my-10">
         <div class="bg-white rounded-lg shadow-md p-4 min-[700px]:flex gap-10">
           <div class="min-[700px]:w-6/12">
-            <h3 class="text-lg font-semibold mt-4">
+            <h3 class="font-grifter text-lg font-semibold mt-4">
               Financial Supply Chain Management
             </h3>
             <p class="text-gray-600 mt-2">

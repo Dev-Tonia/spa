@@ -77,7 +77,7 @@
                 <Icon :name="item.icon" class="text-xl" />
               </span>
               <div>
-                <h3 class="font-semibold text-baseBlack">{{ item.title }}</h3>
+                <h3 class="font-grifter font-semibold text-baseBlack">{{ item.title }}</h3>
                 <p class="mt-1 text-sm leading-6 text-neutral-600">
                   {{ item.description }}
                 </p>
@@ -113,7 +113,7 @@
           >
             <Icon :name="service.icon" class="text-xl" />
           </span>
-          <h3 class="font-bold text-baseBlack">{{ service.title }}</h3>
+          <h3 class="font-grifter font-bold text-baseBlack">{{ service.title }}</h3>
           <p class="mt-2 text-sm leading-6 text-neutral-600">
             {{ service.description }}
           </p>

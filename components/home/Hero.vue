@@ -10,7 +10,7 @@ const slides = [
   {
     title: "Perfecting business ",
     highlight: "processes.",
-    subtitle: "Streamline Operations, Enhance Efficiency, drive and growth",
+    subtitle: "Streamline Operations, Enhance Efficiency, and Drive Growth",
     bgImage: heroImg,
     imageClass: "scale-100",
   },
@@ -53,7 +53,7 @@ const slides = [
   <div class="hero-sec"></div>
 
   <!-- Main content section -->
-  <section class="hero-carousel relative z-10 min-h-[90vh]">
+  <section class="hero-carousel relative z-10 min-h-[70vh]">
     <Swiper
       class="hero-swiper"
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
@@ -80,26 +80,11 @@ const slides = [
       @slideChange="onSlideChange"
     >
       <SwiperSlide v-for="slide in slides" :key="slide">
-        <div class="flex min-h-[90vh] items-center justify-center py-6">
+        <div class="flex min-h-[70vh] items-center justify-center py-6">
           <!-- intro text -->
           <div class="px-6 sm:px-10 md:pr-0 md:pl-16 lg:pl-24 md:w-8/12">
-            <!-- <div class="flex items-center py-5">
-              <div
-                class="text-primary bg-primary/5 rounded-3xl p-2 flex items-center space-x-2"
-              >
-                <Icon name="solar:star-rings-outline" class="text-3xl" />
-                <span class="text-sm font-medium">
-                  Best for small and mid-sized Enterprises
-                </span>
-              </div>
-            </div> -->
             <!-- Title -->
             <div class="">
-              <!-- <img
-                src="../../assets/imgs/Group.svg"
-                class="w-[120px] md:w-[140px] h-auto float-left pr-3"
-                alt="Logo"
-              /> -->
               <p
                 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-baseBlack font-bold font-grifter leading-[57.6px]"
               >
@@ -108,7 +93,7 @@ const slides = [
               </p>
             </div>
             <!-- Description -->
-            <div class="my-8">
+            <div class="my-6">
               <p class="text-2xl">{{ slide.subtitle }}</p>
             </div>
             <!-- CTA -->
@@ -125,11 +110,13 @@ const slides = [
             </div>
           </div>
           <!-- hero image -->
-          <div class="hidden w-4/12 md:flex">
+          <div
+            class="hidden w-4/12 md:flex md:pr-10 lg:pr-16 md:pl-4 h-[60vh]"
+          >
             <div class="flex h-full w-full items-center justify-center">
               <img
                 :src="slide.bgImage"
-                class="h-[70vh] w-auto max-w-full object-contain object-center transition-transform duration-300"
+                class="h-full w-full object-cover object-center transition-transform duration-300"
                 :class="slide.imageClass"
                 alt="Hero Image"
               />
@@ -162,11 +149,12 @@ const slides = [
   transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: #a52424 !important;
+.hero-carousel :deep(.swiper-pagination-bullet) {
+  background: #000;
 }
-.--swiper-pagination-bullet-inactive-color {
-  background: #000 !important;
+
+.hero-carousel :deep(.swiper-pagination-bullet-active) {
+  background: #a52424;
 }
 
 .hero-sec {

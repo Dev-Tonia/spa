@@ -59,9 +59,9 @@ const contents = [
             v-for="(content, index) in contents"
             :key="content.title"
           >
-            <div class="flex flex-col sm:flex-row items-center space-x-4">
+            <div class="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 items-center space-y-4">
               <img :src="content.img" alt="" width="150" />
-              <h3 class="font-bold text-2xl">{{ content.title }}</h3>
+              <h3 class="font-grifter font-bold text-2xl">{{ content.title }}</h3>
             </div>
             <div class="py-5">
               {{ content.description }}

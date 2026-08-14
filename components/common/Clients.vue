@@ -27,8 +27,8 @@ const clients = [
 </script>
 
 <template>
-  <section class="bg-white py-16">
-    <h3 class="font-grifter font-bold text-3xl py-6 wrapper text-center">
+  <section class="bg-white py-12">
+    <h3 class="font-grifter font-bold text-3xl py-2 wrapper text-center">
       Our Esteemed & Valued Partners
     </h3>
     <swiper

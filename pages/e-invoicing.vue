@@ -187,7 +187,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 name="ph:receipt"
                 class="text-3xl text-primary"
               />
-              <h3 class="mt-4 font-semibold text-lg text-baseBlack">
+              <h3 class="font-grifter mt-4 font-semibold text-lg text-baseBlack">
                 Digital invoice exchange
               </h3>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -202,7 +202,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 name="ph:shield-check"
                 class="text-3xl text-primary"
               />
-              <h3 class="mt-4 font-semibold text-lg text-baseBlack">
+              <h3 class="font-grifter mt-4 font-semibold text-lg text-baseBlack">
                 Audit-ready records
               </h3>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -233,7 +233,7 @@ useHead({ title: "E-Invoicing | IDM" });
             <span class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Icon :name="benefit.icon" class="text-xl" />
             </span>
-            <h3 class="font-semibold text-lg text-baseBlack">
+            <h3 class="font-grifter font-semibold text-lg text-baseBlack">
               {{ benefit.title }}
             </h3>
             <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -270,7 +270,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 {{ index + 1 }}
               </div>
               <div>
-                <h3 class="font-semibold text-base text-baseBlack">
+                <h3 class="font-grifter font-semibold text-base text-baseBlack">
                   {{ step.title }}
                 </h3>
                 <p class="mt-1 text-sm leading-6 text-neutral-600">

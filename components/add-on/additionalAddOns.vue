@@ -22,7 +22,7 @@
             <Icon :name="content.icon" class="text-4xl" />
           </div>
           <div>
-            <h6 class="font-bold">{{ content.title }}</h6>
+            <h6 class="font-grifter font-bold">{{ content.title }}</h6>
             <p class="text-sm">{{ content.description }}</p>
           </div>
         </div>

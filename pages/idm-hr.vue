@@ -90,7 +90,7 @@
             >
               <Icon :name="feature.icon" class="text-2xl" />
             </div>
-            <h3 class="font-bold text-xl text-white">{{ feature.title }}</h3>
+            <h3 class="font-grifter font-bold text-xl text-white">{{ feature.title }}</h3>
             <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-white/80">
               <li v-for="item in feature.features" :key="item">
                 {{ item }}

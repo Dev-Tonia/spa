@@ -55,12 +55,12 @@ const contents = [
 </script>
 
 <template>
-  <section class="py-16">
+  <section class="py-12">
     <div class="wrapper">
       <!-- header -->
       <div class="md:flex justify-between">
         <div class="md:w-10/12 lg:w-7/12">
-          <h3 class="font-grifter font-bold text-4xl py-4">
+          <h3 class="font-grifter font-bold text-4xl py-2">
             Industries we serve
           </h3>
           <p class="text-lg md:text-xl text-neutral-600">
@@ -68,7 +68,7 @@ const contents = [
             high quality services and results across serval Industries
           </p>
         </div>
-        <div class="md:w-2/12 lg:w-5/12 pt-6 md:pt-0 flex justify-end">
+        <div class="md:w-2/12 lg:w-5/12 pt-6 md:pt-4 flex justify-end">
           <NuxtLink
             class="text-lg font-bold flex items-center"
             href="/industries"
@@ -79,16 +79,16 @@ const contents = [
       </div>
 
       <!-- list of industries we serve -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 my-10">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 my-8">
         <div
-          class="bg-secondary text-[#FAFAFA] p-6 rounded-xl transition-all duration-300 ease-in-out hover:scale-105 hover:bg-secondary/95"
+          class="bg-secondary text-[#FAFAFA] p-5 rounded-xl transition-all duration-300 ease-in-out hover:scale-105 hover:bg-secondary/95"
           v-for="(content, index) in contents"
           :key="content.id"
         >
           <div class="rounded-xl overflow-hidden">
             <img :src="content.img" alt="" class="w-full h-auto" />
           </div>
-          <h5 class="text-2xl font-bold py-2">{{ content.title }}</h5>
+          <h5 class="font-grifter text-2xl font-bold py-2">{{ content.title }}</h5>
           <p>
             {{ content.description }}
           </p>

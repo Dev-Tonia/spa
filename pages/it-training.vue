@@ -50,7 +50,7 @@
           >
             <Icon :name="point.icon" class="text-xl" />
           </span>
-          <h3 class="font-bold text-baseBlack">{{ point.title }}</h3>
+          <h3 class="font-grifter font-bold text-baseBlack">{{ point.title }}</h3>
           <p class="mt-2 text-sm leading-6 text-neutral-600">
             {{ point.description }}
           </p>

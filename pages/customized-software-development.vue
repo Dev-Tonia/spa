@@ -156,7 +156,7 @@ useHead({ title: "Customized Software Development | IDM" });
             <span class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Icon :name="item.icon" class="text-xl" />
             </span>
-            <h3 class="font-semibold text-lg text-baseBlack">
+            <h3 class="font-grifter font-semibold text-lg text-baseBlack">
               {{ item.title }}
             </h3>
             <p class="mt-2 text-sm leading-6 text-neutral-600">

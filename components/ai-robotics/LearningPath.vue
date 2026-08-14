@@ -43,7 +43,7 @@ const learningPaths = [
             <Icon :name="path.icon" class="text-3xl group-hover:text-primary" />
           </div>
           <h3
-            class="text-2xl font-bold text-baseBlack mb-3 group-hover:text-white"
+            class="font-grifter text-2xl font-bold text-baseBlack mb-3 group-hover:text-white"
           >
             {{ path.level }}
           </h3>

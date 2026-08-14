@@ -1,7 +1,7 @@
 <template>
-  <section class="py-16 sm:py-20 lg:py-24" id="faq">
+  <section class="py-12 sm:py-14 lg:py-16" id="faq">
     <div class="wrapper">
-      <div class="mb-10 text-center sm:mb-14">
+      <div class="mb-8 text-center sm:mb-10">
         <h2 class="font-grifter text-3xl font-bold text-baseBlack sm:text-4xl">
           Frequently Asked Questions
         </h2>
@@ -11,7 +11,7 @@
         </p>
       </div>
 
-      <div class="space-y-10">
+      <div class="space-y-8">
         <div v-for="category in categories" :key="category.title">
           <div class="mb-4 flex items-center gap-2">
             <Icon :name="category.icon" class="text-2xl text-primary" />
@@ -71,17 +71,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="mt-12 flex flex-col items-center gap-3 text-center">
-        <p class="text-neutral-600">Still have a question?</p>
-        <NuxtLink
-          to="/contact"
-          class="inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-secondary"
-        >
-          Talk to our team
-          <Icon name="ri:arrow-right-line" class="text-lg" />
-        </NuxtLink>
-      </div> -->
     </div>
   </section>
 </template>

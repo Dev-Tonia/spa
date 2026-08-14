@@ -3,12 +3,12 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
 </script>
 
 <template>
-  <section class="bg-secondary text-[#FAFAFA] py-20">
+  <section class="bg-secondary text-[#FAFAFA] py-12">
     <div class="wrapper">
-      <div class="sm:flex justify-between items-start py-6 border-b-2">
+      <div class="sm:flex justify-between items-start py-4 border-b-2">
         <div class="sm:w-7/12">
           <h3
-            class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-4"
+            class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-2"
           >
             Explore our solutions
           </h3>
@@ -27,8 +27,8 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
         </div>
       </div>
       <div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 my-20">
-          <div class="space-y-10 h-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 my-10">
+          <div class="space-y-8 h-full">
             <!-- card 1 -->
             <div class="bg-white shadow-md rounded-lg p-6">
               <div class="flex justify-between pb-4">
@@ -59,7 +59,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                 <img
                   :src="addOn"
                   alt="SAP Business One Add-ons Image"
-                  class="rounded-lg h-[300px]"
+                  class="rounded-lg h-[240px]"
                 />
               </div>
             </div>
@@ -97,7 +97,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
               </div>
             </div>
           </div>
-          <div class="space-y-10 h-full">
+          <div class="space-y-8 h-full">
             <!-- Card 3-->
 
             <div class="bg-white shadow-md rounded-lg p-6">
@@ -163,7 +163,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                 <img
                   :src="schoolKid"
                   alt="IDM @ School Image"
-                  class="rounded-lg w-full h-[300px]"
+                  class="rounded-lg w-full h-[240px]"
                 />
               </div>
             </div>

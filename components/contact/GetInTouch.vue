@@ -3,7 +3,7 @@
     <div class="wrapper px-4 sm:px-6 lg:px-8">
       <div class="grid items-start gap-8 md:grid-cols-2 md:gap-10 mx-auto">
         <div class="max-w-xl justify-self-center md:justify-self-start">
-          <h2 class="text-2xl font-semibold mb-2 text-[#12324D]">
+          <h2 class="font-grifter text-2xl font-semibold mb-2 text-[#12324D]">
             Get In Touch
           </h2>
           <p class="text-[#5C6B7A] pb-3">

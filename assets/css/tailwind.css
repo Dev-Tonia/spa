@@ -8,11 +8,11 @@
   @font-face {
     font-family: "Grifter";
     font-weight: 700;
-    src: url("/font/grifter-Bold-700.otf") format("otf");
+    src: url("/font/grifter-bold.otf") format("opentype");
   }
 
   html {
-    font-size: 90%;
+    font-size: 100%;
   }
 
   body {
@@ -29,7 +29,7 @@
   }
 }
 .wrapper {
-  @apply px-5 sm:px-10 md:px-16 lg:px-24;
+  @apply w-full max-w-[1440px] mx-auto px-5 sm:px-10 md:px-16 lg:px-24;
 }
 html {
   scroll-behavior: smooth;

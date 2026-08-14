@@ -7,8 +7,8 @@ function updateIsOpen() {
 </script>
 
 <template>
-  <header class="sticky top-0 text-baseBlack z-30 w-full">
-    <nav class="wrapper py-5 backdrop-blur bg-white/75">
+  <header class="sticky top-0 text-baseBlack z-30 w-full bg-white/75 backdrop-blur">
+    <nav class="wrapper py-5">
       <div class="flex items-center justify-between">
         <div class="flex items-center space-x-5">
           <NuxtLink to="/" class=" ">

@@ -80,27 +80,27 @@ const service = {
 </script>
 
 <template>
-  <section class="bg-[#FAFAFA] py-16">
+  <section class="bg-[#FAFAFA] py-12">
     <div class="wrapper">
       <div class="max-w-5xl mx-auto">
         <OtherServicesServiceCard :service="service" :index="2" />
       </div>
 
-      <div class="text-center max-w-3xl mx-auto mt-16">
+      <div class="text-center max-w-3xl mx-auto mt-10">
         <h3
           class="font-grifter font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight"
         >
           Why Choose
           <span class="text-primary"> IDM </span>
         </h3>
-        <p class="text-lg md:text-xl text-neutral-600 py-4">
+        <p class="text-lg md:text-xl text-neutral-600 py-3">
           IDM combines proven experience, certified expertise, and
           customer-focused support to help African enterprises run stronger
           business processes.
         </p>
       </div>
 
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-12">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-8">
         <div
           class="bg-white border border-[#E7EBEF] rounded-[8px] p-6 transition-colors duration-700 ease-in-out content-wrapper"
           v-for="content in contents"
@@ -112,8 +112,8 @@ const service = {
             <Icon :name="content.icon" class="text-4xl" />
           </div>
 
-          <div class="pt-8">
-            <h5 class="text-baseBlack text-xl font-bold leading-[26px]">
+          <div class="pt-6">
+            <h5 class="font-grifter text-baseBlack text-xl font-bold leading-[26px]">
               {{ content.title }}
             </h5>
             <p class="text-[#7A7474] text-base pt-3">

@@ -126,7 +126,7 @@ const contents = [
             >
               <Icon :name="content.icon" class="text-5xl" />
             </div>
-            <h5 class="text-2xl font-bold">{{ content.title }}</h5>
+            <h5 class="font-grifter text-2xl font-bold">{{ content.title }}</h5>
           </div>
           <div class="rounded-xl overflow-hidden pb-5">
             <img
