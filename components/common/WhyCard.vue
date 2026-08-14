@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="px-6 py-11 bg-white shadow rounded-xl content-wrapper transition-colors duration-700 ease-in-out"
+    class="px-6 py-8 bg-white shadow rounded-xl content-wrapper transition-colors duration-700 ease-in-out"
   >
     <div
       class="w-14 h-14 min-[920px]:w-16 min-[920px]:h-16 bg-primary text-white rounded-xl flex items-center justify-center icon-wrapper"
@@ -16,7 +16,7 @@ const props = defineProps({
       <Icon :name="content.icon" class="text-4xl min-[920px]:text-5xl" />
     </div>
 
-    <div class="pt-10">
+    <div class="pt-6">
       <h6 class="font-grifter text-baseBlack text-xl sm:text-2xl font-bold leading-tight">
         {{ content.tile }}
       </h6>

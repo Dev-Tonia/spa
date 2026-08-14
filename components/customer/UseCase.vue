@@ -37,11 +37,11 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
           </div>
         </div>
 
-        <div class="md:flex justify-between py-10 space-x-10">
+        <div class="md:flex justify-between py-10 md:space-x-10">
           <div class="bg-white rounded-xl p-8">
             <div class="gap-8">
               <div class="">
-                <img :src="useCaseRetail" class="w-full h-[364px]" alt="" />
+                <img :src="useCaseRetail" class="w-full h-[364px] object-cover object-center" alt="" />
               </div>
               <div class="pt-5">
                 <h3 class="font-grifter font-bold text-3xl py-2">Retail</h3>
@@ -57,7 +57,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
           <div class="bg-white rounded-xl p-8">
             <div class="gap-8">
               <div class="">
-                <img :src="useCaseSport" class="w-full h-[364px]" alt="" />
+                <img :src="useCaseSport" class="w-full h-[364px] object-cover object-center" alt="" />
               </div>
               <div class="pt-5">
                 <h3 class="font-grifter font-bold text-3xl py-2">
