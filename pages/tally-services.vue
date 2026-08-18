@@ -11,7 +11,7 @@
             Tally & AMC
           </span>
           <h1
-            class="mt-5 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
+            class="mt-5 font-opensans text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
           >
             Tally services that keep finance operations reliable and growing.
           </h1>
@@ -52,7 +52,7 @@
           <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
             Why IDM
           </p>
-          <h2 class="mt-3 font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+          <h2 class="mt-3 font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
             Tally that fits the rhythm of your business.
           </h2>
           <p class="mt-4 leading-7 text-neutral-600">
@@ -77,7 +77,7 @@
                 <Icon :name="item.icon" class="text-xl" />
               </span>
               <div>
-                <h3 class="font-grifter font-semibold text-baseBlack">{{ item.title }}</h3>
+                <h3 class="font-opensans font-semibold text-baseBlack">{{ item.title }}</h3>
                 <p class="mt-1 text-sm leading-6 text-neutral-600">
                   {{ item.description }}
                 </p>
@@ -93,7 +93,7 @@
         <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
           Core services
         </p>
-        <h2 class="mt-3 font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+        <h2 class="mt-3 font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
           Implementation, integration, and support built around your workflow.
         </h2>
         <p class="mx-auto mt-3 max-w-2xl text-neutral-600">
@@ -113,7 +113,7 @@
           >
             <Icon :name="service.icon" class="text-xl" />
           </span>
-          <h3 class="font-grifter font-bold text-baseBlack">{{ service.title }}</h3>
+          <h3 class="font-opensans font-bold text-baseBlack">{{ service.title }}</h3>
           <p class="mt-2 text-sm leading-6 text-neutral-600">
             {{ service.description }}
           </p>
@@ -124,7 +124,7 @@
     <section class="bg-primary/5">
       <div class="mx-auto max-w-6xl px-4 py-16 sm:py-20">
         <div class="rounded-3xl bg-primary px-8 py-10 text-center text-white shadow-lg sm:px-12 lg:px-16">
-          <h2 class="font-grifter text-2xl font-bold sm:text-3xl">
+          <h2 class="font-opensans text-2xl font-bold sm:text-3xl">
             Ready to make Tally work harder for your business?
           </h2>
           <p class="mx-auto mt-3 max-w-2xl text-white/80">

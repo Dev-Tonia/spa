@@ -9,7 +9,7 @@
           IDM Training
         </span>
         <h1
-          class="mt-5 capitalize font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
+          class="mt-5 capitalize font-opensans text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
         >
           Skills your team can put to work.
         </h1>
@@ -31,7 +31,7 @@
     <!-- Why train with IDM -->
     <section class="mx-auto max-w-6xl px-4 py-14 sm:py-16">
       <div class="mb-10 text-center">
-        <h2 class="font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+        <h2 class="font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
           Why train with IDM
         </h2>
         <p class="mx-auto mt-3 max-w-2xl text-neutral-600">
@@ -50,7 +50,7 @@
           >
             <Icon :name="point.icon" class="text-xl" />
           </span>
-          <h3 class="font-grifter font-bold text-baseBlack">{{ point.title }}</h3>
+          <h3 class="font-opensans font-bold text-baseBlack">{{ point.title }}</h3>
           <p class="mt-2 text-sm leading-6 text-neutral-600">
             {{ point.description }}
           </p>
@@ -61,7 +61,7 @@
     <!-- Programs -->
     <section id="programs" class="mx-auto max-w-6xl px-4 pb-16 sm:pb-20">
       <div class="mb-10 text-center">
-        <h2 class="font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+        <h2 class="font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
           Our training programs
         </h2>
         <p class="mx-auto mt-3 max-w-2xl text-neutral-600">
@@ -85,7 +85,7 @@
       <div
         class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-4 py-14 text-center sm:py-16"
       >
-        <h2 class="font-grifter text-2xl font-bold text-white sm:text-3xl">
+        <h2 class="font-opensans text-2xl font-bold text-white sm:text-3xl">
           Ready to upskill your team or your students?
         </h2>
         <p class="max-w-xl text-white/80">

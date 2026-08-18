@@ -6,7 +6,7 @@ import { sap_hana_learn } from "../../lib/images";
     <div class="wrapper">
       <div>
         <h3
-          class="font-grifter text-baseBlack font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
+          class="font-opensans text-baseBlack font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
         >
           Learn how it works
         </h3>

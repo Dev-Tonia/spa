@@ -14,7 +14,7 @@
         </span>
         <Icon :name="service.icon" class="text-3xl text-primary" />
       </div>
-      <h2 class="font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+      <h2 class="font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
         {{ service.title }}
       </h2>
       <p class="mt-4 leading-7 text-neutral-600">{{ service.description }}</p>

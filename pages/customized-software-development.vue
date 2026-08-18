@@ -91,7 +91,7 @@ useHead({ title: "Customized Software Development | IDM" });
           <span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary">
             Custom software services
           </span>
-          <h1 class="mt-5 max-w-2xl font-grifter text-4xl leading-tight text-baseBlack sm:text-5xl lg:text-6xl">
+          <h1 class="mt-5 max-w-2xl font-opensans text-4xl leading-tight text-baseBlack sm:text-5xl lg:text-6xl">
             Customized software designed around the way your business actually works.
           </h1>
           <p class="mt-5 max-w-2xl text-lg leading-8 text-neutral-600">
@@ -156,7 +156,7 @@ useHead({ title: "Customized Software Development | IDM" });
             <span class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Icon :name="item.icon" class="text-xl" />
             </span>
-            <h3 class="font-grifter font-semibold text-lg text-baseBlack">
+            <h3 class="font-opensans font-semibold text-lg text-baseBlack">
               {{ item.title }}
             </h3>
             <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -187,7 +187,7 @@ useHead({ title: "Customized Software Development | IDM" });
               <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
                 {{ focus.title }}
               </p>
-              <h2 class="mt-3 font-grifter text-2xl text-baseBlack sm:text-3xl">
+              <h2 class="mt-3 font-opensans text-2xl text-baseBlack sm:text-3xl">
                 {{ focus.title }} built for real business use.
               </h2>
               <p class="mt-4 leading-7 text-neutral-600">
@@ -223,7 +223,7 @@ useHead({ title: "Customized Software Development | IDM" });
     <section class="py-16 sm:py-20">
       <div class="wrapper mx-auto max-w-7xl">
         <div class="rounded-3xl bg-primary px-8 py-10 text-center text-white shadow-lg sm:px-12 lg:px-16">
-          <h2 class="font-grifter text-2xl sm:text-3xl">
+          <h2 class="font-opensans text-2xl sm:text-3xl">
             Let’s build software that fits your business, not the other way around.
           </h2>
           <p class="mx-auto mt-3 max-w-2xl text-white/80">

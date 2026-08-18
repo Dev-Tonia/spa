@@ -16,7 +16,7 @@ const props = defineProps({
 <template>
   <Accordion type="single" collapsible class="border-b">
     <AccordionItem :value="data.value">
-      <AccordionTrigger class="text-xl font-bold font-grifter">{{
+      <AccordionTrigger class="text-xl font-bold font-opensans">{{
         data.title
       }}</AccordionTrigger>
       <AccordionContent>

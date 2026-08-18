@@ -21,7 +21,7 @@
   <LazyAiRoboticsWhyChooseUs />
   <section class="py-16 bg-secondary text-white" id="mission">
     <div class="wrapper">
-      <h2 class="font-grifter font-bold text-2xl md:text-3xl mb-6">
+      <h2 class="font-opensans font-bold text-2xl md:text-3xl mb-6">
         Building Nigeria's Next Generation of Innovators
       </h2>
       <p class="text-lg md:text-xl leading-relaxed max-w-3xl">

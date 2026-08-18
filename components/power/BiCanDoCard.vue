@@ -13,7 +13,7 @@
       > -->
       <h5
         :class="[
-          ' font-bold font-grifter text-2xl md:text-3xl',
+          ' font-bold font-opensans text-2xl md:text-3xl',
           data.titleClass,
         ]"
       >

@@ -3,7 +3,7 @@
     <div class="bg-secondary rounded-[20px] px-6 text-white overflow-hidden">
       <div class="rounded-xl px-14 flex flex-col md:flex-row gap-10">
         <div class="md:w-7/12 py-20">
-          <h5 class="font-bold font-grifter text-2xl">
+          <h5 class="font-bold font-opensans text-2xl">
             Promotions of events, exhibitions and conferences
           </h5>
           <p class="py-2">

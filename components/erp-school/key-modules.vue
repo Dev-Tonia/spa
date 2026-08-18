@@ -4,7 +4,7 @@
       <!-- section title -->
       <div class="py-4">
         <h3
-          class="font-grifter text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
+          class="font-opensans text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
         >
           Key Modules incorporated in The School Manager (TSM)
         </h3>

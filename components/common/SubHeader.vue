@@ -4,7 +4,7 @@
       <div class="sm:flex gap-10 justify-between">
         <div class="sm:w-1/2 pb-6">
           <h3
-            class="text-baseBlack text-xl sm:text-2xl lg:text-3xl font-bold font-grifter"
+            class="text-baseBlack text-xl sm:text-2xl lg:text-3xl font-bold font-opensans"
           >
             {{ data.title }}
           </h3>

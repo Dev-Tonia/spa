@@ -28,7 +28,7 @@ const props = defineProps({
     <DialogScrollContent class="w-11/12 sm:w-6/12 md:w-4/12">
       <DialogHeader class="px-8">
         <DialogTitle
-          class="text-center font-bold text-2xl font-grifter text-[#12324D]"
+          class="text-center font-bold text-2xl font-opensans text-[#12324D]"
           >Request A Demo</DialogTitle
         >
         <!-- <DialogDescription>

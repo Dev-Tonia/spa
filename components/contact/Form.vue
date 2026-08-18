@@ -62,7 +62,7 @@ function closeModal() {
   >
     <div class="mb-7 pt-5">
       <h2
-        class="text-xl md:text-2xl font-grifter lg:text-3xl font-bold pb-3 text-[#12324D]"
+        class="text-xl md:text-2xl font-opensans lg:text-3xl font-bold pb-3 text-[#12324D]"
       >
         We're Here To Help!
       </h2>

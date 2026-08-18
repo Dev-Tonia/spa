@@ -5,7 +5,7 @@
     >
       <div class="rounded-xl py-10 px-14 flex flex-col md:flex-row gap-10">
         <div class="md:w-7/12">
-          <h5 class="font-bold font-grifter text-2xl">
+          <h5 class="font-bold font-opensans text-2xl">
             Contact center solution
           </h5>
           <p class="py-2">

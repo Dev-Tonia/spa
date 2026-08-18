@@ -9,7 +9,7 @@
         Contact IDM
       </span>
       <h1
-        class="mt-5 capitalize font-grifter text-4xl font-bold text-baseBlack sm:text-5xl lg:text-6xl"
+        class="mt-5 capitalize font-opensans text-4xl font-bold text-baseBlack sm:text-5xl lg:text-6xl"
       >
         Talk to our team.
       </h1>

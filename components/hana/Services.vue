@@ -18,7 +18,7 @@ import { sap_hana } from "../../lib/images";
             >
               <Icon name="bi:database" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               SAP HANA Database
             </h6>
             <p class="text-neutral-500 text-sm">
@@ -35,7 +35,7 @@ import { sap_hana } from "../../lib/images";
             >
               <Icon name="game-icons:platform" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               SAP HANA Platform
             </h6>
             <p class="text-neutral-500 text-sm">

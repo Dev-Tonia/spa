@@ -59,7 +59,7 @@ const skills = [
           >
             <Icon :name="skill.icon" class="text-2xl" />
           </div>
-          <h4 class="font-grifter text-lg font-bold text-baseBlack">{{ skill.title }}</h4>
+          <h4 class="font-opensans text-lg font-bold text-baseBlack">{{ skill.title }}</h4>
         </div>
       </div>
     </div>

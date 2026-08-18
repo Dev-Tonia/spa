@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-xl p-4 lg:p-8 shadow-sm">
-    <h6 class="font-grifter text-baseBlack text-lg font-bold leading-snug py-4">
+    <h6 class="font-opensans text-baseBlack text-lg font-bold leading-snug py-4">
       {{ content.title }}
     </h6>
     <p class="text-[#908b8b] text-sm leading-[16.80px]">

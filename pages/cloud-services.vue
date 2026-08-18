@@ -31,7 +31,7 @@
       />
       <div class="sm:flex gap-14 py-12">
         <div class="sm:w-1/2 pb-8">
-          <h5 class="font-bold text-lg font-grifter text-baseBlack">
+          <h5 class="font-bold text-lg font-opensans text-baseBlack">
             Cost-Effective Scalability with Cloud-Based Infrastructure for IT
             Flexibility
           </h5>
@@ -57,7 +57,7 @@
             >
               <Icon name="ph:kanban" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               Agile Cloud Hosting: Scale Resources Instantly to Meet Market
               Demands
             </h6>
@@ -73,7 +73,7 @@
             >
               <Icon name="ph:cloud" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               Scalable Cloud Hosting: The Power to Grow and Adapt Effortlessly
             </h6>
             <p class="text-neutral-500 text-sm">

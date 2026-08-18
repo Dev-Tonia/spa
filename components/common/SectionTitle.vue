@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3
-      class="font-grifter text-baseBlack font-bold text-2xl sm:text-3xl lg:text-4xl py-2"
+      class="font-opensans text-baseBlack font-bold text-2xl sm:text-3xl lg:text-4xl py-2"
     >
       {{ data.title }}
     </h3>

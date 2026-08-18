@@ -85,7 +85,7 @@ const slides = [
             <!-- Title -->
             <div class="">
               <p
-                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-baseBlack font-bold font-grifter leading-[57.6px]"
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-baseBlack font-bold font-opensans leading-[57.6px]"
               >
                 {{ slide.title }}
                 <span class="text-primary">{{ slide.highlight }}</span>

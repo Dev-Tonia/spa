@@ -4,7 +4,7 @@
       <!-- section title -->
       <div class="py-4">
         <h3
-          class="font-grifter text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
+          class="font-opensans text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl py-2"
         >
           Modules available on our platform
         </h3>
@@ -154,7 +154,7 @@
       <div class="my-10">
         <div class="bg-white rounded-lg shadow-md p-4 min-[700px]:flex gap-10">
           <div class="min-[700px]:w-6/12">
-            <h3 class="font-grifter text-lg font-semibold mt-4">
+            <h3 class="font-opensans text-lg font-semibold mt-4">
               Financial Supply Chain Management
             </h3>
             <p class="text-gray-600 mt-2">

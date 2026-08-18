@@ -96,7 +96,7 @@ useHead({ title: "E-Invoicing | IDM" });
           <span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary">
             Compliance services
           </span>
-          <h1 class="mt-5 max-w-2xl font-grifter text-4xl leading-tight text-baseBlack sm:text-5xl lg:text-6xl">
+          <h1 class="mt-5 max-w-2xl font-opensans text-4xl leading-tight text-baseBlack sm:text-5xl lg:text-6xl">
             E-invoicing that fits the way your business already works.
           </h1>
           <p class="mt-5 max-w-2xl text-lg leading-8 text-neutral-600">
@@ -127,7 +127,7 @@ useHead({ title: "E-Invoicing | IDM" });
               :key="stat.label"
               class="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm"
             >
-              <p class="font-grifter text-2xl text-baseBlack">{{ stat.value }}</p>
+              <p class="font-opensans text-2xl text-baseBlack">{{ stat.value }}</p>
               <p class="mt-1 text-xs uppercase tracking-[0.16em] text-neutral-500">
                 {{ stat.label }}
               </p>
@@ -169,7 +169,7 @@ useHead({ title: "E-Invoicing | IDM" });
             <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
               Built for operations
             </p>
-            <h2 class="mt-3 font-grifter text-2xl text-baseBlack sm:text-3xl">
+            <h2 class="mt-3 font-opensans text-2xl text-baseBlack sm:text-3xl">
               Keep invoicing fast without losing control.
             </h2>
             <p class="mt-4 leading-7 text-neutral-600">
@@ -187,7 +187,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 name="ph:receipt"
                 class="text-3xl text-primary"
               />
-              <h3 class="font-grifter mt-4 font-semibold text-lg text-baseBlack">
+              <h3 class="font-opensans mt-4 font-semibold text-lg text-baseBlack">
                 Digital invoice exchange
               </h3>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -202,7 +202,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 name="ph:shield-check"
                 class="text-3xl text-primary"
               />
-              <h3 class="font-grifter mt-4 font-semibold text-lg text-baseBlack">
+              <h3 class="font-opensans mt-4 font-semibold text-lg text-baseBlack">
                 Audit-ready records
               </h3>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -233,7 +233,7 @@ useHead({ title: "E-Invoicing | IDM" });
             <span class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Icon :name="benefit.icon" class="text-xl" />
             </span>
-            <h3 class="font-grifter font-semibold text-lg text-baseBlack">
+            <h3 class="font-opensans font-semibold text-lg text-baseBlack">
               {{ benefit.title }}
             </h3>
             <p class="mt-2 text-sm leading-6 text-neutral-600">
@@ -251,7 +251,7 @@ useHead({ title: "E-Invoicing | IDM" });
             <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
               How it works
             </p>
-            <h2 class="mt-3 font-grifter text-3xl text-baseBlack sm:text-4xl">
+            <h2 class="mt-3 font-opensans text-3xl text-baseBlack sm:text-4xl">
               From invoice creation to compliant exchange.
             </h2>
             <p class="mt-4 max-w-xl leading-7 text-neutral-600">
@@ -270,7 +270,7 @@ useHead({ title: "E-Invoicing | IDM" });
                 {{ index + 1 }}
               </div>
               <div>
-                <h3 class="font-grifter font-semibold text-base text-baseBlack">
+                <h3 class="font-opensans font-semibold text-base text-baseBlack">
                   {{ step.title }}
                 </h3>
                 <p class="mt-1 text-sm leading-6 text-neutral-600">
@@ -286,7 +286,7 @@ useHead({ title: "E-Invoicing | IDM" });
     <section class="border-t border-neutral-200 bg-[#FAFAFA] py-16 sm:py-20">
       <div class="wrapper mx-auto max-w-7xl">
         <div class="rounded-3xl bg-primary px-8 py-10 text-center text-white shadow-lg sm:px-12 lg:px-16">
-          <h2 class="font-grifter text-2xl sm:text-3xl">
+          <h2 class="font-opensans text-2xl sm:text-3xl">
             Ready to bring your invoicing process in line with compliance requirements?
           </h2>
           <p class="mx-auto mt-3 max-w-2xl text-white/80">

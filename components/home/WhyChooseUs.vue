@@ -88,7 +88,7 @@ const service = {
 
       <div class="text-center max-w-3xl mx-auto mt-10">
         <h3
-          class="font-grifter font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight"
+          class="font-opensans font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight"
         >
           Why Choose
           <span class="text-primary"> IDM </span>
@@ -113,7 +113,7 @@ const service = {
           </div>
 
           <div class="pt-6">
-            <h5 class="font-grifter text-baseBlack text-xl font-bold leading-[26px]">
+            <h5 class="font-opensans text-baseBlack text-xl font-bold leading-[26px]">
               {{ content.title }}
             </h5>
             <p class="text-[#7A7474] text-base pt-3">

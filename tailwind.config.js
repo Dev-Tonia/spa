@@ -26,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
-        grifter: ["Grifter", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
       screens: {
         xmd: "500px",

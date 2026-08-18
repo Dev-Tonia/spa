@@ -31,7 +31,7 @@ const props = defineProps({
           </div>
 
           <h3
-            class="mt-5 font-grifter text-3xl font-bold tracking-tight text-baseBlack sm:text-4xl lg:text-6xl"
+            class="mt-5 font-opensans text-3xl font-bold tracking-tight text-baseBlack sm:text-4xl lg:text-6xl"
           >
             {{ data.title }}
           </h3>

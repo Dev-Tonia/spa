@@ -2,7 +2,7 @@
   <section class="py-16 bg-neutral-50" id="gallery">
     <div class="wrapper">
       <div class="mb-10 text-center sm:mb-14">
-        <h2 class="font-grifter text-3xl font-bold text-baseBlack sm:text-4xl">
+        <h2 class="font-opensans text-3xl font-bold text-baseBlack sm:text-4xl">
           Media Center
         </h2>
         <p class="mt-3 text-neutral-600">
@@ -154,7 +154,7 @@
             />
           </template>
           <div class="p-6">
-            <h3 class="font-grifter text-2xl font-bold text-baseBlack">
+            <h3 class="font-opensans text-2xl font-bold text-baseBlack">
               {{ selectedMedia.title }}
             </h3>
             <p class="mt-3 text-neutral-600">{{ selectedMedia.caption }}</p>
@@ -184,7 +184,7 @@
             class="h-[70vh] w-full object-contain bg-black/5"
           />
           <div class="p-6">
-            <h3 class="font-grifter text-2xl font-bold text-baseBlack">
+            <h3 class="font-opensans text-2xl font-bold text-baseBlack">
               {{ selectedTestimony.name }}
             </h3>
             <p class="mt-3 text-neutral-600">

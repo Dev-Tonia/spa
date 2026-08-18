@@ -2,7 +2,7 @@
   <section class="py-12 sm:py-14 lg:py-16" id="faq">
     <div class="wrapper">
       <div class="mb-8 text-center sm:mb-10">
-        <h2 class="font-grifter text-3xl font-bold text-baseBlack sm:text-4xl">
+        <h2 class="font-opensans text-3xl font-bold text-baseBlack sm:text-4xl">
           Frequently Asked Questions
         </h2>
         <p class="mt-3 text-neutral-600">
@@ -16,7 +16,7 @@
           <div class="mb-4 flex items-center gap-2">
             <Icon :name="category.icon" class="text-2xl text-primary" />
             <h3
-              class="font-grifter text-xl font-bold text-baseBlack sm:text-2xl"
+              class="font-opensans text-xl font-bold text-baseBlack sm:text-2xl"
             >
               {{ category.title }}
             </h3>

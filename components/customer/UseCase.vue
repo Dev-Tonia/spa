@@ -6,7 +6,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
   <section class="bg-[#FAFAFA] py-16">
     <div class="wrapper">
       <div class="flex flex-col items-center justify-center text-center">
-        <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
+        <h3 class="font-opensans font-bold text-2xl md:text-3xl py-2">
           Use Cases
         </h3>
         <p class="py-4 text-lg md:text-xl text-[#7A7474]">
@@ -22,7 +22,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
               <img :src="useCaseHosp" alt="" class="w-full" />
             </div>
             <div class="md:w-7/12">
-              <h3 class="font-grifter font-bold text-2xl md:text-3xl py-2">
+              <h3 class="font-opensans font-bold text-2xl md:text-3xl py-2">
                 Hospitality
               </h3>
               <p class="py-4 text-xl text-[#7A7474]">
@@ -44,7 +44,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
                 <img :src="useCaseRetail" class="w-full h-[364px] object-cover object-center" alt="" />
               </div>
               <div class="pt-5">
-                <h3 class="font-grifter font-bold text-3xl py-2">Retail</h3>
+                <h3 class="font-opensans font-bold text-3xl py-2">Retail</h3>
                 <p class="py-4 text-xl text-[#7A7474]">
                   From fashion and grocery stores, electronics, professional
                   services, to wholesale distribution.  All common requirements
@@ -60,7 +60,7 @@ import { useCaseHosp, useCaseRetail, useCaseSport } from "../../lib/images";
                 <img :src="useCaseSport" class="w-full h-[364px] object-cover object-center" alt="" />
               </div>
               <div class="pt-5">
-                <h3 class="font-grifter font-bold text-3xl py-2">
+                <h3 class="font-opensans font-bold text-3xl py-2">
                   Sports and Entertainment
                 </h3>
                 <p class="py-4 text-xl text-[#7A7474]">

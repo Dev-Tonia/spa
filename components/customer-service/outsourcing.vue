@@ -9,7 +9,7 @@
       <div class="md:w-5/12">
         <h5
           :class="[
-            ' font-bold font-grifter text-2xl md:text-3xl text-baseBlack',
+            ' font-bold font-opensans text-2xl md:text-3xl text-baseBlack',
           ]"
         >
           Customer service outsourcing

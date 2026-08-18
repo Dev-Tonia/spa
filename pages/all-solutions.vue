@@ -6,7 +6,7 @@
           IDM Solutions
         </p>
         <h1
-          class="mt-3 font-grifter text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl"
+          class="mt-3 font-opensans text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl"
         >
           Technology that keeps your business moving forward.
         </h1>

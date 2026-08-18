@@ -85,7 +85,7 @@ function closeTestimony() {
           class="h-[70vh] w-full object-contain bg-black/5"
         />
         <div class="p-6">
-          <h3 class="font-grifter text-2xl font-bold text-baseBlack">
+          <h3 class="font-opensans text-2xl font-bold text-baseBlack">
             {{ selectedTestimony.name }}
           </h3>
           <p class="mt-3 text-base text-neutral-600">

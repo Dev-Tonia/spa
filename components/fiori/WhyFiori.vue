@@ -14,7 +14,7 @@ const goToSearch = () => {
       />
       <div class="sm:flex gap-14 py-12">
         <div class="sm:w-1/2 pb-8">
-          <h5 class="font-bold text-lg font-grifter text-baseBlack">
+          <h5 class="font-bold text-lg font-opensans text-baseBlack">
             Experience the Future of SAP with Fiori 3.0: A Unified, Role-Based,
             and Mobile-Optimized User Interface
           </h5>
@@ -43,7 +43,7 @@ const goToSearch = () => {
             >
               <Icon name="ph:devices-light" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               Seamless Business Functions Across All Devices
             </h6>
             <p class="text-neutral-500 text-sm">
@@ -60,7 +60,7 @@ const goToSearch = () => {
             >
               <Icon name="ph:device-mobile-camera-light" class="text-5xl" />
             </div>
-            <h6 class="text-lg font-bold font-grifter py-5">
+            <h6 class="text-lg font-bold font-opensans py-5">
               Explore 300+ Role-Based Apps with SAP Fiori and UI5
             </h6>
             <p class="text-neutral-500 text-sm">

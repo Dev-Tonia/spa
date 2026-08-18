@@ -83,7 +83,7 @@ const graphicsContents = [
     <div class="wrapper">
       <div class="bg-white -mt-24 p-10 rounded">
         <div>
-          <h3 class="font-grifter text-primary font-bold text-5xl py-2">
+          <h3 class="font-opensans text-primary font-bold text-5xl py-2">
             Our Training Solutions
           </h3>
 

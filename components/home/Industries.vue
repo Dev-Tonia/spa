@@ -60,7 +60,7 @@ const contents = [
       <!-- header -->
       <div class="md:flex justify-between">
         <div class="md:w-10/12 lg:w-7/12">
-          <h3 class="font-grifter font-bold text-4xl py-2">
+          <h3 class="font-opensans font-bold text-4xl py-2">
             Industries we serve
           </h3>
           <p class="text-lg md:text-xl text-neutral-600">
@@ -88,7 +88,7 @@ const contents = [
           <div class="rounded-xl overflow-hidden">
             <img :src="content.img" alt="" class="w-full h-auto" />
           </div>
-          <h5 class="font-grifter text-2xl font-bold py-2">{{ content.title }}</h5>
+          <h5 class="font-opensans text-2xl font-bold py-2">{{ content.title }}</h5>
           <p>
             {{ content.description }}
           </p>

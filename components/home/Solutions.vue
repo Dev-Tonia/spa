@@ -8,7 +8,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
       <div class="sm:flex justify-between items-start py-4 border-b-2">
         <div class="sm:w-7/12">
           <h3
-            class="font-grifter font-bold text-2xl md:text-3xl lg:text-4xl py-2"
+            class="font-opensans font-bold text-2xl md:text-3xl lg:text-4xl py-2"
           >
             Explore our solutions
           </h3>
@@ -34,7 +34,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
               <div class="flex justify-between pb-4">
                 <div class="w-10/12">
                   <h2
-                    class="text-2xl font-grifter font-bold mb-4 text-baseBlack"
+                    class="text-2xl font-opensans font-bold mb-4 text-baseBlack"
                   >
                     SAP Business One Add-ons
                   </h2>
@@ -84,7 +84,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                     />
                   </div>
                   <h2
-                    class="text-2xl font-grifter font-bold mb-4 text-baseBlack"
+                    class="text-2xl font-opensans font-bold mb-4 text-baseBlack"
                   >
                     Cloud Services
                   </h2>
@@ -120,7 +120,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                     />
                   </div>
                   <h2
-                    class="text-2xl font-grifter font-bold mb-4 text-baseBlack"
+                    class="text-2xl font-opensans font-bold mb-4 text-baseBlack"
                   >
                     Power BI
                   </h2>
@@ -139,7 +139,7 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
               <div class="flex justify-between pb-4">
                 <div class="w-10/12">
                   <h2
-                    class="text-2xl font-grifter font-bold mb-4 text-baseBlack"
+                    class="text-2xl font-opensans font-bold mb-4 text-baseBlack"
                   >
                     IDM @ School
                   </h2>

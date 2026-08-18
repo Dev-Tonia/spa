@@ -40,7 +40,7 @@ const contents = [
       <div class="flex items-center justify-center text-center">
         <div class="md:w-11/12 lg:w-9/12">
           <h3
-            class="text-2xl sm:text-3xl lg:text-4xl font-bold font-grifter leading-9 md:leading-[48px] py-2"
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold font-opensans leading-9 md:leading-[48px] py-2"
           >
             We provide complete consulting services to transform /
             <span class="capitalize">perfect business process</span>
@@ -61,7 +61,7 @@ const contents = [
           >
             <div class="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 items-center space-y-4">
               <img :src="content.img" alt="" width="150" />
-              <h3 class="font-grifter font-bold text-2xl">{{ content.title }}</h3>
+              <h3 class="font-opensans font-bold text-2xl">{{ content.title }}</h3>
             </div>
             <div class="py-5">
               {{ content.description }}

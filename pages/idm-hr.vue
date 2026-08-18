@@ -12,7 +12,7 @@
             HR Management
           </span>
           <h1
-            class="mt-5 font-grifter text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
+            class="mt-5 font-opensans text-3xl font-bold text-baseBlack sm:text-4xl lg:text-5xl"
           >
             IDM HR
           </h1>
@@ -55,7 +55,7 @@
 
     <!-- Overview -->
     <section class="mx-auto max-w-4xl px-4 py-14 text-center sm:py-16">
-      <h2 class="font-grifter text-2xl font-bold text-baseBlack sm:text-3xl">
+      <h2 class="font-opensans text-2xl font-bold text-baseBlack sm:text-3xl">
         One platform for the entire employee lifecycle
       </h2>
       <p class="mt-4 leading-7 text-neutral-600">
@@ -71,7 +71,7 @@
     <!-- Features -->
     <section id="features" class="bg-secondary text-white py-16">
       <div class="wrapper">
-        <h2 class="font-grifter text-2xl font-bold text-white sm:text-3xl">
+        <h2 class="font-opensans text-2xl font-bold text-white sm:text-3xl">
           Why you should choose IDM HR
         </h2>
         <p class="py-4 text-lg md:text-xl text-white/80">
@@ -90,7 +90,7 @@
             >
               <Icon :name="feature.icon" class="text-2xl" />
             </div>
-            <h3 class="font-grifter font-bold text-xl text-white">{{ feature.title }}</h3>
+            <h3 class="font-opensans font-bold text-xl text-white">{{ feature.title }}</h3>
             <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-white/80">
               <li v-for="item in feature.features" :key="item">
                 {{ item }}
@@ -106,7 +106,7 @@
       <div
         class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-4 py-14 text-center sm:py-16"
       >
-        <h2 class="font-grifter text-2xl font-bold text-white sm:text-3xl">
+        <h2 class="font-opensans text-2xl font-bold text-white sm:text-3xl">
           Bring your HR operations into one platform.
         </h2>
         <p class="max-w-xl text-white/80">

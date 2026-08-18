@@ -5,7 +5,7 @@
         <div class="min-[850px]:w-8/12 text-center min-[850px]:text-start">
           <div class="text-baseBlack">
             <h1
-              class="text-3xl md:text-4xl lg:text-5xl font-bold font-grifter mb-4"
+              class="text-3xl md:text-4xl lg:text-5xl font-bold font-opensans mb-4"
             >
               Our Mobile App
             </h1>
