@@ -1,10 +1,10 @@
 <script setup>
 import {
   heroImg,
-  heroImg2,
-  heroImg3,
-  studentsTheirUniforms,
   heroImg5,
+  smilingModel,
+  schoolGirlWriting,
+  schoolBgTransparent,
 } from "../../lib/images";
 const slides = [
   {
@@ -19,7 +19,7 @@ const slides = [
     highlight: "Africa.",
     subtitle:
       "Shaping Africa’s future with reliable, transformative IT solutions.",
-    bgImage: heroImg2,
+    bgImage: smilingModel,
     imageClass: "scale-100",
   },
   {
@@ -27,14 +27,14 @@ const slides = [
     highlight: " ICT.",
     subtitle:
       "Equipping the next generation with the tools to shape the global ICT landscape",
-    bgImage: heroImg3,
+    bgImage: schoolGirlWriting,
     imageClass: "scale-100",
   },
   {
     title: "IDM@School, The future of",
     highlight: "learning.",
     subtitle: "Leading the next frontier of innovation and technology",
-    bgImage: studentsTheirUniforms,
+    bgImage: schoolBgTransparent,
     imageClass: "scale-100",
   },
   {
@@ -77,7 +77,6 @@ const slides = [
           translate: ['100%', 0, 0],
         },
       }"
-      @slideChange="onSlideChange"
     >
       <SwiperSlide v-for="slide in slides" :key="slide">
         <div class="flex min-h-[70vh] items-center justify-center py-6">
@@ -116,7 +115,7 @@ const slides = [
             <div class="flex h-full w-full items-center justify-center">
               <img
                 :src="slide.bgImage"
-                class="h-full w-full object-cover object-center transition-transform duration-300"
+                class="h-full w-full object-contain object-center transition-transform duration-300"
                 :class="slide.imageClass"
                 alt="Hero Image"
               />
