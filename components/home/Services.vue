@@ -55,17 +55,34 @@ const contents = [
       <div class="py-5">
         <div class="grid gap-5 md:grid-cols-2">
           <div
-            class="border-[#E7EBEF] border bg-white rounded-[8px] p-6"
             v-for="(content, index) in contents"
             :key="content.title"
+            class="group relative overflow-hidden rounded-2xl border border-[#E7EBEF] bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg"
           >
-            <div class="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 items-center space-y-4">
-              <img :src="content.img" alt="" width="150" />
-              <h3 class="font-opensans font-bold text-2xl">{{ content.title }}</h3>
+            <div
+              class="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-primary transition-transform duration-300 group-hover:scale-x-100"
+            ></div>
+            <div class="flex flex-col items-center gap-4 sm:flex-row sm:gap-5">
+              <div
+                class="flex h-20 w-24 shrink-0 items-center justify-center rounded-xl border border-[#E7EBEF] bg-slate-50 p-3 transition-colors duration-300 group-hover:border-primary/30 group-hover:bg-primary/5"
+              >
+                <img
+                  :src="content.img"
+                  alt=""
+                  class="max-h-12 w-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-center font-opensans text-xl font-bold text-baseBlack sm:text-left sm:text-2xl"
+              >
+                {{ content.title }}
+              </h3>
             </div>
-            <div class="py-5">
+            <p
+              class="mt-5 border-t border-[#E7EBEF] pt-4 text-base leading-7 text-neutral-600"
+            >
               {{ content.description }}
-            </div>
+            </p>
           </div>
         </div>
       </div>
