@@ -36,12 +36,6 @@ const capabilities = [
             About IDM
           </span>
 
-          <h1
-            class="mt-6 max-w-2xl font-opensans text-4xl font-semibold leading-tight text-baseBlack sm:text-5xl lg:text-6xl"
-          >
-            Building practical technology solutions for business and education.
-          </h1>
-
           <p class="mt-5 max-w-2xl text-lg leading-8 text-[#655F5F] md:text-xl">
             International Data Management Services Limited (IDM) was
             incorporated in Nigeria in 1981 and is affiliated with Comcraft

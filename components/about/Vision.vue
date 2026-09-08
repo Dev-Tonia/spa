@@ -91,7 +91,7 @@ const principles = [
           <h3
             class="mt-4 font-opensans text-3xl font-semibold text-baseBlack sm:text-4xl"
           >
-            A practical partner for long-term growth.
+            A Strategic Partner For Sustainable Growth.
           </h3>
           <div class="mt-6 space-y-1">
             <div class="flex gap-4">

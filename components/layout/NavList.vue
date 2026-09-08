@@ -191,7 +191,7 @@ watch(route, () => {
     </li>
 
     <li class="py-4 min-[850px]:py-0">
-      <NuxtLink to="/idm-@-school"> School Education </NuxtLink>
+      <NuxtLink to="/idm-@-school"> IDM@School </NuxtLink>
     </li>
 
     <li

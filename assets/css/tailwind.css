@@ -24,7 +24,7 @@
   }
 }
 .wrapper {
-  @apply w-full max-w-[1440px] mx-auto px-5 sm:px-10 md:px-16 lg:px-24;
+  @apply w-full max-w-[2000px] mx-auto px-5 sm:px-10 md:px-16 lg:px-24;
 }
 html {
   scroll-behavior: smooth;

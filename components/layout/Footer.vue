@@ -35,21 +35,23 @@ const currentYear = date.value.getFullYear();
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:col-span-2">
         <div>
-          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em] dark:text-white">
+          <h2
+            class="mb-6 text-xs font-semibold uppercase tracking-[0.18em] dark:text-white"
+          >
             Company
           </h2>
           <ul class="">
             <li>
-            <NuxtLink class="hover:underline text-sm font-medium" to="/about">
-              About Us
-            </NuxtLink>
+              <NuxtLink class="hover:underline text-sm font-medium" to="/about">
+                About Us
+              </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="hover:underline text-sm font-medium"
                 to="/idm-@-school"
               >
-                School Education
+                IDM@School
               </NuxtLink>
             </li>
             <li>
@@ -63,7 +65,9 @@ const currentYear = date.value.getFullYear();
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">Industries</h2>
+          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">
+            Industries
+          </h2>
           <ul class="">
             <li
               class="mb-2"
@@ -77,7 +81,9 @@ const currentYear = date.value.getFullYear();
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">Solutions</h2>
+          <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.18em]">
+            Solutions
+          </h2>
           <ul class="">
             <li
               class="mb-2"

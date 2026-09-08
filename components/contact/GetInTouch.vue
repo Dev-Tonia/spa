@@ -41,7 +41,8 @@
               <Icon name="ri-smartphone-fill" class="text-4xl" />
             </span>
             <span class="flex flex-col">
-              <a href="tel:+23407011048875">+23407011048875</a>
+              <a href="tel:+2347011048875">+234 7011048875</a>
+              <a href="tel:+2348023379633">+234 8023379633</a>
             </span>
           </div>
         </div>

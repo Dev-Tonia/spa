@@ -56,8 +56,7 @@ export interface MediaItem {
 
 export const tabs = [
   { key: "school", label: "School" },
-  { key: "idms", label: "IDMS" },
-  { key: "outing", label: "Outing" },
+  { key: "idms", label: "Events" },
   { key: "schoolRobotics", label: "School Robotics" },
   { key: "brochure", label: "Resources " },
 ];
@@ -255,7 +254,7 @@ export const mediaItems: MediaItem[] = [
     src: image1,
     alt: "idm 1",
     type: "image",
-    tab: "outing",
+    tab: "idms",
   },
   {
     title: "IDM Booth",
@@ -263,7 +262,7 @@ export const mediaItems: MediaItem[] = [
     src: image2,
     alt: "idm 2",
     type: "image",
-    tab: "outing",
+    tab: "idms",
   },
   {
     title: "IDM Team",
@@ -271,7 +270,7 @@ export const mediaItems: MediaItem[] = [
     src: image3,
     alt: "idm 3",
     type: "image",
-    tab: "outing",
+    tab: "idms",
   },
   {
     title: "Outing 2",
@@ -279,7 +278,7 @@ export const mediaItems: MediaItem[] = [
     src: image5,
     alt: "outing 2",
     type: "image",
-    tab: "outing",
+    tab: "idms",
   },
   {
     title: "Outing Video",
@@ -287,7 +286,7 @@ export const mediaItems: MediaItem[] = [
     src: videoMp4,
     alt: "outing video",
     type: "video",
-    tab: "outing",
+    tab: "idms",
   },
 
   {
@@ -296,7 +295,7 @@ export const mediaItems: MediaItem[] = [
     src: image6,
     alt: "robotics demo",
     type: "image",
-    tab: "outing",
+    tab: "idms",
   },
   {
     title: "Robotics Video",
@@ -304,7 +303,7 @@ export const mediaItems: MediaItem[] = [
     src: videoMp4,
     alt: "robotics video",
     type: "video",
-    tab: "outing",
+    tab: "idms",
   },
 
   //
@@ -327,7 +326,7 @@ export const mediaItems: MediaItem[] = [
   },
 
   {
-    title: "IDM & SAP B-One",
+    title: "SAP",
     caption: "Product brochure",
     src: idmSapBOnePdf,
     alt: "idm sap brochure",
@@ -336,7 +335,7 @@ export const mediaItems: MediaItem[] = [
     downloadName: "IDM-SAP-B-One.pdf",
   },
   {
-    title: "IDM Overview",
+    title: "Company Profile",
     caption: "Company brochure",
     src: idmSapPdf,
     alt: "idm pdf",

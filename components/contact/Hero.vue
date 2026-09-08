@@ -30,7 +30,7 @@
           <Icon name="ri:mail-line" class="text-lg" />
         </a>
         <a
-          href="tel:+23407011048875"
+          href="tel:+2347011048875"
           class="inline-flex items-center gap-2 rounded-lg border border-primary/20 bg-white px-5 py-2.5 text-sm font-bold text-primary transition-colors hover:border-primary hover:bg-primary/5"
         >
           Call now

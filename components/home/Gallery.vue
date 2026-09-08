@@ -115,7 +115,7 @@
               Unsupported
             </div>
           </div>
-          <div class="p-5 text-left">
+          <div v-if="currentTab !== 'idms'" class="p-5 text-left">
             <h3 class="font-semibold text-baseBlack">{{ media.title }}</h3>
             <p class="mt-2 text-sm text-neutral-500">{{ media.caption }}</p>
           </div>
@@ -125,24 +125,34 @@
       <div
         v-if="selectedMedia !== null"
         class="fixed inset-0 z-50 grid place-items-center bg-black/70 p-4"
+        @click.self="closeMedia"
       >
         <button
           type="button"
           @click="closeMedia"
-          class="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-baseBlack shadow-lg transition hover:bg-neutral-100"
+          class="hidden"
           aria-label="Close media preview"
         >
           ×
         </button>
 
         <div
-          class="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl"
+          class="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl"
         >
+          <button
+            type="button"
+            @click="closeMedia"
+            class="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[0px] text-baseBlack shadow-lg transition hover:bg-neutral-100"
+            aria-label="Close media preview"
+          >
+            <Icon name="lucide:x" class="h-5 w-5" aria-hidden="true" />
+          </button>
+
           <template v-if="selectedMedia.type === 'image'">
             <img
               :src="selectedMedia.src"
               :alt="selectedMedia.alt"
-              class="h-[70vh] w-full object-contain bg-black/5"
+              class="h-[70vh] w-full object-cover bg-black/5"
             />
           </template>
           <template v-else-if="selectedMedia.type === 'video'">
@@ -150,10 +160,10 @@
               :src="selectedMedia.src"
               controls
               autoplay
-              class="h-[70vh] w-full object-contain bg-black/5"
+              class="h-[70vh] w-full object-cover bg-black/5"
             />
           </template>
-          <div class="p-6">
+          <div v-if="currentTab !== 'idms'" class="p-6">
             <h3 class="font-opensans text-2xl font-bold text-baseBlack">
               {{ selectedMedia.title }}
             </h3>
@@ -165,19 +175,29 @@
       <div
         v-if="selectedTestimony !== null"
         class="fixed inset-0 z-50 grid place-items-center bg-black/70 p-4"
+        @click.self="closeTestimony"
       >
         <button
           type="button"
           @click="closeTestimony"
-          class="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-baseBlack shadow-lg transition hover:bg-neutral-100"
+          class="hidden"
           aria-label="Close testimony preview"
         >
           ×
         </button>
 
         <div
-          class="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl"
+          class="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl"
         >
+          <button
+            type="button"
+            @click="closeTestimony"
+            class="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[0px] text-baseBlack shadow-lg transition hover:bg-neutral-100"
+            aria-label="Close testimony preview"
+          >
+            <Icon name="lucide:x" class="h-5 w-5" aria-hidden="true" />
+          </button>
+
           <img
             :src="selectedTestimony.image"
             :alt="selectedTestimony.name"
