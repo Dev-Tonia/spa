@@ -2,7 +2,7 @@
 import {
   heroImg,
   heroImg5,
-  smilingModel,
+  heroImg2,
   schoolGirlWriting,
   schoolBgTransparent,
 } from "../../lib/images";
@@ -19,7 +19,7 @@ const slides = [
     highlight: "Africa.",
     subtitle:
       "Shaping Africa’s future with reliable, transformative IT solutions.",
-    bgImage: smilingModel,
+    bgImage: heroImg2,
     imageClass: "scale-100",
   },
   {
@@ -109,9 +109,7 @@ const slides = [
             </div>
           </div>
           <!-- hero image -->
-          <div
-            class="hidden w-4/12 md:flex md:pr-10 lg:pr-16 md:pl-4 h-[60vh]"
-          >
+          <div class="hidden w-4/12 md:flex md:pr-10 lg:pr-16 md:pl-4 h-[60vh]">
             <div class="flex h-full w-full items-center justify-center">
               <img
                 :src="slide.bgImage"
