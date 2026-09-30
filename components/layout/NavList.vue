@@ -16,6 +16,14 @@ import {
 
 import { useRoute } from "vue-router";
 
+const solutionGroups = [
+  { title: "Solutions", category: "solution" },
+  { title: "Services", category: "service" },
+].map((group) => ({
+  ...group,
+  items: navLinks.solutions.items.filter((item) => item.category === group.category),
+}));
+
 const route = useRoute();
 const hoveredDropdown = ref(null);
 
@@ -83,87 +91,37 @@ watch(route, () => {
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent class="overflow-hidden">
-          <div class="max-h-[80vh] overflow-y-auto">
-            <div class="w-screen wrapper px-4 py-3 mt-4 lg:px-6">
-              <div class="grid gap-4 min-[980px]:grid-cols-2">
-                <div>
-                  <h6
-                    class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
-                  >
-                    Solutions
-                  </h6>
-                  <div class="space-y-1">
-                    <div
-                      v-for="(item, index) in navLinks.solutions.items.filter(
-                        (entry) => entry.category === 'solution',
-                      )"
-                      :key="index"
-                    >
-                      <DropdownMenuItem class="rounded-md p-0">
-                        <NuxtLink
-                          :to="item.to"
-                          class="flex items-start gap-2 rounded-md px-2 py-1.5 hover:bg-neutral-100"
-                        >
-                          <Icon
-                            :name="item.icon"
-                            class="mt-0.5 text-lg text-primary"
-                          />
-                          <span class="min-w-0">
-                            <span
-                              class="block text-sm leading-5 text-neutral-700"
-                              >{{ item.name }}</span
-                            >
-                            <span
-                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
-                              >{{ item.description }}</span
-                            >
-                          </span>
-                        </NuxtLink>
-                      </DropdownMenuItem>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h6
-                    class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
-                  >
-                    Services
-                  </h6>
-                  <div class="space-y-1">
-                    <div
-                      v-for="(item, index) in navLinks.solutions.items.filter(
-                        (entry) => entry.category === 'service',
-                      )"
-                      :key="index"
-                    >
-                      <DropdownMenuItem class="rounded-md p-0">
-                        <NuxtLink
-                          :to="item.to"
-                          class="flex items-start gap-2 rounded-md px-2 py-1.5 hover:bg-neutral-100"
-                        >
-                          <Icon
-                            :name="item.icon"
-                            class="mt-0.5 text-lg text-primary"
-                          />
-                          <span class="min-w-0">
-                            <span
-                              class="block text-sm leading-5 text-neutral-700"
-                              >{{ item.name }}</span
-                            >
-                            <span
-                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
-                              >{{ item.description }}</span
-                            >
-                          </span>
-                        </NuxtLink>
-                      </DropdownMenuItem>
-                    </div>
-                  </div>
-                </div>
+        <DropdownMenuContent
+          align="center"
+          :side-offset="16"
+          :collision-padding="16"
+          class="header-dropdown"
+        >
+          <div class="solution-groups">
+            <section
+              v-for="group in solutionGroups"
+              :key="group.category"
+              :aria-label="group.title"
+              class="menu-group"
+            >
+              <h6 class="menu-heading">{{ group.title }}</h6>
+              <div class="menu-items">
+                <DropdownMenuItem
+                  v-for="item in group.items"
+                  :key="item.id"
+                  as-child
+                  class="menu-link"
+                >
+                  <NuxtLink :to="item.to">
+                    <span class="menu-icon"><Icon :name="item.icon" /></span>
+                    <span class="menu-copy">
+                      <span class="menu-title">{{ item.name }}</span>
+                      <span class="menu-description">{{ item.description }}</span>
+                    </span>
+                  </NuxtLink>
+                </DropdownMenuItem>
               </div>
-            </div>
+            </section>
           </div>
         </DropdownMenuContent>
       </DropdownMenu>
@@ -212,38 +170,28 @@ watch(route, () => {
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent class="overflow-hidden">
-          <div class="max-h-[80vh] overflow-y-auto">
-            <div class="w-screen wrapper px-4 py-3 mt-4 lg:px-6">
-              <div class="grid gap-4 min-[980px]:grid-cols-2">
-                <div
-                  v-for="(item, index) in navLinks.industries.items"
-                  :key="index"
-                >
-                  <DropdownMenuItem class="rounded-md p-0">
-                    <NuxtLink
-                      :to="item.to"
-                      class="flex items-start gap-2 rounded-md px-2 py-1.5 hover:bg-neutral-100"
-                    >
-                      <Icon
-                        :name="item.icon"
-                        class="mt-0.5 text-lg text-primary"
-                      />
-                      <span class="min-w-0">
-                        <span class="block text-sm leading-5 text-neutral-700">
-                          {{ item.name }}
-                        </span>
-                        <span
-                          class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
-                        >
-                          {{ item.description }}
-                        </span>
-                      </span>
-                    </NuxtLink>
-                  </DropdownMenuItem>
-                </div>
-              </div>
-            </div>
+        <DropdownMenuContent
+          align="center"
+          :side-offset="16"
+          :collision-padding="16"
+          class="header-dropdown"
+        >
+          <h6 class="menu-heading">Industries we serve</h6>
+          <div class="industry-grid">
+            <DropdownMenuItem
+              v-for="item in navLinks.industries.items"
+              :key="item.id"
+              as-child
+              class="menu-link"
+            >
+              <NuxtLink :to="item.to">
+                <span class="menu-icon"><Icon :name="item.icon" /></span>
+                <span class="menu-copy">
+                  <span class="menu-title">{{ item.name }}</span>
+                  <span class="menu-description">{{ item.description }}</span>
+                </span>
+              </NuxtLink>
+            </DropdownMenuItem>
           </div>
         </DropdownMenuContent>
       </DropdownMenu>
@@ -281,7 +229,95 @@ watch(route, () => {
 </template>
 
 <style scoped>
-ul .router-link-exact-active {
+ul > li > .router-link-exact-active {
   @apply text-primary border-b-2 border-b-primary pb-1;
+}
+
+.header-dropdown {
+  width: min(820px, calc(100vw - 32px));
+  max-height: min(80vh, var(--radix-dropdown-menu-content-available-height));
+  overflow-y: auto;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 18px 50px -16px rgb(15 23 42 / 22%);
+  @apply font-nunito;
+}
+
+.solution-groups,
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 24px;
+}
+
+.menu-group + .menu-group {
+  border-left: 1px solid #eeeeee;
+  padding-left: 24px;
+}
+
+.menu-heading {
+  margin: 0 0 12px;
+  padding: 0 10px 12px;
+  border-bottom: 1px solid #eeeeee;
+  color: #737373;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.menu-items {
+  display: grid;
+  gap: 4px;
+}
+
+.menu-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 76px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: normal;
+  transition: background-color 150ms ease;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link[data-highlighted] {
+  background: #fff1f2;
+  outline: none;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+  height: 32px;
+  border: 1px solid #fee2e2;
+  border-radius: 8px;
+  background: #fff7f7;
+  font-size: 18px;
+  @apply text-primary;
+}
+
+.menu-copy { min-width: 0; }
+.menu-title {
+  display: block;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.menu-description {
+  display: block;
+  margin-top: 3px;
+  color: #737373;
+  font-size: 12px;
+  line-height: 17px;
 }
 </style>

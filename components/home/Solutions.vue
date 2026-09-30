@@ -39,11 +39,12 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                     SAP Business One Add-ons
                   </h2>
                   <p class="text-gray-700 mb-4">
-                    Microsoft Power BI is a comprehensive suite of business
-                    analytics tools used to analyze data and share insights. It
-                    connects to various data sources, transforms data, and
-                    creates interactive visualizations to help businesses make
-                    data-driven decisions.
+                    SAP Business One is a powerful, affordable Enterprise
+                    Resource Planning (ERP) software system built specifically
+                    for small and mid-sized businesses (SMEs). It connects every
+                    part of your company—including finance, sales, inventory,
+                    and purchasing—into one central platform, allowing you to
+                    automate daily tasks and make better decisions.
                   </p>
                 </div>
 

@@ -1,7 +1,6 @@
 <script setup>
 import { useVuelidate } from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
-// const formData = ref(formInitial);
 const formData = reactive({
   email: "",
   fullName: "",
@@ -30,26 +29,39 @@ const v$ = useVuelidate(rules, formData);
 const isOpen = ref(false);
 const modalMsg = ref("");
 const error = ref(false);
+const sending = ref(false);
 const submit = async () => {
-  v$.value.$validate();
-  if (v$.value.$error) {
-    isOpen.value = true;
-    error.value = true;
-    modalMsg.value = "Error Occurred \nAll the input field are required.";
-    return;
-  } else {
+  if (sending.value) return;
+  sending.value = true;
+  try {
+    const valid = await v$.value.$validate();
+    if (!valid) {
+      isOpen.value = true;
+      error.value = true;
+      modalMsg.value = "Please complete all fields and enter a valid email address.";
+      return;
+    }
+    const result = await $fetch("/contact.php", {
+      method: "POST",
+      body: new URLSearchParams({ ...formData }),
+      retry: 0,
+    });
+    if (result?.success !== true) throw new Error("Unexpected response");
     error.value = false;
     isOpen.value = true;
-    modalMsg.value = "Thank you for contacting IDM Service .";
-  }
+    modalMsg.value = "Thank you for contacting IDM Service. Your message has been submitted.";
 
-  formData.fullName = "";
-  formData.companyType = "";
-  formData.email = "";
-  formData.phoneNumber = "";
-  formData.additionalInfo = "";
-  formData.designation = "";
-  formData.enquiryType = "";
+    Object.keys(formData).forEach((key) => {
+      formData[key] = "";
+    });
+    v$.value.$reset();
+  } catch {
+    error.value = true;
+    isOpen.value = true;
+    modalMsg.value = "Unable to send your message. Please try again or email enquiry@idmng.com.";
+  } finally {
+    sending.value = false;
+  }
 };
 function closeModal() {
   isOpen.value = false;
@@ -128,21 +140,24 @@ function closeModal() {
       >
       <div class="relative">
         <select
-          name="cars"
-          id="cars"
+          v-model="formData.enquiryType"
+          name="enquiryType"
+          id="enquiry"
+          :aria-invalid="v$.enquiryType.$error"
           class="w-full rounded border border-[#C7D6E6] bg-white py-1 px-3 text-base leading-8 text-[#12324D] outline-none transition-colors duration-200 ease-in-out placeholder:text-[#8A97A6] focus:border-[#2B6CB0] focus:ring-2 focus:ring-[#2B6CB0]/10"
           :class="{
-            'border-red-500 focus:border-red-500': error,
-            'border-[#2B6CB0] ': !error,
+            'border-red-500 focus:border-red-500': v$.enquiryType.$error,
+            'border-[#2B6CB0] ': !v$.enquiryType.$error,
           }"
         >
+          <option disabled value="">Select enquiry type</option>
           <optgroup label="SAP">
-            <option value="volvo">Demo</option>
-            <option value="saab">Training</option>
+            <option value="SAP Demo">Demo</option>
+            <option value="SAP Training">Training</option>
           </optgroup>
           <optgroup label="School">
-            <option value="mercedes">Training</option>
-            <option value="audi">IDM@School</option>
+            <option value="School Training">Training</option>
+            <option value="IDM@School">IDM@School</option>
           </optgroup>
         </select>
       </div>
@@ -159,9 +174,11 @@ function closeModal() {
     <div>
       <button
         type="submit"
+        :disabled="sending"
+        :aria-busy="sending"
         class="rounded border-0 bg-[#12324D] py-2 px-8 font-bold text-white transition-colors duration-500 hover:bg-[#2B6CB0] focus:outline-none"
       >
-        Submit
+        {{ sending ? "Sending..." : "Submit" }}
       </button>
     </div>
   </form>
