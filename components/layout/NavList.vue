@@ -64,7 +64,7 @@ watch(route, () => {
 
 <template>
   <ul
-    class="min-[850px]:space-x-5 font-semibold font-nunito text-sm lg:text-base min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
+    class="nav-list min-[850px]:space-x-5 font-semibold font-nunito text-sm lg:text-base min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
     :class="{ 'hidden ': isOpen }"
   >
     <li class="py-4 min-[850px]:py-0">
@@ -229,6 +229,30 @@ watch(route, () => {
 </template>
 
 <style scoped>
+@media (min-width: 850px) and (max-width: 1085px) {
+  .nav-list {
+    flex: 1;
+    justify-content: flex-end;
+    gap: clamp(10px, 1.4vw, 15px);
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .nav-list > li {
+    margin-left: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .nav-list :deep(button) {
+    gap: 4px;
+  }
+
+  .nav-list :deep(button > :last-child) {
+    margin-left: 0;
+  }
+}
+
 ul > li > .router-link-exact-active {
   @apply text-primary border-b-2 border-b-primary pb-1;
 }
@@ -258,31 +282,31 @@ ul > li > .router-link-exact-active {
 }
 
 .menu-heading {
-  margin: 0 0 12px;
-  padding: 0 10px 12px;
-  border-bottom: 1px solid #eeeeee;
-  color: #737373;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  margin: 0 0 14px;
+  padding: 0 12px 14px;
+  border-bottom: 2px solid #fee2e2;
+  color: #262626;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: -0.02em;
 }
 
 .menu-items {
   display: grid;
-  gap: 4px;
+  gap: 6px;
 }
 
 .menu-link {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  min-height: 76px;
-  padding: 10px;
-  border-radius: 8px;
+  gap: 14px;
+  min-height: 78px;
+  padding: 12px;
+  border-radius: 10px;
   cursor: pointer;
   white-space: normal;
-  transition: background-color 150ms ease;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
 }
 
 .menu-link:hover,
@@ -292,16 +316,20 @@ ul > li > .router-link-exact-active {
   outline: none;
 }
 
+.menu-link:focus-visible {
+  box-shadow: inset 0 0 0 2px #fca5a5;
+}
+
 .menu-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 32px;
-  height: 32px;
+  flex: 0 0 36px;
+  height: 36px;
   border: 1px solid #fee2e2;
   border-radius: 8px;
   background: #fff7f7;
-  font-size: 18px;
+  font-size: 20px;
   @apply text-primary;
 }
 
@@ -309,15 +337,15 @@ ul > li > .router-link-exact-active {
 .menu-title {
   display: block;
   color: #262626;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 22px;
 }
 .menu-description {
   display: block;
-  margin-top: 3px;
-  color: #737373;
-  font-size: 12px;
-  line-height: 17px;
+  margin-top: 4px;
+  color: #626262;
+  font-size: 13px;
+  line-height: 19px;
 }
 </style>

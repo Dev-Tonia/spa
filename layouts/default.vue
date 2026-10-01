@@ -10,9 +10,9 @@ function updateIsOpen() {
   <header
     class="sticky top-0 text-baseBlack z-30 w-full bg-white/75 backdrop-blur"
   >
-    <nav class="wrapper py-5">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-5">
+    <nav class="wrapper py-5 site-nav">
+      <div class="flex items-center justify-between site-nav-row">
+        <div class="flex items-center space-x-5 site-logo">
           <NuxtLink to="/" class=" ">
             <div class="h-9 sm:h-10">
               <img
@@ -52,4 +52,18 @@ function updateIsOpen() {
   <LayoutFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 850px) and (max-width: 1085px) {
+  .site-nav {
+    padding: 18px 24px;
+  }
+
+  .site-nav-row {
+    gap: 20px;
+  }
+
+  .site-logo {
+    flex-shrink: 0;
+  }
+}
+</style>

@@ -1,6 +1,14 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/icon", "nuxt-swiper"],
   // pages: true,
+  nitro: {
+    devProxy: {
+      "/contact.php": {
+        target: "http://127.0.0.1:8081/contact.php",
+        changeOrigin: true,
+      },
+    },
+  },
 
   shadcn: {
     /**

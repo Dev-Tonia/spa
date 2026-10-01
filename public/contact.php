@@ -4,7 +4,8 @@ ini_set('display_errors', '0');
 header('Content-Type: application/json; charset=UTF-8');
 header('Cache-Control: no-store');
 
-function respond($status, $success, $message) {
+function respond($status, $success, $message)
+{
     http_response_code($status);
     echo json_encode(['success' => $success, 'message' => $message]);
     exit;
