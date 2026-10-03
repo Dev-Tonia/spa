@@ -88,10 +88,12 @@ watch(route, () => {
           :side-offset="12"
           :collision-padding="16"
           class="overflow-hidden"
-          :style="{ width: 'min(1100px, calc(100vw - 2rem))' }"
         >
           <div class="max-h-[80vh] overflow-y-auto">
-            <div class="wrapper px-4 py-3 mt-4 lg:px-6">
+            <div
+              class="wrapper px-4 py-3 mt-4 lg:px-6"
+              :style="{ width: 'min(1100px, calc(100vw - 3rem))' }"
+            >
               <div class="grid gap-4 min-[980px]:grid-cols-2">
                 <div class="min-w-0">
                   <h6
@@ -223,10 +225,12 @@ watch(route, () => {
           :side-offset="12"
           :collision-padding="16"
           class="overflow-hidden"
-          :style="{ width: 'min(1100px, calc(100vw - 2rem))' }"
         >
           <div class="max-h-[80vh] overflow-y-auto">
-            <div class="wrapper px-4 py-3 mt-4 lg:px-6">
+            <div
+              class="wrapper px-4 py-3 mt-4 lg:px-6"
+              :style="{ width: 'min(1100px, calc(100vw - 3rem))' }"
+            >
               <div class="grid gap-4 min-[980px]:grid-cols-2">
                 <div
                   v-for="(item, index) in navLinks.industries.items"
