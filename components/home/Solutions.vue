@@ -39,12 +39,14 @@ import { addOn, bi, clouds, idmSoln, schoolKid } from "../../lib/images";
                     SAP Business One Add-ons
                   </h2>
                   <p class="text-gray-700 mb-4">
-                    SAP Business One is a powerful, affordable Enterprise
-                    Resource Planning (ERP) software system built specifically
-                    for small and mid-sized businesses (SMEs). It connects every
-                    part of your company—including finance, sales, inventory,
-                    and purchasing—into one central platform, allowing you to
-                    automate daily tasks and make better decisions.
+                    The SAP Business One is an integrated application that
+                    integrates all transactional, reporting & controlling
+                    process in the entire company. Applications such as CRM, SCM
+                    & ERP directly derive their data from standard transactional
+                    data – Sales, Purchase, Production, Logistics, Accounting,
+                    Finance, CRM, Services etc. This state of art application
+                    developed by SAP is based on the latest client server
+                    Technology duly adapted for today's businesses.
                   </p>
                 </div>
 
