@@ -48,7 +48,7 @@ const isDropdownTriggerActive = (key, items) => {
 };
 
 watch(route, () => {
-  if (window.innerWidth <= 850 && typeof props.updateIsOpen === "function") {
+  if (window.innerWidth <= 1085 && typeof props.updateIsOpen === "function") {
     props.updateIsOpen();
   }
 });
@@ -56,17 +56,17 @@ watch(route, () => {
 
 <template>
   <ul
-    class="min-[850px]:space-x-5 font-semibold font-nunito text-sm lg:text-base min-[850px]:items-center flex flex-col min-[850px]:flex-row w-1/2 min-[850px]:w-auto"
+    class="min-[1085px]:space-x-5 font-semibold font-nunito text-sm lg:text-base min-[1085px]:items-center flex flex-col min-[1085px]:flex-row w-1/2 min-[1085px]:w-auto"
     :class="{ 'hidden ': isOpen }"
   >
-    <li class="py-4 min-[850px]:py-0">
+    <li class="py-4 min-[1085px]:py-0">
       <NuxtLink to="/"> Home </NuxtLink>
     </li>
-    <li class="pt-4 min-[850px]:pt-0">
+    <li class="pt-4 min-[1085px]:pt-0">
       <NuxtLink to="/about"> About Us </NuxtLink>
     </li>
     <li
-      class="cursor-pointer hidden min-[850px]:flex"
+      class="cursor-pointer hidden min-[1085px]:flex"
       @mouseenter="setHoveredDropdown('solutions')"
       @mouseleave="clearHoveredDropdown('solutions')"
     >
@@ -177,7 +177,7 @@ watch(route, () => {
       </DropdownMenu>
     </li>
 
-    <li class="cursor-pointer min-[850px]:hidden">
+    <li class="cursor-pointer min-[1085px]:hidden">
       <!-- This used on the small screen  -->
       <Accordion type="single" collapsible class="">
         <AccordionItem value="solutions">
@@ -194,16 +194,16 @@ watch(route, () => {
       </Accordion>
     </li>
 
-    <li class="py-4 min-[850px]:py-0">
+    <li class="py-4 min-[1085px]:py-0">
       <NuxtLink to="/it-training"> IT Training </NuxtLink>
     </li>
 
-    <li class="py-4 min-[850px]:py-0">
+    <li class="py-4 min-[1085px]:py-0">
       <NuxtLink to="/idm-@-school"> School Education </NuxtLink>
     </li>
 
     <li
-      class="cursor-pointer hidden min-[850px]:flex"
+      class="cursor-pointer hidden min-[1085px]:flex"
       @mouseenter="setHoveredDropdown('industries')"
       @mouseleave="clearHoveredDropdown('industries')"
     >
@@ -266,7 +266,7 @@ watch(route, () => {
       </DropdownMenu>
     </li>
 
-    <li class="cursor-pointer min-[850px]:hidden">
+    <li class="cursor-pointer min-[1085px]:hidden">
       <!-- This used on the small screen  -->
       <Accordion type="single" collapsible class="">
         <AccordionItem value="industries">
@@ -282,13 +282,13 @@ watch(route, () => {
         </AccordionItem>
       </Accordion>
     </li>
-    <li class="py-4 min-[850px]:py-0">
+    <li class="py-4 min-[1085px]:py-0">
       <NuxtLink to="/media-center"> Media Center </NuxtLink>
     </li>
-    <li class="py-4 min-[850px]:py-0">
+    <li class="py-4 min-[1085px]:py-0">
       <NuxtLink to="/contact"> Contact Us </NuxtLink>
     </li>
-    <!-- <li class="pb-4 hidden min-[850px]:block">
+    <!-- <li class="pb-4 hidden min-[1085px]:block">
       <Button
         class="text-white bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito"
         >Request a demo

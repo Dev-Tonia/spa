@@ -24,7 +24,7 @@ function updateIsOpen() {
           </NuxtLink>
         </div>
         <LayoutNavList
-          class="min-[850px]:flex hidden"
+          class="min-[1085px]:flex hidden"
           :isOpen="isOpen"
           :updateIsOpen="updateIsOpen"
         />
@@ -35,7 +35,7 @@ function updateIsOpen() {
         <Icon
           @click="updateIsOpen"
           name="ri:menu-fill"
-          class="text-3xl text-secondary min-[850px]:hidden cursor-pointer"
+          class="text-3xl text-secondary min-[1085px]:hidden cursor-pointer"
         />
       </div>
     </nav>
@@ -43,7 +43,7 @@ function updateIsOpen() {
   <LayoutMobileNavbar
     :isOpen="isOpen"
     :updateIsOpen="updateIsOpen"
-    class="min-[850px]:hidden"
+    class="min-[1085px]:hidden"
   />
 
   <main class="">
@@ -53,7 +53,7 @@ function updateIsOpen() {
 </template>
 
 <style scoped>
-@media (min-width: 850px) and (max-width: 1085px) {
+@media (min-width: 1085px) and (max-width: 1280px) {
   .site-nav {
     padding: 18px 24px;
   }
