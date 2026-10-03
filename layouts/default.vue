@@ -30,7 +30,7 @@ function updateIsOpen() {
         />
         <CommonModal
           title="Request A Demo"
-          class="text-white cursor-pointer bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden xl:inline-flex"
+          class="text-white cursor-pointer bg-primary py-4 px-4 text-sm sm:text-base sm:px-8 font-bold font-nunito hidden min-[1085px]:inline-flex"
         />
         <Icon
           @click="updateIsOpen"
