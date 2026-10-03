@@ -83,11 +83,17 @@ watch(route, () => {
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent class="overflow-hidden">
+        <DropdownMenuContent
+          align="center"
+          :side-offset="12"
+          :collision-padding="16"
+          class="overflow-hidden"
+          :style="{ width: 'min(1100px, calc(100vw - 2rem))' }"
+        >
           <div class="max-h-[80vh] overflow-y-auto">
-            <div class="w-screen wrapper px-4 py-3 mt-4 lg:px-6">
+            <div class="wrapper px-4 py-3 mt-4 lg:px-6">
               <div class="grid gap-4 min-[980px]:grid-cols-2">
-                <div>
+                <div class="min-w-0">
                   <h6
                     class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
                   >
@@ -115,7 +121,7 @@ watch(route, () => {
                               >{{ item.name }}</span
                             >
                             <span
-                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
+                              class="mt-0.5 block break-words text-[11px] leading-4 text-neutral-500"
                               >{{ item.description }}</span
                             >
                           </span>
@@ -125,7 +131,7 @@ watch(route, () => {
                   </div>
                 </div>
 
-                <div>
+                <div class="min-w-0">
                   <h6
                     class="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500"
                   >
@@ -153,7 +159,7 @@ watch(route, () => {
                               >{{ item.name }}</span
                             >
                             <span
-                              class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
+                              class="mt-0.5 block break-words text-[11px] leading-4 text-neutral-500"
                               >{{ item.description }}</span
                             >
                           </span>
@@ -212,13 +218,20 @@ watch(route, () => {
           <Icon name="iconamoon:arrow-down-2" class="text-2xl" />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent class="overflow-hidden">
+        <DropdownMenuContent
+          align="center"
+          :side-offset="12"
+          :collision-padding="16"
+          class="overflow-hidden"
+          :style="{ width: 'min(1100px, calc(100vw - 2rem))' }"
+        >
           <div class="max-h-[80vh] overflow-y-auto">
-            <div class="w-screen wrapper px-4 py-3 mt-4 lg:px-6">
+            <div class="wrapper px-4 py-3 mt-4 lg:px-6">
               <div class="grid gap-4 min-[980px]:grid-cols-2">
                 <div
                   v-for="(item, index) in navLinks.industries.items"
                   :key="index"
+                  class="min-w-0"
                 >
                   <DropdownMenuItem class="rounded-md p-0">
                     <NuxtLink
@@ -234,7 +247,7 @@ watch(route, () => {
                           {{ item.name }}
                         </span>
                         <span
-                          class="mt-0.5 block text-[11px] leading-4 text-neutral-500"
+                          class="mt-0.5 block break-words text-[11px] leading-4 text-neutral-500"
                         >
                           {{ item.description }}
                         </span>
